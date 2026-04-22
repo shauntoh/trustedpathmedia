@@ -1,9 +1,9 @@
 const footerLinks = {
   Company: [
-    { label: 'About', href: '#' },
-    { label: 'Contact', href: '#' },
-    { label: 'Affiliate Disclosure', href: '#' },
-    { label: 'Privacy Policy', href: '#' },
+    { label: 'About', href: '#/about' },
+    { label: 'Contact', href: 'mailto:contact@trustedpathmedia.com' },
+    { label: 'Affiliate Disclosure', href: '#/disclosure' },
+    { label: 'Privacy Policy', href: '#/privacy' },
   ],
   Categories: [
     { label: 'AI Tools', href: '#' },
@@ -77,9 +77,9 @@ export default function Footer() {
             from qualifying purchases made through links on this site. This does not affect our editorial rankings or recommendations.
           </p>
           <div className="flex items-center gap-5 shrink-0">
-            <a href="#" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Privacy</a>
+            <a href="#/privacy" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Privacy</a>
             <a href="#" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Terms</a>
-            <a href="#" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Contact</a>
+            <a href="mailto:contact@trustedpathmedia.com" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Contact</a>
           </div>
         </div>
       </div>

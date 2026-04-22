@@ -1,5 +1,6 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const fitColors = {
   Excellent: 'text-emerald-400 bg-emerald-950/50 border-emerald-800/30',
@@ -43,6 +44,11 @@ function RatingBar({ label, score }) {
 }
 
 export default function ReviewPage({ review }) {
+  usePageMeta({
+    title: review ? `${review.name} Review` : 'Review',
+    description: review ? review.description : undefined,
+  })
+
   if (!review) {
     return (
       <div className="min-h-screen bg-navy-900 flex items-center justify-center">

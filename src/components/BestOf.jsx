@@ -7,6 +7,7 @@ const articles = [
     readTime: '8 min read',
     badgeColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',
     featured: true,
+    href: '#/guide/ai-tools-side-hustlers',
   },
   {
     category: 'Hosting',
@@ -16,6 +17,7 @@ const articles = [
     readTime: '6 min read',
     badgeColor: 'text-emerald-400 bg-emerald-950/50 border-emerald-800/30',
     featured: false,
+    href: '#/guide/web-hosting-beginners',
   },
   {
     category: 'VPN',
@@ -25,6 +27,7 @@ const articles = [
     readTime: '7 min read',
     badgeColor: 'text-rose-400 bg-rose-950/50 border-rose-800/30',
     featured: false,
+    href: '#/guide/vpn-remote-workers',
   },
   {
     category: 'Productivity',
@@ -34,6 +37,7 @@ const articles = [
     readTime: '9 min read',
     badgeColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',
     featured: false,
+    href: '#/guide/productivity-apps',
   },
   {
     category: 'SaaS',
@@ -43,6 +47,7 @@ const articles = [
     readTime: '7 min read',
     badgeColor: 'text-blue-400 bg-blue-950/50 border-blue-800/30',
     featured: false,
+    href: '#/guide/saas-small-teams',
   },
   {
     category: 'Courses',
@@ -52,6 +57,7 @@ const articles = [
     readTime: '5 min read',
     badgeColor: 'text-amber-400 bg-amber-950/50 border-amber-800/30',
     featured: false,
+    href: '#/guide/online-courses-high-income',
   },
 ]
 
@@ -64,12 +70,12 @@ function ArrowIcon({ className = 'w-4 h-4' }) {
 }
 
 function ArticleCard({ article }) {
-  const { category, title, description, readTime, badgeColor, featured } = article
+  const { category, title, description, readTime, badgeColor, featured, href } = article
 
   if (featured) {
     return (
       <a
-        href="#"
+        href={href}
         className="group col-span-1 sm:col-span-2 bg-navy-800/60 border border-white/[0.07] rounded-2xl p-8 hover:bg-navy-800 hover:border-blue-600/20 transition-all duration-300 hover:shadow-xl hover:shadow-black/30 flex flex-col justify-between min-h-[230px]"
       >
         <div>
@@ -94,7 +100,7 @@ function ArticleCard({ article }) {
 
   return (
     <a
-      href="#"
+      href={href}
       className="group bg-navy-800/40 border border-white/[0.07] rounded-2xl p-6 hover:bg-navy-800/70 hover:border-blue-600/20 transition-all duration-300 hover:shadow-lg hover:shadow-black/20 flex flex-col justify-between"
     >
       <div>
