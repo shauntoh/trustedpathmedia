@@ -10,9 +10,11 @@ import Footer from './components/Footer'
 import ReviewPage from './pages/ReviewPage'
 
 import claudeAiReview from './data/reviews/claude-ai'
+import hostingerReview from './data/reviews/hostinger'
 
 const reviews = {
   'claude-ai': claudeAiReview,
+  'hostinger': hostingerReview,
 }
 
 function useHashRoute() {
