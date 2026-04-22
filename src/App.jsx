@@ -41,11 +41,15 @@ export default function App() {
 
   if (reviewMatch) {
     const slug = reviewMatch[1]
-    return <ReviewPage review={reviews[slug]} />
+    return (
+      <div key={hash} className="page-enter">
+        <ReviewPage review={reviews[slug]} />
+      </div>
+    )
   }
 
   return (
-    <div className="min-h-screen bg-navy-900">
+    <div key={hash} className="min-h-screen bg-navy-900 page-enter">
       <Nav />
       <main>
         <Hero />
