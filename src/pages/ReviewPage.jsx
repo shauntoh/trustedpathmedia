@@ -73,7 +73,7 @@ export default function ReviewPage({ review }) {
         {/* Breadcrumb */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-2 text-xs text-slate-500">
-            <a href="/#" className="hover:text-slate-300 transition-colors">Home</a>
+            <a href="#" className="hover:text-slate-300 transition-colors">Home</a>
             <span>/</span>
             <span className={categoryColor.split(' ')[0]}>{category}</span>
             <span>/</span>

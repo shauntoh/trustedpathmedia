@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import ReviewPage from './pages/ReviewPage'
 import GuidePage from './pages/GuidePage'
 import CategoryPage from './pages/CategoryPage'
+import GuidesPage from './pages/GuidesPage'
 import AboutPage from './pages/AboutPage'
 import DisclosurePage from './pages/DisclosurePage'
 import PrivacyPage from './pages/PrivacyPage'
@@ -98,6 +99,11 @@ export default function App() {
         <CategoryPage category={categoryMap[categoryMatch[1]] || categoryMatch[1]} />
       </div>
     )
+  }
+
+  // Guides listing
+  if (hash === '#/guides') {
+    return <div key={hash} className="page-enter"><GuidesPage /></div>
   }
 
   // Static pages

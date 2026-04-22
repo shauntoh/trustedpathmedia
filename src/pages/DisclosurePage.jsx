@@ -10,7 +10,7 @@ export default function DisclosurePage() {
 
           {/* Breadcrumb */}
           <nav className="text-xs text-slate-500 mb-10">
-            <a href="/#" className="hover:text-slate-300 transition-colors">Home</a>
+            <a href="#" className="hover:text-slate-300 transition-colors">Home</a>
             <span className="mx-2">/</span>
             <span className="text-slate-300">Affiliate Disclosure</span>
           </nav>
