@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { label: 'AI Tools', href: '#categories' },
-  { label: 'Hosting', href: '#categories' },
-  { label: 'SaaS', href: '#categories' },
-  { label: 'VPN', href: '#categories' },
-  { label: 'Courses', href: '#categories' },
+  { label: 'Best AI Tools', href: '#picks' },
+  { label: 'Best Hosting', href: '#picks' },
+  { label: 'Best VPNs', href: '#picks' },
+  { label: 'Buying Guides', href: '#categories' },
+  { label: 'About', href: '#newsletter' },
 ]
 
 export default function Nav() {
@@ -64,10 +64,10 @@ export default function Nav() {
               Newsletter
             </a>
             <a
-              href="#categories"
+              href="#picks"
               className="bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/20"
             >
-              Explore Tools
+              See Top Picks
             </a>
           </div>
 
@@ -105,11 +105,11 @@ export default function Nav() {
                 Join Newsletter
               </a>
               <a
-                href="#categories"
+                href="#picks"
                 className="block bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg text-center transition-all"
                 onClick={() => setIsOpen(false)}
               >
-                Explore Tools
+                See Top Picks
               </a>
             </div>
           </div>

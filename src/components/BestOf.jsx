@@ -3,7 +3,7 @@ const articles = [
     category: 'AI Tools',
     title: 'Best AI Tools for Side Hustlers in 2025',
     description:
-      'The tools that actually move the needle for freelancers, creators, and one-person businesses.',
+      'The AI tools that genuinely move the needle for freelancers, creators, and one-person businesses — ranked by real-world value, not hype.',
     readTime: '8 min read',
     badgeColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',
     featured: true,
@@ -12,7 +12,7 @@ const articles = [
     category: 'Hosting',
     title: 'Best Web Hosting for Beginners',
     description:
-      'No jargon. Just the right host for your first project, portfolio, or small business.',
+      'How to choose the right host for your first site — without overpaying, getting locked into the wrong plan, or wading through sales jargon.',
     readTime: '6 min read',
     badgeColor: 'text-emerald-400 bg-emerald-950/50 border-emerald-800/30',
     featured: false,
@@ -21,7 +21,7 @@ const articles = [
     category: 'VPN',
     title: 'Best VPNs for Remote Workers & Travelers',
     description:
-      'Tested on public WiFi, hotel networks, and international connections for real-world performance.',
+      'Which VPNs hold up on hotel networks, airport WiFi, and international connections — compared on speed, privacy policy, and app quality.',
     readTime: '7 min read',
     badgeColor: 'text-rose-400 bg-rose-950/50 border-rose-800/30',
     featured: false,
@@ -30,7 +30,7 @@ const articles = [
     category: 'Productivity',
     title: 'Best Productivity Apps Worth Paying For',
     description:
-      'Premium tools that justify their subscription fees every single month.',
+      'The tools that justify their subscription every month — assessed on whether they save meaningful time and actually get used.',
     readTime: '9 min read',
     badgeColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',
     featured: false,
@@ -39,7 +39,7 @@ const articles = [
     category: 'SaaS',
     title: 'Best SaaS Tools for Small Teams',
     description:
-      'Cut your software stack and boost output with these high-leverage platforms.',
+      'High-leverage platforms that let small teams punch above their weight — without bloated feature sets or enterprise pricing.',
     readTime: '7 min read',
     badgeColor: 'text-blue-400 bg-blue-950/50 border-blue-800/30',
     featured: false,
@@ -48,7 +48,7 @@ const articles = [
     category: 'Courses',
     title: 'Best Online Courses for High-Income Skills',
     description:
-      'Courses with real ROI, taught by practitioners — not just certified instructors.',
+      'Courses worth the investment — focused on skills with clear career or income upside, not just credentials.',
     readTime: '5 min read',
     badgeColor: 'text-amber-400 bg-amber-950/50 border-amber-800/30',
     featured: false,
@@ -84,7 +84,7 @@ function ArticleCard({ article }) {
         <div className="flex items-center justify-between mt-6 pt-5 border-t border-white/[0.05]">
           <span className="text-xs text-slate-500">{readTime}</span>
           <span className="text-blue-400 text-sm font-medium inline-flex items-center gap-1.5 group-hover:gap-2.5 transition-all duration-200">
-            Read Guide
+            Read the Guide
             <ArrowIcon />
           </span>
         </div>
@@ -121,9 +121,9 @@ export default function BestOf() {
 
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
           <div>
-            <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-3">Comparison Guides</p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Best-Of Roundups</h2>
-            <p className="text-slate-400">Deep-dive guides to help you decide with confidence.</p>
+            <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-3">Buying Guides</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Make the Right Call</h2>
+            <p className="text-slate-400">Practical guides that cut through the noise — so you only pay for what's worth it.</p>
           </div>
           <a
             href="#"

@@ -3,8 +3,9 @@ const picks = [
     name: 'Claude AI',
     category: 'AI Tools',
     rating: '9.4',
+    bestFor: 'Knowledge workers & writers',
     description:
-      'The most capable AI assistant for research, writing, and complex reasoning. Best-in-class for knowledge workers and professionals.',
+      'A standout AI assistant for research, long-form writing, and complex reasoning — with a thoughtful, accurate output that holds up under real-world use.',
     badge: 'Top Pick',
     badgeColor: 'bg-violet-950/60 text-violet-400 border-violet-800/40',
   },
@@ -12,8 +13,9 @@ const picks = [
     name: 'Hostinger',
     category: 'Hosting',
     rating: '8.9',
+    bestFor: 'Side projects & small businesses',
     description:
-      'Outstanding performance-to-price ratio. Ideal for side projects, agencies, and growing businesses that need reliability without enterprise costs.',
+      'Strong performance at a price point that makes sense for early-stage projects. Reliable uptime, clean dashboard, and no hidden cost surprises.',
     badge: 'Best Value',
     badgeColor: 'bg-emerald-950/60 text-emerald-400 border-emerald-800/40',
   },
@@ -21,8 +23,9 @@ const picks = [
     name: 'NordVPN',
     category: 'VPN',
     rating: '9.1',
+    bestFor: 'Remote workers & frequent travelers',
     description:
-      'Industry-leading encryption with a verified no-logs policy. Consistently fast across 60+ countries — built for privacy-conscious users.',
+      'One of the most consistently reviewed VPNs for privacy and speed. Covers 60+ countries with a transparent no-logs policy and solid app experience.',
     badge: "Editors' Choice",
     badgeColor: 'bg-rose-950/60 text-rose-400 border-rose-800/40',
   },
@@ -30,8 +33,9 @@ const picks = [
     name: 'Notion',
     category: 'Productivity',
     rating: '8.7',
+    bestFor: 'Solo operators & small teams',
     description:
-      'The all-in-one workspace that replaces five other tools. Unmatched flexibility for teams and solo operators who think in systems.',
+      'A flexible workspace that consolidates notes, tasks, wikis, and projects in one place. The learning curve pays off quickly for anyone who works in systems.',
     badge: 'Staff Pick',
     badgeColor: 'bg-cyan-950/60 text-cyan-400 border-cyan-800/40',
   },
@@ -63,7 +67,7 @@ export default function EditorsPicks() {
             <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-3">Curated by Our Team</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Editor's Picks</h2>
             <p className="text-slate-400 max-w-lg">
-              Tools we've tested, paid for, and genuinely recommend — with no sponsored bias.
+              Tools we've researched, compared, and stand behind — with clear context on who each one is best for.
             </p>
           </div>
           <a
@@ -75,8 +79,8 @@ export default function EditorsPicks() {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {picks.map(({ name, category, rating, description, badge, badgeColor }) => (
+        <div id="picks" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {picks.map(({ name, category, rating, bestFor, description, badge, badgeColor }) => (
             <div
               key={name}
               className="group relative bg-navy-800 border border-white/[0.07] rounded-2xl p-6 flex flex-col hover:border-blue-600/30 hover:bg-navy-750 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40"
@@ -93,13 +97,19 @@ export default function EditorsPicks() {
               <h3 className="text-xl font-bold text-white mb-1">{name}</h3>
 
               {/* Category + Rating */}
-              <div className="flex items-center gap-2 mb-4">
+              <div className="flex items-center gap-2 mb-3">
                 <span className="text-xs text-slate-500 font-medium">{category}</span>
                 <span className="text-slate-700">·</span>
                 <div className="flex items-center gap-1">
                   <StarIcon />
                   <span className="text-xs font-semibold text-amber-400">{rating}</span>
                 </div>
+              </div>
+
+              {/* Best for */}
+              <div className="flex items-center gap-1.5 mb-4">
+                <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-600">Best for</span>
+                <span className="text-[11px] text-slate-400 font-medium">{bestFor}</span>
               </div>
 
               {/* Description */}
@@ -112,7 +122,7 @@ export default function EditorsPicks() {
                 href="#"
                 className="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-blue-500/50 hover:bg-blue-600/10 text-slate-300 hover:text-blue-400 text-sm font-medium px-4 py-2.5 rounded-lg transition-all duration-200"
               >
-                View Pick
+                See Recommendation
                 <ArrowIcon />
               </a>
             </div>

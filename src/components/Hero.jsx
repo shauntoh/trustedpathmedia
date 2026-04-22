@@ -24,29 +24,28 @@ export default function Hero() {
         {/* Trust badge */}
         <div className="inline-flex items-center gap-2 bg-blue-950/50 border border-blue-800/30 rounded-full px-4 py-1.5 mb-10">
           <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-          <span className="text-blue-400 text-xs font-medium tracking-widest uppercase">Independent Digital Reviews</span>
+          <span className="text-blue-400 text-xs font-medium tracking-widest uppercase">Curated Recommendations</span>
         </div>
 
         {/* Headline */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.08] tracking-tight max-w-4xl mb-6">
-          The trusted source for{' '}
-          <span className="text-gradient">digital tools</span>{' '}
-          worth your money
+          Trusted digital tools{' '}
+          <span className="text-gradient">worth paying for.</span>
         </h1>
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed mb-10">
-          We cut through the noise to bring you expert-curated recommendations for AI tools,
-          hosting, SaaS, and software that actually delivers — not paid placements.
+          Curated picks across AI tools, hosting, SaaS, VPNs, courses, and productivity
+          software — for ambitious people who want to grow faster and spend smarter.
         </p>
 
         {/* CTAs */}
         <div className="flex flex-wrap items-center gap-4 mb-20">
           <a
-            href="#categories"
+            href="#picks"
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-blue-600/25 hover:-translate-y-0.5"
           >
-            Explore Tools
+            See Top Picks
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
             </svg>
@@ -62,7 +61,6 @@ export default function Hero() {
         {/* Stats */}
         <div className="flex flex-wrap items-center gap-8 pt-8 border-t border-white/[0.06]">
           {[
-            { value: '200+', label: 'Tools Reviewed' },
             { value: '6', label: 'Categories' },
             { value: '100%', label: 'Independent' },
             { value: '$0', label: 'Paid Rankings' },

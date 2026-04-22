@@ -5,7 +5,7 @@ const categories = [
     name: 'AI Tools',
     description: 'LLMs, assistants & automation',
     icon: Brain,
-    count: '40+ picks',
+    label: 'Top Picks',
     color: 'text-violet-400',
     bgColor: 'bg-violet-950/50',
     hoverBorder: 'hover:border-violet-500/30',
@@ -14,7 +14,7 @@ const categories = [
     name: 'Hosting',
     description: 'Servers, cloud & infrastructure',
     icon: Server,
-    count: '25+ picks',
+    label: 'Best Value',
     color: 'text-emerald-400',
     bgColor: 'bg-emerald-950/50',
     hoverBorder: 'hover:border-emerald-500/30',
@@ -23,7 +23,7 @@ const categories = [
     name: 'SaaS',
     description: 'Apps, platforms & services',
     icon: LayoutGrid,
-    count: '50+ picks',
+    label: 'Editor Curated',
     color: 'text-blue-400',
     bgColor: 'bg-blue-950/50',
     hoverBorder: 'hover:border-blue-500/30',
@@ -32,7 +32,7 @@ const categories = [
     name: 'VPN',
     description: 'Privacy, security & access',
     icon: Shield,
-    count: '15+ picks',
+    label: 'Trusted Picks',
     color: 'text-rose-400',
     bgColor: 'bg-rose-950/50',
     hoverBorder: 'hover:border-rose-500/30',
@@ -41,7 +41,7 @@ const categories = [
     name: 'Courses',
     description: 'Skills, training & education',
     icon: GraduationCap,
-    count: '30+ picks',
+    label: 'Worth Paying For',
     color: 'text-amber-400',
     bgColor: 'bg-amber-950/50',
     hoverBorder: 'hover:border-amber-500/30',
@@ -50,7 +50,7 @@ const categories = [
     name: 'Productivity',
     description: 'Focus, workflow & output',
     icon: Zap,
-    count: '35+ picks',
+    label: 'Worth Paying For',
     color: 'text-cyan-400',
     bgColor: 'bg-cyan-950/50',
     hoverBorder: 'hover:border-cyan-500/30',
@@ -63,15 +63,15 @@ export default function Categories() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="mb-12">
-          <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-3">Browse by Category</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Explore What We Cover</h2>
+          <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-3">What We Recommend</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Six Categories. Only the Best.</h2>
           <p className="text-slate-400 max-w-xl">
-            Every category is curated by specialists who actually use and pay for these tools.
+            Focused on the tools that genuinely move the needle — curated to help you spend smarter.
           </p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-          {categories.map(({ name, description, icon: Icon, count, color, bgColor, hoverBorder }) => (
+          {categories.map(({ name, description, icon: Icon, label, color, bgColor, hoverBorder }) => (
             <a
               key={name}
               href="#"
@@ -82,7 +82,7 @@ export default function Categories() {
               </div>
               <p className="font-semibold text-white text-sm mb-0.5">{name}</p>
               <p className="text-[11px] text-slate-500 leading-snug mb-2 hidden sm:block">{description}</p>
-              <p className={`text-[11px] font-medium ${color}`}>{count}</p>
+              <p className={`text-[11px] font-medium ${color}`}>{label}</p>
             </a>
           ))}
         </div>

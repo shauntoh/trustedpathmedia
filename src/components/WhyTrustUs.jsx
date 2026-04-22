@@ -3,9 +3,9 @@ import { Search, ShieldCheck, Award, Eye } from 'lucide-react'
 const pillars = [
   {
     icon: Search,
-    title: 'Independently Tested',
+    title: 'Editorially Independent',
     description:
-      'We pay for and personally test every tool before recommending it. No free access in exchange for coverage, no shortcuts.',
+      'Our picks are based on independent research, publicly available data, and real-world use cases — not free access deals or vendor relationships.',
     color: 'text-blue-400',
     bgColor: 'bg-blue-950/40',
   },
@@ -13,23 +13,23 @@ const pillars = [
     icon: ShieldCheck,
     title: 'No Paid Rankings',
     description:
-      'Our rankings are determined entirely by performance, value, and reliability. Advertisers and vendors have zero influence on our picks.',
+      'We don\'t accept payment to rank or feature tools. Recommendations reflect value, reliability, and fit for the intended audience — nothing else.',
     color: 'text-emerald-400',
     bgColor: 'bg-emerald-950/40',
   },
   {
     icon: Award,
-    title: 'Expert Curated',
+    title: 'Practical Focus',
     description:
-      'Every category is reviewed by specialists with real hands-on experience. We write for practitioners, not browsers.',
+      'Every recommendation includes clear context on who it\'s best for and why. No hype, no filler — just honest assessments of real-world value.',
     color: 'text-amber-400',
     bgColor: 'bg-amber-950/40',
   },
   {
     icon: Eye,
-    title: 'Fully Transparent',
+    title: 'Affiliate Transparent',
     description:
-      'We earn commissions through affiliate links to fund our work. Every relationship is clearly disclosed — no hidden arrangements, ever.',
+      'We earn commissions through affiliate links, which funds this work. Every relationship is clearly disclosed. Our opinions are always our own.',
     color: 'text-violet-400',
     bgColor: 'bg-violet-950/40',
   },
@@ -42,10 +42,10 @@ export default function WhyTrustUs() {
 
         <div className="max-w-2xl mx-auto text-center mb-16">
           <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-3">Why Trust Us</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Built on Transparency</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">How We Work</h2>
           <p className="text-slate-400 text-lg leading-relaxed">
-            In a world of sponsored "best of" lists, we do things differently. Our editorial
-            independence is the product — and we guard it carefully.
+            Most "best of" lists are paid placements. Ours aren't. Here's the approach
+            we take to keep our recommendations worth reading.
           </p>
         </div>
 
