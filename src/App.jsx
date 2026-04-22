@@ -11,10 +11,12 @@ import ReviewPage from './pages/ReviewPage'
 
 import claudeAiReview from './data/reviews/claude-ai'
 import hostingerReview from './data/reviews/hostinger'
+import nordvpnReview from './data/reviews/nordvpn'
 
 const reviews = {
   'claude-ai': claudeAiReview,
   'hostinger': hostingerReview,
+  'nordvpn': nordvpnReview,
 }
 
 function useHashRoute() {
