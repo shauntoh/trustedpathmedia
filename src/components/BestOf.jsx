@@ -7,6 +7,7 @@ const articles = [
     readTime: '8 min read',
     badgeColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',
     featured: true,
+    linkTo: '/best-ai-tools',
   },
   {
     category: 'Hosting',
@@ -55,6 +56,8 @@ const articles = [
   },
 ]
 
+import { Link } from 'react-router-dom'
+
 function ArrowIcon({ className = 'w-4 h-4' }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -64,14 +67,12 @@ function ArrowIcon({ className = 'w-4 h-4' }) {
 }
 
 function ArticleCard({ article }) {
-  const { category, title, description, readTime, badgeColor, featured } = article
+  const { category, title, description, readTime, badgeColor, featured, linkTo } = article
 
   if (featured) {
-    return (
-      <a
-        href="#"
-        className="group col-span-1 sm:col-span-2 bg-navy-800/60 border border-white/[0.07] rounded-2xl p-8 hover:bg-navy-800 hover:border-blue-600/20 transition-all duration-300 hover:shadow-xl hover:shadow-black/30 flex flex-col justify-between min-h-[230px]"
-      >
+    const sharedClass = 'group col-span-1 sm:col-span-2 bg-navy-800/60 border border-white/[0.07] rounded-2xl p-8 hover:bg-navy-800 hover:border-blue-600/20 transition-all duration-300 hover:shadow-xl hover:shadow-black/30 flex flex-col justify-between min-h-[230px]'
+    const inner = (
+      <>
         <div>
           <span className={`inline-flex text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full border ${badgeColor} mb-5`}>
             {category}
@@ -88,8 +89,11 @@ function ArticleCard({ article }) {
             <ArrowIcon />
           </span>
         </div>
-      </a>
+      </>
     )
+    return linkTo
+      ? <Link to={linkTo} className={sharedClass}>{inner}</Link>
+      : <a href="#" className={sharedClass}>{inner}</a>
   }
 
   return (

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const navLinks = [
-  { label: 'Best AI Tools', href: '#picks' },
+  { label: 'Best AI Tools', to: '/best-ai-tools' },
   { label: 'Best Hosting', href: '#picks' },
   { label: 'Best VPNs', href: '#picks' },
   { label: 'Buying Guides', href: '#categories' },
@@ -44,15 +45,25 @@ export default function Nav() {
 
           {/* Desktop nav links */}
           <div className="hidden md:flex items-center space-x-1">
-            {navLinks.map(({ label, href }) => (
-              <a
-                key={label}
-                href={href}
-                className="text-slate-400 hover:text-white text-sm px-3.5 py-2 rounded-lg hover:bg-white/[0.05] transition-all duration-200"
-              >
-                {label}
-              </a>
-            ))}
+            {navLinks.map(({ label, href, to }) =>
+              to ? (
+                <Link
+                  key={label}
+                  to={to}
+                  className="text-slate-400 hover:text-white text-sm px-3.5 py-2 rounded-lg hover:bg-white/[0.05] transition-all duration-200"
+                >
+                  {label}
+                </Link>
+              ) : (
+                <a
+                  key={label}
+                  href={href}
+                  className="text-slate-400 hover:text-white text-sm px-3.5 py-2 rounded-lg hover:bg-white/[0.05] transition-all duration-200"
+                >
+                  {label}
+                </a>
+              )
+            )}
           </div>
 
           {/* Desktop actions */}
@@ -63,12 +74,12 @@ export default function Nav() {
             >
               Newsletter
             </a>
-            <a
-              href="#picks"
+            <Link
+              to="/best-ai-tools"
               className="bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/20"
             >
               See Top Picks
-            </a>
+            </Link>
           </div>
 
           {/* Mobile toggle */}
@@ -86,16 +97,27 @@ export default function Nav() {
       {isOpen && (
         <div className="md:hidden bg-navy-900 border-t border-white/[0.06]">
           <div className="px-4 py-4 space-y-1">
-            {navLinks.map(({ label, href }) => (
-              <a
-                key={label}
-                href={href}
-                className="block text-slate-400 hover:text-white text-sm py-2.5 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
-                onClick={() => setIsOpen(false)}
-              >
-                {label}
-              </a>
-            ))}
+            {navLinks.map(({ label, href, to }) =>
+              to ? (
+                <Link
+                  key={label}
+                  to={to}
+                  className="block text-slate-400 hover:text-white text-sm py-2.5 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {label}
+                </Link>
+              ) : (
+                <a
+                  key={label}
+                  href={href}
+                  className="block text-slate-400 hover:text-white text-sm py-2.5 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {label}
+                </a>
+              )
+            )}
             <div className="pt-3 space-y-2 border-t border-white/[0.06] mt-3">
               <a
                 href="#newsletter"
@@ -104,13 +126,13 @@ export default function Nav() {
               >
                 Join Newsletter
               </a>
-              <a
-                href="#picks"
+              <Link
+                to="/best-ai-tools"
                 className="block bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg text-center transition-all"
                 onClick={() => setIsOpen(false)}
               >
                 See Top Picks
-              </a>
+              </Link>
             </div>
           </div>
         </div>

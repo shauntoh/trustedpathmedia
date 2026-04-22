@@ -1,25 +1,36 @@
+import { useEffect } from 'react'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import Nav from './components/Nav'
-import Hero from './components/Hero'
-import Categories from './components/Categories'
-import EditorsPicks from './components/EditorsPicks'
-import WhyTrustUs from './components/WhyTrustUs'
-import BestOf from './components/BestOf'
-import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
+import Home from './pages/Home'
+import BestAITools from './pages/BestAITools'
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
+function AppShell() {
+  return (
+    <div className="min-h-screen bg-navy-900">
+      <ScrollToTop />
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/best-ai-tools" element={<BestAITools />} />
+      </Routes>
+      <Footer />
+    </div>
+  )
+}
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-navy-900">
-      <Nav />
-      <main>
-        <Hero />
-        <Categories />
-        <EditorsPicks />
-        <WhyTrustUs />
-        <BestOf />
-        <Newsletter />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <AppShell />
+    </BrowserRouter>
   )
 }

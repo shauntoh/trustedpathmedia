@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const picks = [
   {
     name: 'Claude AI',
@@ -8,6 +10,7 @@ const picks = [
       'A standout AI assistant for research, long-form writing, and complex reasoning — with a thoughtful, accurate output that holds up under real-world use.',
     badge: 'Top Pick',
     badgeColor: 'bg-violet-950/60 text-violet-400 border-violet-800/40',
+    linkTo: '/best-ai-tools',
   },
   {
     name: 'Hostinger',
@@ -80,7 +83,7 @@ export default function EditorsPicks() {
         </div>
 
         <div id="picks" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {picks.map(({ name, category, rating, bestFor, description, badge, badgeColor }) => (
+          {picks.map(({ name, category, rating, bestFor, description, badge, badgeColor, linkTo }) => (
             <div
               key={name}
               className="group relative bg-navy-800 border border-white/[0.07] rounded-2xl p-6 flex flex-col hover:border-blue-600/30 hover:bg-navy-750 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40"
@@ -118,13 +121,23 @@ export default function EditorsPicks() {
               </p>
 
               {/* CTA */}
-              <a
-                href="#"
-                className="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-blue-500/50 hover:bg-blue-600/10 text-slate-300 hover:text-blue-400 text-sm font-medium px-4 py-2.5 rounded-lg transition-all duration-200"
-              >
-                See Recommendation
-                <ArrowIcon />
-              </a>
+              {linkTo ? (
+                <Link
+                  to={linkTo}
+                  className="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-blue-500/50 hover:bg-blue-600/10 text-slate-300 hover:text-blue-400 text-sm font-medium px-4 py-2.5 rounded-lg transition-all duration-200"
+                >
+                  See Recommendation
+                  <ArrowIcon />
+                </Link>
+              ) : (
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-blue-500/50 hover:bg-blue-600/10 text-slate-300 hover:text-blue-400 text-sm font-medium px-4 py-2.5 rounded-lg transition-all duration-200"
+                >
+                  See Recommendation
+                  <ArrowIcon />
+                </a>
+              )}
             </div>
           ))}
         </div>
