@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.jsx';
+import Hero from '../components/Hero.jsx';
+import Categories from '../components/Categories.jsx';
+import EditorsPicks from '../components/EditorsPicks.jsx';
+import WhyTrustUs from '../components/WhyTrustUs.jsx';
+import BestOf from '../components/BestOf.jsx';
+import Newsletter from '../components/Newsletter.jsx';
+import Footer from '../components/Footer.jsx';
+---
+<BaseLayout
+  title=""
+  description="Independent digital tool reviews — curated picks across AI, hosting, VPN, SaaS, courses and productivity software for ambitious professionals."
+>
+  <div class="min-h-screen bg-navy-900">
+    <Nav client:load />
+    <main>
+      <Hero />
+      <Categories />
+      <EditorsPicks />
+      <WhyTrustUs />
+      <BestOf />
+      <Newsletter client:load />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

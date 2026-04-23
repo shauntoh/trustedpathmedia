@@ -1,4 +1,5 @@
 import { Brain, Server, LayoutGrid, Shield, GraduationCap, Zap } from 'lucide-react'
+import { url } from '../lib/url'
 
 const categories = [
   {
@@ -9,7 +10,7 @@ const categories = [
     color: 'text-violet-400',
     bgColor: 'bg-violet-950/50',
     hoverBorder: 'hover:border-violet-500/30',
-    href: '#/category/ai-tools',
+    href: '/category/ai-tools',
   },
   {
     name: 'Hosting',
@@ -19,7 +20,7 @@ const categories = [
     color: 'text-emerald-400',
     bgColor: 'bg-emerald-950/50',
     hoverBorder: 'hover:border-emerald-500/30',
-    href: '#/category/hosting',
+    href: '/category/hosting',
   },
   {
     name: 'SaaS',
@@ -29,7 +30,7 @@ const categories = [
     color: 'text-blue-400',
     bgColor: 'bg-blue-950/50',
     hoverBorder: 'hover:border-blue-500/30',
-    href: '#/category/saas',
+    href: '/category/saas',
   },
   {
     name: 'VPN',
@@ -39,7 +40,7 @@ const categories = [
     color: 'text-rose-400',
     bgColor: 'bg-rose-950/50',
     hoverBorder: 'hover:border-rose-500/30',
-    href: '#/category/vpn',
+    href: '/category/vpn',
   },
   {
     name: 'Courses',
@@ -49,7 +50,7 @@ const categories = [
     color: 'text-amber-400',
     bgColor: 'bg-amber-950/50',
     hoverBorder: 'hover:border-amber-500/30',
-    href: '#/category/courses',
+    href: '/category/courses',
   },
   {
     name: 'Productivity',
@@ -59,7 +60,7 @@ const categories = [
     color: 'text-cyan-400',
     bgColor: 'bg-cyan-950/50',
     hoverBorder: 'hover:border-cyan-500/30',
-    href: '#/category/productivity',
+    href: '/category/productivity',
   },
 ]
 
@@ -80,7 +81,7 @@ export default function Categories() {
           {categories.map(({ name, description, icon: Icon, label, color, bgColor, hoverBorder, href }) => (
             <a
               key={name}
-              href={href}
+              href={url(href)}
               className={`group relative bg-navy-800/50 border border-white/[0.07] rounded-2xl p-5 transition-all duration-300 hover:bg-navy-800 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30 ${hoverBorder}`}
             >
               <div className={`w-10 h-10 rounded-xl ${bgColor} flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110`}>

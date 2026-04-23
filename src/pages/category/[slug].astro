@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CategoryPageComponent from '../../components/pages/CategoryPage.jsx';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: 'ai-tools' }, props: { category: 'AI Tools' } },
+    { params: { slug: 'hosting' }, props: { category: 'Hosting' } },
+    { params: { slug: 'saas' }, props: { category: 'SaaS' } },
+    { params: { slug: 'vpn' }, props: { category: 'VPN' } },
+    { params: { slug: 'courses' }, props: { category: 'Courses' } },
+    { params: { slug: 'productivity' }, props: { category: 'Productivity' } },
+  ];
+}
+
+const { category } = Astro.props;
+---
+<BaseLayout
+  title={`Best ${category} Tools`}
+  description={`Independent reviews and top picks for ${category.toLowerCase()} tools — ranked by real-world value, features, and pricing.`}
+>
+  <CategoryPageComponent category={category} client:load />
+</BaseLayout>

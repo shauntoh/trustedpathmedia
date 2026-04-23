@@ -23,7 +23,8 @@ jobs:
 
       - run: npm run build
         env:
-          VITE_BASE_PATH: /trustedpathmedia/
+          SITE_URL: 'https://shauntoh.github.io'
+          BASE_PATH: '/trustedpathmedia'
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4

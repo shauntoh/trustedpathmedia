@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AboutPageComponent from '../components/pages/AboutPage.jsx';
+---
+<BaseLayout
+  title="About Us"
+  description="TrustedPathMedia is an independent digital tool review site. No paid rankings. No vendor deals. Just honest research."
+>
+  <AboutPageComponent client:load />
+</BaseLayout>

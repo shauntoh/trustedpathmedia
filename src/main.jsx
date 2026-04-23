@@ -1,10 +1,2 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+// Deprecated — project migrated from Vite + React SPA to Astro SSG.
+// Entry point is now src/pages/index.astro

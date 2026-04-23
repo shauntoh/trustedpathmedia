@@ -1,3 +1,5 @@
+import { url } from '../lib/url'
+
 const picks = [
   {
     name: 'Claude AI',
@@ -8,7 +10,7 @@ const picks = [
       'A standout AI assistant for research, long-form writing, and complex reasoning — with a thoughtful, accurate output that holds up under real-world use.',
     badge: 'Top Pick',
     badgeColor: 'bg-violet-950/60 text-violet-400 border-violet-800/40',
-    href: '#/review/claude-ai',
+    href: '/review/claude-ai',
   },
   {
     name: 'Hostinger',
@@ -19,7 +21,7 @@ const picks = [
       'Strong performance at a price point that makes sense for early-stage projects. Reliable uptime, clean dashboard, and no hidden cost surprises.',
     badge: 'Best Value',
     badgeColor: 'bg-emerald-950/60 text-emerald-400 border-emerald-800/40',
-    href: '#/review/hostinger',
+    href: '/review/hostinger',
   },
   {
     name: 'NordVPN',
@@ -30,7 +32,7 @@ const picks = [
       'One of the most consistently reviewed VPNs for privacy and speed. Covers 60+ countries with a transparent no-logs policy and solid app experience.',
     badge: "Editors' Choice",
     badgeColor: 'bg-rose-950/60 text-rose-400 border-rose-800/40',
-    href: '#/review/nordvpn',
+    href: '/review/nordvpn',
   },
   {
     name: 'Notion',
@@ -41,7 +43,7 @@ const picks = [
       'A flexible workspace that consolidates notes, tasks, wikis, and projects in one place. The learning curve pays off quickly for anyone who works in systems.',
     badge: 'Staff Pick',
     badgeColor: 'bg-cyan-950/60 text-cyan-400 border-cyan-800/40',
-    href: '#/review/notion',
+    href: '/review/notion',
   },
 ]
 
@@ -75,7 +77,7 @@ export default function EditorsPicks() {
             </p>
           </div>
           <a
-            href="#/guides"
+            href={url('/guides')}
             className="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition-colors shrink-0"
           >
             View all picks
@@ -123,7 +125,7 @@ export default function EditorsPicks() {
 
               {/* CTA */}
               <a
-                href={href}
+                href={url(href)}
                 className="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-blue-500/50 hover:bg-blue-600/10 text-slate-300 hover:text-blue-400 text-sm font-medium px-4 py-2.5 rounded-lg transition-all duration-200"
               >
                 See Recommendation

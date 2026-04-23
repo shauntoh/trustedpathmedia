@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import GuidePageComponent from '../../components/pages/GuidePage.jsx';
+import aiToolsSideHustlers from '../../data/guides/ai-tools-side-hustlers.js';
+import webHostingBeginners from '../../data/guides/web-hosting-beginners.js';
+import vpnRemoteWorkers from '../../data/guides/vpn-remote-workers.js';
+import productivityApps from '../../data/guides/productivity-apps.js';
+import saasSmallTeams from '../../data/guides/saas-small-teams.js';
+import onlineCoursesHighIncome from '../../data/guides/online-courses-high-income.js';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: 'ai-tools-side-hustlers' }, props: { guide: aiToolsSideHustlers } },
+    { params: { slug: 'web-hosting-beginners' }, props: { guide: webHostingBeginners } },
+    { params: { slug: 'vpn-remote-workers' }, props: { guide: vpnRemoteWorkers } },
+    { params: { slug: 'productivity-apps' }, props: { guide: productivityApps } },
+    { params: { slug: 'saas-small-teams' }, props: { guide: saasSmallTeams } },
+    { params: { slug: 'online-courses-high-income' }, props: { guide: onlineCoursesHighIncome } },
+  ];
+}
+
+const { guide } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  'headline': guide.title,
+  'description': guide.intro,
+  'author': { '@type': 'Organization', 'name': 'TrustedPathMedia', 'url': 'https://trustedpathmedia.vercel.app' },
+  'publisher': { '@type': 'Organization', 'name': 'TrustedPathMedia', 'url': 'https://trustedpathmedia.vercel.app' },
+};
+---
+<BaseLayout
+  title={guide.title}
+  description={guide.intro}
+  schema={schema}
+>
+  <GuidePageComponent guide={guide} client:load />
+</BaseLayout>

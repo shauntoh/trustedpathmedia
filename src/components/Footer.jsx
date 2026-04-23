@@ -1,25 +1,33 @@
+import { url } from '../lib/url'
+
 const footerLinks = {
   Company: [
-    { label: 'About', href: '#/about' },
+    { label: 'About', href: '/about' },
     { label: 'Contact', href: 'mailto:contact@trustedpathmedia.com' },
-    { label: 'Affiliate Disclosure', href: '#/disclosure' },
-    { label: 'Privacy Policy', href: '#/privacy' },
+    { label: 'Affiliate Disclosure', href: '/disclosure' },
+    { label: 'Privacy Policy', href: '/privacy' },
   ],
   Categories: [
-    { label: 'AI Tools', href: '#/category/ai-tools' },
-    { label: 'Hosting', href: '#/category/hosting' },
-    { label: 'SaaS', href: '#/category/saas' },
-    { label: 'VPN', href: '#/category/vpn' },
-    { label: 'Courses', href: '#/category/courses' },
-    { label: 'Productivity', href: '#/category/productivity' },
+    { label: 'AI Tools', href: '/category/ai-tools' },
+    { label: 'Hosting', href: '/category/hosting' },
+    { label: 'SaaS', href: '/category/saas' },
+    { label: 'VPN', href: '/category/vpn' },
+    { label: 'Courses', href: '/category/courses' },
+    { label: 'Productivity', href: '/category/productivity' },
   ],
   Guides: [
-    { label: 'Best AI Tools', href: '#/guide/ai-tools-side-hustlers' },
-    { label: 'Best Hosting', href: '#/guide/web-hosting-beginners' },
-    { label: 'Best VPNs', href: '#/guide/vpn-remote-workers' },
-    { label: 'Best for Side Hustlers', href: '#/guide/ai-tools-side-hustlers' },
-    { label: 'Best SaaS for Teams', href: '#/guide/saas-small-teams' },
+    { label: 'Best AI Tools', href: '/guide/ai-tools-side-hustlers' },
+    { label: 'Best Hosting', href: '/guide/web-hosting-beginners' },
+    { label: 'Best VPNs', href: '/guide/vpn-remote-workers' },
+    { label: 'Best for Side Hustlers', href: '/guide/ai-tools-side-hustlers' },
+    { label: 'Best SaaS for Teams', href: '/guide/saas-small-teams' },
   ],
+}
+
+// mailto links should not get the base prefix
+function resolveHref(href) {
+  if (href.startsWith('mailto:')) return href
+  return url(href)
 }
 
 export default function Footer() {
@@ -58,7 +66,7 @@ export default function Footer() {
                 {links.map(({ label, href }) => (
                   <li key={label}>
                     <a
-                      href={href}
+                      href={resolveHref(href)}
                       className="text-slate-500 hover:text-slate-300 text-sm transition-colors duration-200"
                     >
                       {label}
@@ -77,8 +85,8 @@ export default function Footer() {
             from qualifying purchases made through links on this site. This does not affect our editorial rankings or recommendations.
           </p>
           <div className="flex items-center gap-5 shrink-0">
-            <a href="#/privacy" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Privacy</a>
-            <a href="#/terms" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Terms</a>
+            <a href={url('/privacy')} className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Privacy</a>
+            <a href={url('/terms')} className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Terms</a>
             <a href="mailto:contact@trustedpathmedia.com" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Contact</a>
           </div>
         </div>
