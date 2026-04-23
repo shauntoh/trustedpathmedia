@@ -15,6 +15,7 @@ import GuidesPage from './pages/GuidesPage'
 import AboutPage from './pages/AboutPage'
 import DisclosurePage from './pages/DisclosurePage'
 import PrivacyPage from './pages/PrivacyPage'
+import TermsPage from './pages/TermsPage'
 
 // Reviews
 import claudeAiReview from './data/reviews/claude-ai'
@@ -115,6 +116,9 @@ export default function App() {
   }
   if (hash === '#/privacy') {
     return <div key={hash} className="page-enter"><PrivacyPage /></div>
+  }
+  if (hash === '#/terms') {
+    return <div key={hash} className="page-enter"><TermsPage /></div>
   }
 
   // Homepage

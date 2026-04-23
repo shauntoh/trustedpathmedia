@@ -1,7 +1,13 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function DisclosurePage() {
+  usePageMeta({
+    title: 'Affiliate Disclosure',
+    description: 'How TrustedPathMedia earns money through affiliate commissions — and why it does not affect our editorial independence.',
+  })
+
   return (
     <div className="min-h-screen bg-navy-900 page-enter">
       <Nav />
@@ -21,50 +27,44 @@ export default function DisclosurePage() {
           <div className="space-y-8 text-slate-400 leading-relaxed">
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Affiliate Participation</h2>
               <p>
-                TrustedPathMedia participates in affiliate marketing programs. We earn commissions from qualifying
-                purchases made through links on this site. These commissions come at no additional cost to you —
-                you pay the same price whether or not you use our links.
+                We make money when you buy something through our links. Here is exactly what that means,
+                what it doesn't mean, and why it shouldn't change how you read our work.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Editorial Independence</h2>
+              <h2 className="text-xl font-semibold text-white mb-3">What an Affiliate Commission Is</h2>
               <p>
-                Affiliate relationships do not affect our editorial independence. Rankings and recommendations on
-                this site are based solely on research merit — factors such as product quality, pricing
-                transparency, feature depth, and real-world value.
-              </p>
-              <p className="mt-3">
-                Commission rates are not a factor in how we rank or position any product. A tool that pays us
-                more does not receive a higher rating or better placement as a result.
+                When you click a link on TrustedPathMedia and complete a purchase on the vendor's site, we
+                receive a commission. This is standard in online publishing — the vendor pays it from their
+                own margin. You pay the same price you would pay going directly to their site.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Our Commitment to You</h2>
+              <h2 className="text-xl font-semibold text-white mb-3">What It Doesn't Affect</h2>
               <p>
-                We only recommend products we have researched and believe provide genuine value. If a product does
-                not meet our standards — regardless of whether an affiliate program exists — we will not
-                recommend it, and we will say so clearly in our coverage.
+                Commission rates do not influence our rankings, our scores, or our editorial framing.
+                Research and evaluation happen before we ever look at whether an affiliate program exists or
+                what it pays. A product that pays 50% commission does not get a higher rating than one that
+                pays 5%. A product with no affiliate program can still appear in our recommendations if it's
+                the right answer for the reader.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">How We Disclose</h2>
+              <h2 className="text-xl font-semibold text-white mb-3">Our Commitment</h2>
               <p>
-                Affiliate relationships are clearly disclosed on every page and review where affiliate links
-                appear. You will see a disclosure notice at the top or bottom of relevant content so you always
-                know when a link may earn us a commission.
+                We only recommend products we believe provide genuine, defensible value to the professionals
+                reading this site. Our editorial reputation is worth more to us than any individual commission.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Questions</h2>
               <p>
-                If you have questions about our affiliate relationships or any specific recommendation, please
-                reach out to us at{' '}
+                If you have questions about a specific affiliate relationship, contact us at{' '}
                 <a
                   href="mailto:contact@trustedpathmedia.com"
                   className="text-blue-400 hover:text-blue-300 transition-colors"

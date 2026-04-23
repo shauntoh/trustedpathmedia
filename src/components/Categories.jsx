@@ -70,9 +70,9 @@ export default function Categories() {
 
         <div className="mb-12">
           <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-3">What We Recommend</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Six Categories. Only the Best.</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3">Six Categories. Independently Reviewed.</h2>
           <p className="text-slate-400 max-w-xl">
-            Focused on the tools that genuinely move the needle — curated to help you spend smarter.
+            Tools we've tested and vetted — so you know what you're paying for before you pay.
           </p>
         </div>
 

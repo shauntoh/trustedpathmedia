@@ -1,5 +1,6 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 import aiToolsSideHustlers from '../data/guides/ai-tools-side-hustlers'
 import webHostingBeginners from '../data/guides/web-hosting-beginners'
@@ -26,6 +27,11 @@ function ArrowIcon() {
 }
 
 export default function GuidesPage() {
+  usePageMeta({
+    title: 'Buying Guides',
+    description: 'Practical buying guides across AI tools, hosting, VPN, SaaS, courses and productivity — cut through the noise and spend smarter.',
+  })
+
   return (
     <div className="min-h-screen bg-navy-900 page-enter">
       <Nav />

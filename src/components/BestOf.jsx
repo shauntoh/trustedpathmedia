@@ -1,7 +1,7 @@
 const articles = [
   {
     category: 'AI Tools',
-    title: 'Best AI Tools for Side Hustlers in 2025',
+    title: 'Best AI Tools for Side Hustlers in 2026',
     description:
       'The AI tools that genuinely move the needle for freelancers, creators, and one-person businesses — ranked by real-world value, not hype.',
     readTime: '8 min read',
@@ -132,7 +132,7 @@ export default function BestOf() {
             <p className="text-slate-400">Practical guides that cut through the noise — so you only pay for what's worth it.</p>
           </div>
           <a
-            href="#"
+            href="#/guides"
             className="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition-colors shrink-0"
           >
             View all guides

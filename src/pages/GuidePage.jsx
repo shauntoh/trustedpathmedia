@@ -1,5 +1,6 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 function CheckIcon() {
   return (
@@ -83,6 +84,11 @@ function PickCard({ pick }) {
 }
 
 export default function GuidePage({ guide }) {
+  usePageMeta({
+    title: guide ? guide.title : 'Buying Guide',
+    description: guide ? guide.intro : undefined,
+  })
+
   if (!guide) {
     return (
       <div className="min-h-screen bg-navy-900 flex items-center justify-center">

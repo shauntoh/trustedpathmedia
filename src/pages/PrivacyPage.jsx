@@ -1,7 +1,13 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function PrivacyPage() {
+  usePageMeta({
+    title: 'Privacy Policy',
+    description: 'TrustedPathMedia privacy policy — what we collect, what we never do, and how to contact us.',
+  })
+
   return (
     <div className="min-h-screen bg-navy-900 page-enter">
       <Nav />
@@ -21,64 +27,53 @@ export default function PrivacyPage() {
           <div className="space-y-8 text-slate-400 leading-relaxed">
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Information We Collect</h2>
               <p>
-                We collect email addresses when you subscribe to our newsletter. We also use analytics tools to
-                understand site traffic and how visitors interact with our content. Analytics data is aggregated
-                and does not include personally identifiable information.
-              </p>
-              <p className="mt-3">
-                We do not collect payment information, social security numbers, or other sensitive personal data.
+                Short version: we collect as little as possible, we don't sell anything, and you can opt out
+                of everything.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">How We Use It</h2>
+              <h2 className="text-xl font-semibold text-white mb-3">What We Collect</h2>
               <p>
-                Newsletter email addresses are used solely to send our digest. We do not use your email address
-                for any other purpose without your explicit consent.
+                Email address — only if you subscribe to our newsletter. We use it to send the newsletter.
+                That's it. Analytics data — aggregated traffic patterns only. We see "200 people read this
+                review," not who those people are. We have no login system, no user accounts, and no payment
+                data.
               </p>
-              <p className="mt-3">
-                We do not sell, rent, or share your personal data with third parties for their marketing purposes.
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-white mb-3">What We Don't Do</h2>
+              <p>
+                We do not sell your data. We do not rent your data. We do not share your email with third
+                parties for marketing purposes. We do not build advertising profiles.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Cookies</h2>
               <p>
-                We use cookies for two purposes: analytics (to understand site traffic) and affiliate link
-                tracking (to attribute purchases to our site when you click through to a partner). These are
-                standard industry practices.
-              </p>
-              <p className="mt-3">
-                You can disable cookies in your browser settings at any time. Note that disabling cookies may
-                affect site functionality or your browsing experience.
+                Analytics cookies track aggregate site traffic. Affiliate tracking cookies are set when you
+                click a partner link — this is how vendors attribute purchases and pay us commissions.
+                Standard in affiliate publishing. You can disable all cookies in your browser without
+                breaking the site.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Third Parties</h2>
+              <h2 className="text-xl font-semibold text-white mb-3">Third-Party Links</h2>
               <p>
-                Affiliate links on this site redirect to third-party websites — such as software vendors or
-                marketplaces — that have their own privacy policies and data practices. We are not responsible
-                for the privacy practices of those sites. We encourage you to review their policies before making
-                a purchase.
+                Once you leave TrustedPathMedia, the vendor's privacy policy governs your data. We encourage
+                you to review it before purchasing.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Your Rights</h2>
+              <h2 className="text-xl font-semibold text-white mb-3">Opt-Out</h2>
               <p>
-                If you have subscribed to our newsletter and wish to have your email address removed from our
-                list, you can unsubscribe at any time using the link in any newsletter email, or by contacting
-                us directly.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Contact</h2>
-              <p>
-                For privacy-related questions or requests, please contact us at{' '}
+                To unsubscribe from the newsletter: use the link in any email we send. To request data
+                deletion:{' '}
                 <a
                   href="mailto:contact@trustedpathmedia.com"
                   className="text-blue-400 hover:text-blue-300 transition-colors"

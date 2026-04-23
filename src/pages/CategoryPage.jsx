@@ -1,5 +1,6 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { usePageMeta } from '../hooks/usePageMeta'
 import claudeAi from '../data/reviews/claude-ai'
 import hostinger from '../data/reviews/hostinger'
 import nordvpn from '../data/reviews/nordvpn'
@@ -18,15 +19,20 @@ const categoryColorMap = {
 }
 
 const categoryDescriptors = {
-  'AI Tools':     'The best AI assistants, LLMs, and automation tools — independently reviewed.',
-  'Hosting':      'Reliable servers, cloud platforms, and infrastructure picks for every budget.',
-  'SaaS':         'Apps and platforms that are genuinely worth paying for.',
-  'VPN':          'Privacy and security tools you can actually trust.',
-  'Courses':      'Training and education that moves the needle on your skills.',
-  'Productivity': 'Focus, workflow, and output tools that pay for themselves.',
+  'AI Tools':     'Independent reviews of AI writing, coding, research, and automation tools — ranked by actual output quality, not marketing claims.',
+  'Hosting':      'Web hosting and cloud platform comparisons covering real uptime data, pricing traps, and which providers hold up when traffic spikes.',
+  'SaaS':         'Honest assessments of business software across CRM, analytics, finance, and operations — with a hard look at where the pricing stops making sense.',
+  'VPN':          'Privacy and security analysis of VPN providers — jurisdiction, logging policies, and the gap between advertised and tested speeds.',
+  'Courses':      'Vetted online courses and learning platforms evaluated on curriculum depth, instructor credibility, and whether the skills transfer to real work.',
+  'Productivity': 'Tools that reduce friction in how you work — task management, focus, note-taking, and automation — reviewed for professionals who actually use them daily.',
 }
 
 export default function CategoryPage({ category }) {
+  usePageMeta({
+    title: category ? `Best ${category} Tools` : 'Category',
+    description: `Independent reviews and top picks for ${category || 'digital'} tools — ranked by real-world value.`,
+  })
+
   const reviews = allReviews.filter(r => r.category === category)
   const colors = categoryColorMap[category] || { text: 'text-blue-400', bg: 'bg-blue-950/50' }
   const descriptor = categoryDescriptors[category] || 'Curated picks in this category.'

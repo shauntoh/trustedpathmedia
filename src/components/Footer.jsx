@@ -6,19 +6,19 @@ const footerLinks = {
     { label: 'Privacy Policy', href: '#/privacy' },
   ],
   Categories: [
-    { label: 'AI Tools', href: '#' },
-    { label: 'Hosting', href: '#' },
-    { label: 'SaaS', href: '#' },
-    { label: 'VPN', href: '#' },
-    { label: 'Courses', href: '#' },
-    { label: 'Productivity', href: '#' },
+    { label: 'AI Tools', href: '#/category/ai-tools' },
+    { label: 'Hosting', href: '#/category/hosting' },
+    { label: 'SaaS', href: '#/category/saas' },
+    { label: 'VPN', href: '#/category/vpn' },
+    { label: 'Courses', href: '#/category/courses' },
+    { label: 'Productivity', href: '#/category/productivity' },
   ],
   Guides: [
-    { label: 'Best AI Tools', href: '#' },
-    { label: 'Best Hosting', href: '#' },
-    { label: 'Best VPNs', href: '#' },
-    { label: 'Best for Side Hustlers', href: '#' },
-    { label: 'Best SaaS for Teams', href: '#' },
+    { label: 'Best AI Tools', href: '#/guide/ai-tools-side-hustlers' },
+    { label: 'Best Hosting', href: '#/guide/web-hosting-beginners' },
+    { label: 'Best VPNs', href: '#/guide/vpn-remote-workers' },
+    { label: 'Best for Side Hustlers', href: '#/guide/ai-tools-side-hustlers' },
+    { label: 'Best SaaS for Teams', href: '#/guide/saas-small-teams' },
   ],
 }
 
@@ -42,8 +42,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-6">
-              Independent digital tool reviews for western markets. We help you make
-              confident buying decisions — without the noise.
+              No paid rankings. No sponsored placements. Just independent reviews
+              of digital tools that are worth your money.
             </p>
             <p className="text-slate-600 text-xs leading-relaxed">
               © {new Date().getFullYear()} TrustedPathMedia.<br />All rights reserved.
@@ -78,7 +78,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-5 shrink-0">
             <a href="#/privacy" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Privacy</a>
-            <a href="#" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Terms</a>
+            <a href="#/terms" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Terms</a>
             <a href="mailto:contact@trustedpathmedia.com" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Contact</a>
           </div>
         </div>

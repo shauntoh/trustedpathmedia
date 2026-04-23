@@ -75,7 +75,7 @@ export default function EditorsPicks() {
             </p>
           </div>
           <a
-            href="#"
+            href="#/guides"
             className="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition-colors shrink-0"
           >
             View all picks

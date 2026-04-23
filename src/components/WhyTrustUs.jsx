@@ -21,7 +21,7 @@ const pillars = [
     icon: Award,
     title: 'Practical Focus',
     description:
-      'Every recommendation includes clear context on who it\'s best for and why. No hype, no filler — just honest assessments of real-world value.',
+      'Every recommendation states clearly who it\'s best for and why — with enough context to know if it fits before you commit.',
     color: 'text-amber-400',
     bgColor: 'bg-amber-950/40',
   },

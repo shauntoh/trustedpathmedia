@@ -24,7 +24,7 @@ export default function Hero() {
         {/* Trust badge */}
         <div className="inline-flex items-center gap-2 bg-blue-950/50 border border-blue-800/30 rounded-full px-4 py-1.5 mb-10">
           <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-          <span className="text-blue-400 text-xs font-medium tracking-widest uppercase">Curated Recommendations</span>
+          <span className="text-blue-400 text-xs font-medium tracking-widest uppercase">Independent Reviews</span>
         </div>
 
         {/* Headline */}
@@ -35,8 +35,8 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed mb-10">
-          Curated picks across AI tools, hosting, SaaS, VPNs, courses, and productivity
-          software — for ambitious people who want to grow faster and spend smarter.
+          Honest picks across AI tools, hosting, SaaS, VPNs, courses, and productivity
+          software. No paid placements. No filler. Just tools that hold up under use.
         </p>
 
         {/* CTAs */}
@@ -61,7 +61,7 @@ export default function Hero() {
         {/* Stats */}
         <div className="flex flex-wrap items-center gap-8 pt-8 border-t border-white/[0.06]">
           {[
-            { value: '6', label: 'Categories' },
+            { value: 'Every Tool', label: 'Independently Tested' },
             { value: '100%', label: 'Independent' },
             { value: '$0', label: 'Paid Rankings' },
           ].map(({ value, label }) => (

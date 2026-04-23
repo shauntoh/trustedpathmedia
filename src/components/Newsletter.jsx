@@ -38,8 +38,7 @@ export default function Newsletter() {
             </h2>
 
             <p className="text-slate-400 text-lg leading-relaxed max-w-xl mx-auto mb-10">
-              Join thousands of professionals who receive our weekly digest of the best new tools,
-              honest reviews, and exclusive deals — no filler, no fluff.
+              The no-fluff digest for professionals who want better tools, not more noise. Delivered weekly.
             </p>
 
             {/* Form or confirmation */}

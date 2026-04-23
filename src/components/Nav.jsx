@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react'
 const navLinks = [
   { label: 'AI Tools', href: '#/category/ai-tools' },
   { label: 'Hosting', href: '#/category/hosting' },
-  { label: 'VPNs', href: '#/category/vpn' },
+  { label: 'VPN', href: '#/category/vpn' },
   { label: 'Buying Guides', href: '#/guides' },
   { label: 'About', href: '#/about' },
 ]
@@ -58,13 +58,13 @@ export default function Nav() {
           {/* Desktop actions */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="#newsletter"
+              href="#"
               className="text-slate-400 hover:text-slate-200 text-sm transition-colors duration-200"
             >
               Newsletter
             </a>
             <a
-              href="#picks"
+              href="#"
               className="bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/20"
             >
               See Top Picks
@@ -98,14 +98,14 @@ export default function Nav() {
             ))}
             <div className="pt-3 space-y-2 border-t border-white/[0.06] mt-3">
               <a
-                href="#newsletter"
+                href="#"
                 className="block text-slate-300 text-sm py-2.5 px-4 rounded-lg border border-white/10 text-center hover:bg-white/[0.05] transition-all"
                 onClick={() => setIsOpen(false)}
               >
                 Join Newsletter
               </a>
               <a
-                href="#picks"
+                href="#"
                 className="block bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg text-center transition-all"
                 onClick={() => setIsOpen(false)}
               >

@@ -14,7 +14,7 @@ const guide = {
       bestFor: 'First websites, WordPress blogs, portfolio sites, small business landing pages',
       pros: [
         'hPanel is cleaner and less intimidating than cPanel — new users get oriented in minutes',
-        'Renewal rates are among the lowest in the industry at ~$11.99/month (Premium) after intro',
+        'Renewal rates are among the lowest in the industry at $10.99/month (Premium) after intro',
         'Free domain, SSL, and weekly backups included on all plans — no hidden add-ons',
       ],
       con: 'Phone support is not available; live chat response times vary during peak hours.',

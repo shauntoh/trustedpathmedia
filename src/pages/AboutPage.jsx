@@ -1,7 +1,13 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function AboutPage() {
+  usePageMeta({
+    title: 'About Us',
+    description: 'TrustedPathMedia is an independent digital tool review site. No paid rankings. No vendor deals. Just honest research.',
+  })
+
   return (
     <div className="min-h-screen bg-navy-900 page-enter">
       <Nav />
@@ -22,39 +28,45 @@ export default function AboutPage() {
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Who We Are</h2>
               <p>
-                TrustedPathMedia is an independent digital tool review site. We research, compare, and recommend
-                tools across AI, hosting, SaaS, VPN, courses, and productivity software — built for professionals
-                and ambitious individuals who want to invest in the right tools without wasting time or money.
+                Most "review" sites are marketing departments with a byline. Rankings are auctioned, affiliate
+                deals shape the editorial angle, and the top result usually belongs to whoever paid the most to
+                be there.
               </p>
               <p className="mt-3">
-                We are not affiliated with any single platform or vendor. Our team evaluates products based on
-                real-world use cases, pricing transparency, and long-term value — not on who pays the most for
-                placement.
+                TrustedPathMedia exists because that model is broken for readers.
+              </p>
+              <p className="mt-3">
+                We are an independent media site covering AI tools, hosting, SaaS, VPN, online courses, and
+                productivity software — built for professionals who are buying these tools with real money and
+                real deadlines. We don't accept paid placements. We don't take vendor sponsorships. No one can
+                buy a position in our rankings.
               </p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold text-white mb-3">Our Mission</h2>
+              <h2 className="text-xl font-semibold text-white mb-3">How We Review</h2>
               <p>
-                Help readers spend smarter. There is an enormous amount of marketing noise in the software space —
-                inflated claims, paid placements disguised as reviews, and SEO content that regurgitates feature
-                lists without real analysis.
+                We start with the product, not the pitch deck. Every review begins with independent research:
+                pricing tiers read line by line, feature claims stress-tested against real workflows, user
+                complaints sourced from public forums and documentation gaps we found ourselves.
               </p>
               <p className="mt-3">
-                We cut through that. We only recommend tools worth paying for, and we tell you why — including the
-                downsides.
+                We compare within categories, not in isolation — because "good" only means something relative
+                to the alternatives at that price. We publish weaknesses. If a tool has a meaningful
+                limitation, it's in the review.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">How We Make Money</h2>
               <p>
-                We earn affiliate commissions when readers purchase through our links. This is how we fund our
-                research and keep the site running. We are transparent about this on every page.
+                When you click a link on this site and purchase a product, we earn a commission. The price you
+                pay is identical whether you use our link or go direct — the vendor pays the commission from
+                their margin, not yours.
               </p>
               <p className="mt-3">
-                Our editorial rankings are never for sale. A product does not get a higher rating because it pays
-                a higher commission. Commission rates are not a factor in our recommendations.
+                We do not accept: sponsored posts, paid reviews, vendor-funded placements, or "partnerships"
+                that give any company editorial influence.
               </p>
             </section>
 
@@ -63,19 +75,19 @@ export default function AboutPage() {
               <ul className="space-y-2 list-none">
                 <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1 shrink-0">—</span>
-                  <span>Every recommendation is based on independent research, not vendor relationships.</span>
+                  <span>Rankings are based on research merit. Commission rates do not affect them.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1 shrink-0">—</span>
-                  <span>We disclose affiliate relationships clearly on every review and page.</span>
+                  <span>We disclose affiliate relationships clearly on every page where affiliate links appear.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1 shrink-0">—</span>
-                  <span>We publish honest cons alongside pros — if a tool has real weaknesses, we say so.</span>
+                  <span>Pros and cons are both published. A glowing review with no downsides is not a review.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1 shrink-0">—</span>
-                  <span>We update reviews when products change significantly.</span>
+                  <span>When a product changes materially — pricing, features, terms — we update the review.</span>
                 </li>
               </ul>
             </section>
