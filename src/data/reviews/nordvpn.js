@@ -18,7 +18,7 @@ const review = {
   pricingNote: 'Basic from $3.09/month (2-yr intro) · renews significantly higher at standard rates',
   description:
     'NordVPN is a Panama-based VPN with 9,000+ servers across 130+ countries and a NordLynx protocol (built on WireGuard) that consistently clocks the fastest speeds among major VPN providers — around 900 Mbps in independent tests on a 1 Gbps line. Its no-logs policy has been audited by Deloitte five times as of 2025, providing more third-party verification than most competitors. The weak points are meaningful: introductory pricing is notably cheaper than renewal rates, a 2018 server breach was concealed for 18 months, and the parent company (Nord Security) now also owns Surfshark, raising some market-concentration concerns.',
-  affiliateUrl: '#',
+  affiliateUrl: 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=146390',
   affiliateLabel: 'Try NordVPN',
   pros: [
     'Fastest independently tested VPN speeds — NordLynx/WireGuard consistently delivers 900+ Mbps on gigabit connections',
