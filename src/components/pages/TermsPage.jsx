@@ -24,7 +24,7 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Informational Purpose</h2>
               <p>
-                TrustedPathMedia is published for informational purposes only. The content on this site —
+                ToolNav is published for informational purposes only. The content on this site —
                 including reviews, guides, and recommendations — does not constitute professional financial,
                 legal, or business advice. You should consult qualified professionals before making significant
                 purchasing or business decisions.
@@ -54,8 +54,8 @@ export default function TermsPage() {
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Intellectual Property</h2>
               <p>
-                All content on TrustedPathMedia — including text, reviews, guides, and editorial commentary —
-                is owned by TrustedPathMedia. Reproduction, redistribution, or commercial use of our content
+                All content on ToolNav — including text, reviews, guides, and editorial commentary —
+                is owned by ToolNav. Reproduction, redistribution, or commercial use of our content
                 without explicit written permission is prohibited.
               </p>
             </section>
@@ -65,10 +65,10 @@ export default function TermsPage() {
               <p>
                 For questions about these terms, contact us at{' '}
                 <a
-                  href="mailto:contact@trustedpathmedia.com"
+                  href="mailto:trustedpathmedia@gmail.com"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  contact@trustedpathmedia.com
+                  trustedpathmedia@gmail.com
                 </a>
                 .
               </p>

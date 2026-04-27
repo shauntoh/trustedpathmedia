@@ -16,8 +16,8 @@ const {
 } = Astro.props;
 
 const siteTitle = title
-  ? `${title} | TrustedPathMedia`
-  : 'TrustedPathMedia — Trusted Digital Tools Worth Paying For';
+  ? `${title} | ToolNav`
+  : 'ToolNav — Trusted Digital Tools Worth Paying For';
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -35,7 +35,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="TrustedPathMedia" />
+    <meta property="og:site_name" content="ToolNav" />
     <meta property="og:title" content={siteTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />

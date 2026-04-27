@@ -1,16 +1,16 @@
-# TrustedPathMedia
+# ToolNav
 
 **The trusted source for digital tools worth your money.**
 
-TrustedPathMedia is an independent affiliate media brand focused on expert-curated recommendations for digital products — AI tools, hosting, SaaS, VPN, courses, and productivity software — built for western markets.
+ToolNav is an independent affiliate media brand focused on expert-curated recommendations for digital products — AI tools, hosting, SaaS, VPN, courses, and productivity software — built for western markets.
 
-Live site: [trustedpathmedia.com](https://trustedpathmedia.com) *(coming soon)*
+Live site: [toolnav.io](https://toolnav.io)
 
 ---
 
 ## Overview
 
-TrustedPathMedia helps professionals and digital buyers make confident purchasing decisions by cutting through sponsored noise. Every recommendation is independently tested, editorially driven, and fully disclosed.
+ToolNav helps professionals and digital buyers make confident purchasing decisions by cutting through sponsored noise. Every recommendation is independently tested, editorially driven, and fully disclosed.
 
 **Core brand values:** Trustworthy · Independent · Editorial · Premium
 
@@ -20,19 +20,19 @@ TrustedPathMedia helps professionals and digital buyers make confident purchasin
 
 | Layer | Technology |
 |---|---|
-| Framework | React 18 |
-| Build Tool | Vite 6 |
+| Framework | Astro 4 |
+| UI Components | React 18 |
 | Styling | Tailwind CSS 3 |
 | Icons | Lucide React |
 | Font | Inter (Google Fonts) |
-| Deployment | Vercel |
+| Deployment | GitHub Pages |
 
 ---
 
 ## Project Structure
 
 ```
-trustedpathmedia/
+toolnav/
 ├── public/
 │   └── favicon.svg
 ├── src/
@@ -45,12 +45,15 @@ trustedpathmedia/
 │   │   ├── BestOf.jsx        # Best-of editorial roundups
 │   │   ├── Newsletter.jsx    # Email signup block
 │   │   └── Footer.jsx        # Multi-column footer
-│   ├── App.jsx
-│   ├── main.jsx
+│   ├── data/                 # Content data (reviews, guides, etc.)
+│   ├── layouts/              # Astro layouts (BaseLayout.astro)
+│   ├── pages/                # Astro file-based routing
+│   │   ├── index.astro       # Homepage
+│   │   ├── review/           # Dynamic review pages
+│   │   └── guide/            # Dynamic guide pages
 │   └── index.css
-├── index.html
+├── astro.config.mjs
 ├── tailwind.config.js
-├── vite.config.js
 ├── postcss.config.js
 └── package.json
 ```
@@ -68,8 +71,8 @@ trustedpathmedia/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/trustedpathmedia.git
-cd trustedpathmedia
+git clone https://github.com/YOUR_USERNAME/toolnav.git
+cd toolnav
 
 # Install dependencies
 npm install
@@ -78,7 +81,7 @@ npm install
 npm run dev
 ```
 
-The dev server runs at `http://localhost:3000`.
+The dev server runs at `http://localhost:4321`.
 
 ### Build for Production
 
@@ -111,27 +114,9 @@ Custom Tailwind `navy` color scale is defined in `tailwind.config.js`.
 
 ## Deployment
 
-This project is deployed on **Vercel** with zero-config setup.
+This project is deployed automatically to **GitHub Pages** using GitHub Actions.
 
-### Deploy to Vercel
-
-1. Push to GitHub (this repo)
-2. Go to [vercel.com](https://vercel.com) → **Add New Project**
-3. Import the `trustedpathmedia` repository
-4. Framework preset will auto-detect **Vite**
-5. Click **Deploy** — no environment variables required
-
-### Custom Domain
-
-In the Vercel dashboard:
-1. Project Settings → **Domains**
-2. Add `trustedpathmedia.com` and `www.trustedpathmedia.com`
-3. Update your DNS registrar with the provided CNAME/A records
-4. SSL is provisioned automatically
-
----
-
-## Updating the Site
+### Deploying Updates
 
 ```bash
 # Make your changes, then:
@@ -140,16 +125,16 @@ git commit -m "feat: your change description"
 git push origin main
 ```
 
-Vercel auto-deploys on every push to `main`.
+The GitHub Action (`.github/workflows/deploy.yml`) will automatically build the Astro site and push it to the `gh-pages` branch, updating the live site at `toolnav.io`.
 
 ---
 
 ## Affiliate Disclosure
 
-TrustedPathMedia earns commissions from qualifying purchases made through links on this site. Affiliate relationships do not influence editorial rankings or recommendations. All relationships are clearly disclosed.
+ToolNav earns commissions from qualifying purchases made through links on this site. Affiliate relationships do not influence editorial rankings or recommendations. All relationships are clearly disclosed.
 
 ---
 
 ## License
 
-© 2025 TrustedPathMedia. All rights reserved.
+© 2026 ToolNav. All rights reserved.

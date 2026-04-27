@@ -4,8 +4,8 @@ export function usePageMeta({ title, description }) {
   useEffect(() => {
     // title
     document.title = title
-      ? `${title} | TrustedPathMedia`
-      : 'TrustedPathMedia — Trusted Digital Tools'
+      ? `${title} | ToolNav`
+      : 'ToolNav — Trusted Digital Tools'
 
     // helper: find or create a meta tag and set its content
     const setMeta = (nameOrProp, content, isProp = false) => {
@@ -22,7 +22,7 @@ export function usePageMeta({ title, description }) {
     const desc =
       description ||
       'Independent digital tool reviews — curated picks across AI, hosting, VPN, SaaS, courses and productivity.'
-    const titleFull = title ? `${title} | TrustedPathMedia` : 'TrustedPathMedia'
+    const titleFull = title ? `${title} | ToolNav` : 'ToolNav'
 
     setMeta('description', desc)
     setMeta('og:title', titleFull, true)

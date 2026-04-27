@@ -16,7 +16,7 @@ export default function AboutPage() {
             <span className="text-slate-300">About</span>
           </nav>
 
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-10">About TrustedPathMedia</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-10">About ToolNav</h1>
 
           <div className="space-y-10 text-slate-400 leading-relaxed">
 
@@ -28,7 +28,7 @@ export default function AboutPage() {
                 be there.
               </p>
               <p className="mt-3">
-                TrustedPathMedia exists because that model is broken for readers.
+                ToolNav exists because that model is broken for readers.
               </p>
               <p className="mt-3">
                 We are an independent media site covering AI tools, hosting, SaaS, VPN, online courses, and

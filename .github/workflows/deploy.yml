@@ -23,8 +23,8 @@ jobs:
 
       - run: npm run build
         env:
-          SITE_URL: 'https://shauntoh.github.io'
-          BASE_PATH: '/trustedpathmedia'
+          SITE_URL: 'https://toolnav.io'
+          BASE_PATH: '/toolnav'
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4

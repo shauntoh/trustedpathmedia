@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shauntoh.github.io/trustedpathmedia/sitemap-index.xml
+Sitemap: https://toolnav.io/toolnav/sitemap-index.xml

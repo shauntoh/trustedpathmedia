@@ -4,7 +4,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: process.env.SITE_URL || 'https://trustedpathmedia.vercel.app',
+  site: process.env.SITE_URL || 'https://toolnav.io',
   base: process.env.BASE_PATH || '/',
   integrations: [
     react(),

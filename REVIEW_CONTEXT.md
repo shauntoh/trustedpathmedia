@@ -1,4 +1,4 @@
-# Review Page Context — TrustedPathMedia
+# Review Page Context — ToolNav
 
 Reference standard for all product review pages. Apply consistently to every new review.
 
@@ -6,10 +6,10 @@ Reference standard for all product review pages. Apply consistently to every new
 
 ## URL Taxonomy
 
-Hash-based routing (GitHub Pages compatible):
+Standard URL routing via Astro:
 
 ```
-/#/review/{slug}
+/review/{slug}
 ```
 
 **Slug rules:** lowercase, hyphenated, no special characters.
@@ -95,19 +95,11 @@ Each review lives in `src/data/reviews/{slug}.js` and exports a single default o
 
 ## Navigation & Transitions
 
-**Rule:** Every route change must trigger a page-enter animation. This applies to all hash navigations — homepage → review page, review page → homepage, and any future routes added.
+**Rule:** Every route change triggers a page-enter animation.
 
 **Implementation:**
 - The `.page-enter` CSS class is defined in `src/index.css` — `opacity: 0 → 1` + `translateY(8px → 0)` over 200ms ease-out
-- In `App.jsx`, every top-level route wrapper takes `key={hash}` — this forces React to remount the component on every hash change, re-triggering the animation
-- The `useEffect` scroll-to-top (`window.scrollTo(0, 0)`) runs on every `hash` change alongside the animation
-
-**Why:** Without a transition, hash-based navigation feels like an in-page jump rather than a page load. The 200ms fade + drift gives the user a clear signal they've arrived somewhere new, without adding perceived latency.
-
-**For every new page or route added:**
-1. Wrap the top-level return in `<div key={hash} className="page-enter">` (or add `page-enter` directly to the root element)
-2. Register the slug in the `reviews` map in `App.jsx`
-3. Never skip the `key={hash}` — without it, React reuses the existing DOM and the animation won't fire
+- Astro handles the routing and page loads natively.
 
 ---
 

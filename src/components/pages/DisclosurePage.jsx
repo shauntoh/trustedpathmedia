@@ -31,7 +31,7 @@ export default function DisclosurePage() {
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">What an Affiliate Commission Is</h2>
               <p>
-                When you click a link on TrustedPathMedia and complete a purchase on the vendor&apos;s site, we
+                When you click a link on ToolNav and complete a purchase on the vendor&apos;s site, we
                 receive a commission. This is standard in online publishing — the vendor pays it from their
                 own margin. You pay the same price you would pay going directly to their site.
               </p>
@@ -61,10 +61,10 @@ export default function DisclosurePage() {
               <p>
                 If you have questions about a specific affiliate relationship, contact us at{' '}
                 <a
-                  href="mailto:contact@trustedpathmedia.com"
+                  href="mailto:trustedpathmedia@gmail.com"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  contact@trustedpathmedia.com
+                  trustedpathmedia@gmail.com
                 </a>
                 .
               </p>

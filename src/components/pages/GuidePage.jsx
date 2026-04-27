@@ -164,7 +164,7 @@ export default function GuidePage({ guide }) {
               <p className="text-slate-400 leading-relaxed text-base">{verdict}</p>
               <p className="text-xs text-slate-600 mt-6 pt-6 border-t border-white/[0.05]">
                 <span className="text-slate-500 font-medium">Affiliate Disclosure:</span>{' '}
-                TrustedPathMedia earns a commission from qualifying purchases made through links on this page. This does not affect our editorial rankings or recommendations.
+                ToolNav earns a commission from qualifying purchases made through links on this page. This does not affect our editorial rankings or recommendations.
               </p>
             </div>
           </div>

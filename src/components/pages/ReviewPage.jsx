@@ -295,7 +295,7 @@ export default function ReviewPage({ review }) {
                   </svg>
                 </a>
                 <p className="text-xs text-slate-600 mt-3" id="disclosure">
-                  <span className="text-slate-500 font-medium">Affiliate Disclosure:</span> TrustedPathMedia earns a commission from qualifying purchases made through links on this page. This does not affect our editorial rating or recommendation.
+                  <span className="text-slate-500 font-medium">Affiliate Disclosure:</span> ToolNav earns a commission from qualifying purchases made through links on this page. This does not affect our editorial rating or recommendation.
                 </p>
               </div>
             </div>

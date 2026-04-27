@@ -59,7 +59,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Third-Party Links</h2>
               <p>
-                Once you leave TrustedPathMedia, the vendor&apos;s privacy policy governs your data. We encourage
+                Once you leave ToolNav, the vendor&apos;s privacy policy governs your data. We encourage
                 you to review it before purchasing.
               </p>
             </section>
@@ -70,10 +70,10 @@ export default function PrivacyPage() {
                 To unsubscribe from the newsletter: use the link in any email we send. To request data
                 deletion:{' '}
                 <a
-                  href="mailto:contact@trustedpathmedia.com"
+                  href="mailto:trustedpathmedia@gmail.com"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  contact@trustedpathmedia.com
+                  trustedpathmedia@gmail.com
                 </a>
                 .
               </p>
