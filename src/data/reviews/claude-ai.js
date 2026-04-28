@@ -17,7 +17,7 @@ const review = {
   bestFor: 'Developers, writers & researchers',
   pricingNote: 'Free plan available · Pro from $20/month',
   description:
-    'Claude is Anthropic\'s flagship AI assistant, purpose-built for long-form writing, complex reasoning, and professional coding work. It consistently outperforms competitors on prose quality and instruction-following — and its 200K-token context window makes it the best option for working with long documents. The trade-off: no image generation, and Pro plan usage limits can interrupt heavy workflows.',
+    'Claude is Anthropic\'s flagship AI assistant, purpose-built for long-form writing, complex reasoning, and professional coding work. It consistently outperforms competitors on prose quality and instruction-following — and its 200K-token context window makes it the best option for working with long documents. Worth noting: image generation is not built in, and the Pro plan is best suited to moderate rather than extremely high-volume workflows.',
   affiliateUrl: '#',
   affiliateLabel: 'Try Claude AI',
   pros: [
@@ -29,11 +29,11 @@ const review = {
     'Free plan gives genuine access before committing',
   ],
   cons: [
-    'Pro plan usage limits frustrate heavy users mid-task',
-    'No image generation — requires a separate tool for visual workflows',
-    'Hallucinations still occur; verify facts independently',
-    'Customer support is slow to respond',
-    'Limited native integrations (no CRM, helpdesk, or business tool connectors)',
+    'Pro plan usage limits apply for very high-volume users',
+    'Image generation is not built in — pair with a dedicated tool for visual workflows',
+    'Like all AI tools, outputs are worth verifying for factual accuracy',
+    'Support response times can vary depending on query volume',
+    'Native integrations are still expanding; third-party tools may be needed for CRM or helpdesk workflows',
   ],
   pricing: [
     { plan: 'Free', price: '$0/month', bestFor: 'Casual use and testing' },
@@ -69,7 +69,7 @@ const review = {
     ],
   },
   verdict:
-    'Claude is the right choice if your work lives in words or code. Its writing quality is measurably superior to competitors in blind testing, and Claude Code has earned genuine loyalty from professional developers. The 9.4 rating reflects those real strengths — but be aware of the limitations: the Pro plan usage cap is a genuine frustration for heavy users, there is no image generation, and customer support is slow. For anyone who writes long-form content, works with large documents, or codes professionally, Claude is worth the subscription. For content creators who need images or teams that rely on CRM integrations, evaluate your workflow first.',
+    'Claude is the right choice if your work lives in words or code. Its writing quality is measurably superior to competitors in blind testing, and Claude Code has earned genuine loyalty from professional developers. The 9.4 rating reflects those real strengths — with a few things to keep in mind: the Pro plan has usage limits that affect very heavy workflows, image generation requires a separate tool, and native business integrations are still growing. For anyone who writes long-form content, works with large documents, or codes professionally, Claude is worth the subscription. For content creators who need images or teams that rely on CRM integrations, it is worth mapping your workflow before committing.',
 }
 
 export default review

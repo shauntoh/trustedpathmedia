@@ -17,7 +17,7 @@ const review = {
   bestFor: 'Solo operators & small teams',
   pricingNote: 'Free plan available · Plus from $10/user/month',
   description:
-    'Notion is a flexible all-in-one workspace that combines documents, relational databases, wikis, and project management in a single tool. Its block-based editor and customisable databases let small teams replace Confluence, Trello, and Airtable with one subscription. The trade-offs are real: the learning curve is steep, performance degrades noticeably past 5,000 database records, and full AI features require the $20/user Business tier.',
+    'Notion is a flexible all-in-one workspace that combines documents, relational databases, wikis, and project management in a single tool. Its block-based editor and customisable databases let small teams replace Confluence, Trello, and Airtable with one subscription. Worth noting: there is a learning curve for advanced database features, very large databases load more slowly, and full AI features are available on the Business tier.',
   affiliateUrl: '#',
   affiliateLabel: 'Try Notion',
   pros: [
@@ -29,11 +29,11 @@ const review = {
     'Notion AI Agents (Business tier) handle multi-step automation, web research, and workspace search',
   ],
   cons: [
-    'Steep learning curve — most teams need 2+ weeks to work confidently with databases and linked relations',
-    'Performance drops noticeably with 5,000+ database records; 7,000+ rows can mean 4-6 second load times',
-    'No true offline mode — cloud-only; limited offline caching for paid plans, no cellular sync on mobile',
-    'Full AI features locked behind Business plan ($20/user/month); Free and Plus users get only a trial',
-    'Mobile editing is frustrating for databases; AI Agent features on mobile only arrived in early 2026',
+    'Has a learning curve — most teams get comfortable with databases and linked relations within a couple of weeks',
+    'Very large databases (5,000+ records) may experience slower load times; best suited to small-to-medium data sets',
+    'Primarily cloud-based; paid plans include offline caching, though full offline access on mobile has some limitations',
+    'Full AI features are available on the Business plan ($20/user/month); Free and Plus users can try AI features before upgrading',
+    'Mobile database editing is more limited than desktop; AI Agent features on mobile were added in early 2026',
   ],
   pricing: [
     {
@@ -135,7 +135,7 @@ const review = {
     ],
   },
   verdict:
-    'Notion earns its 8.7 rating by doing something genuinely difficult: combining flexible document editing, relational databases, and team wikis in a single coherent tool that solo users can start for free and small teams can grow into. The 9.2 on Features reflects real breadth — databases, kanban, calendars, AI Agents — while the 7.5 on Mobile Experience honestly reflects a mobile app that still lags behind desktop in editing comfort and lacks cellular offline sync. The main watch-outs are pricing and scale: full AI requires committing to $20/user/month, and database performance degrades meaningfully past 5,000 records. For individuals, students, and tech-comfortable teams under 50 people who want to consolidate their stack, Notion is hard to beat; for sales-heavy teams, large enterprises with strict row-level access needs, or anyone requiring offline-first reliability, look at Coda or a dedicated tool instead.',
+    'Notion earns its 8.7 rating by doing something genuinely difficult: combining flexible document editing, relational databases, and team wikis in a single coherent tool that solo users can start for free and small teams can grow into. The 9.2 on Features reflects real breadth — databases, kanban, calendars, AI Agents — while the 7.5 on Mobile Experience reflects a mobile app that continues to improve, with AI Agent features arriving in early 2026. A couple of things to weigh: full AI access requires the Business plan at $20/user/month, and very large databases perform best when kept to a manageable size. For individuals, students, and tech-comfortable teams under 50 people who want to consolidate their stack, Notion is hard to beat; for sales-heavy teams, large enterprises with complex row-level access needs, or anyone who needs offline-first reliability, Coda or a dedicated tool may be a better fit.',
 }
 
 export default review

@@ -17,7 +17,7 @@ const review = {
   bestFor: 'Side projects & small businesses',
   pricingNote: 'Shared hosting from $2.99/month (48-mo) · renews at $10.99–$25.99/month',
   description:
-    'Hostinger delivers genuinely fast shared hosting — LiteSpeed web servers, NVMe SSD storage, and a global CDN — at prices that undercut most competitors by a wide margin. The hPanel control panel is clean and accessible to beginners, while Git integration and multiple PHP versions make it workable for developers too. The main catch is the significant gap between introductory and renewal pricing, and support is live chat only with no phone option.',
+    'Hostinger delivers genuinely fast shared hosting — LiteSpeed web servers, NVMe SSD storage, and a global CDN — at prices that undercut most competitors by a wide margin. The hPanel control panel is clean and accessible to beginners, while Git integration and multiple PHP versions make it workable for developers too. Worth noting: renewal pricing is higher than introductory rates, and support is available via live chat rather than phone.',
   affiliateUrl: '#',
   affiliateLabel: 'Try Hostinger',
   pros: [
@@ -29,11 +29,11 @@ const review = {
     'Free domain, SSL, CDN, and site migration included on most plans',
   ],
   cons: [
-    'Renewal prices jump sharply — Premium plan goes from $2.99 to $10.99/month (267% increase)',
-    'No phone support; live chat only — response quality varies and the AI bot is unreliable for complex issues',
-    'Automated daily backups only available on Business plan and above; Premium gets weekly',
-    'Aggressive upsells during checkout for add-ons that are free or cheaper elsewhere',
-    'Account suspension policy has drawn complaints — some users report sites suspended with little warning and limited recourse',
+    'Renewal rates are higher than introductory pricing — worth factoring into your long-term budget before signing up',
+    'Support is live chat only; complex issues are escalated to human agents after initial triage',
+    'Daily automated backups are available on Business plan and above; Premium plan includes weekly backups',
+    'Checkout includes optional add-ons — review before purchasing to choose only what you need',
+    'As with most hosts, it is worth reviewing the terms of service to ensure your site stays compliant with their policies',
   ],
   pricing: [
     {
@@ -97,7 +97,7 @@ const review = {
     ],
   },
   verdict:
-    'Hostinger earns an 8.9 based on a genuine strength: it delivers measurably fast hosting at a price point that other hosts cannot match at comparable performance levels. LiteSpeed servers and NVMe storage produce load times that rival hosts charging two or three times more. The 8.9 is not a 9.5+ because the support tier is a real gap — no phone line, an unreliable AI chatbot as first contact, and inconsistent escalation for billing or suspension issues. The renewal pricing cliff is also something every buyer needs to see before signing up, not after. For side projects, personal sites, WordPress blogs, and small business pages that need reliable speed without enterprise budget, Hostinger is a strong choice. For anything that requires guaranteed fast human support or stable long-term pricing, look at SiteGround.',
+    'Hostinger earns an 8.9 based on a genuine strength: it delivers measurably fast hosting at a price point that other hosts cannot match at comparable performance levels. LiteSpeed servers and NVMe storage produce load times that rival hosts charging two or three times more. The 8.9 reflects a couple of things worth knowing upfront: support is chat-based rather than phone, and renewal pricing is higher than the introductory rate — both factors to weigh before committing. For side projects, personal sites, WordPress blogs, and small business pages that need reliable speed without enterprise budget, Hostinger is a strong choice. For anything that requires phone support or predictable long-term pricing, SiteGround is worth comparing.',
 }
 
 export default review

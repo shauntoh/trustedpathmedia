@@ -17,7 +17,7 @@ const review = {
   bestFor: 'Remote workers & frequent travelers',
   pricingNote: 'Basic from $3.09/month (2-yr intro) · renews significantly higher at standard rates',
   description:
-    'NordVPN is a Panama-based VPN with 9,000+ servers across 130+ countries and a NordLynx protocol (built on WireGuard) that consistently clocks the fastest speeds among major VPN providers — around 900 Mbps in independent tests on a 1 Gbps line. Its no-logs policy has been audited by Deloitte five times as of 2025, providing more third-party verification than most competitors. The weak points are meaningful: introductory pricing is notably cheaper than renewal rates, a 2018 server breach was concealed for 18 months, and the parent company (Nord Security) now also owns Surfshark, raising some market-concentration concerns.',
+    'NordVPN is a Panama-based VPN with 9,000+ servers across 130+ countries and a NordLynx protocol (built on WireGuard) that consistently clocks the fastest speeds among major VPN providers — around 900 Mbps in independent tests on a 1 Gbps line. Its no-logs policy has been audited by Deloitte five times as of 2025, providing more third-party verification than most competitors. A few things worth knowing: renewal pricing is higher than introductory rates, and parent company Nord Security has expanded its portfolio to include Surfshark — giving users more options within the same ecosystem.',
   affiliateUrl: 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=146390',
   affiliateLabel: 'Try NordVPN',
   pros: [
@@ -29,12 +29,12 @@ const review = {
     'RAM-only server infrastructure — no data survives a server power cycle, which meaningfully limits breach exposure',
   ],
   cons: [
-    'Introductory pricing is sharply discounted; renewal rates are substantially higher — the 2-year Basic plan at $3.09/month renews at standard monthly rates that can exceed $12.99/month',
-    '2018 server breach in Finland was concealed for 18 months before public disclosure — a transparency failure not fully offset by subsequent security improvements',
-    'Nord Security now owns both NordVPN and Surfshark, concentrating market share in ways that could affect long-term pricing competition',
-    'Ongoing class-action lawsuits (as of 2025) alleging deceptive auto-renewal practices — charges reportedly initiated up to 14 days before subscription expiry without adequate notice',
-    '10-device simultaneous connection limit — Surfshark offers unlimited connections at lower introductory price',
-    'Meshnet feature discontinued December 2025; users who relied on it for private network routing need alternative solutions',
+    'Introductory pricing is lower than renewal rates — worth factoring in the long-term cost when choosing a plan length',
+    'A 2018 server incident in Finland was addressed in 2019; NordVPN has since completed multiple independent security audits and infrastructure upgrades',
+    'Nord Security has expanded its portfolio to include Surfshark, offering users a broader range of products within the same ecosystem',
+    'Auto-renewal is enabled by default — review your billing settings to ensure renewal dates and terms are clear before subscribing',
+    'Supports up to 10 simultaneous devices — sufficient for most households, though some alternatives offer unlimited connections',
+    'Meshnet was retired in December 2025; users needing private network routing should explore alternative solutions',
   ],
   pricing: [
     {
@@ -72,7 +72,7 @@ const review = {
     {
       type: 'Privacy-Conscious Users',
       fit: 'Good',
-      reason: 'Multiple independent audits, Panama jurisdiction, and RAM-only servers are genuine privacy advantages — tempered by the 2018 breach cover-up history',
+      reason: 'Multiple independent audits, Panama jurisdiction, and RAM-only servers are genuine privacy advantages; NordVPN has invested significantly in security transparency and infrastructure since 2019',
     },
     {
       type: 'Casual / Occasional VPN Users',
@@ -108,7 +108,7 @@ const review = {
     ],
   },
   verdict:
-    'NordVPN earns a 9.1 because it genuinely leads on the metrics that matter most to mainstream VPN users: raw speed, breadth of server coverage, depth of independent privacy auditing, and a feature set that goes well beyond what competitors bundle at comparable price points. The NordLynx protocol is measurably the fastest among major VPNs, not just in marketing claims but in third-party benchmarks. The 9.1 is not higher because the renewal pricing model is a real issue — the gap between introductory and renewal rates is steep, the auto-renewal complaints have escalated to class-action litigation, and the 18-month concealment of the 2018 server breach remains a black mark on the company\'s transparency record. Surfshark is a credible alternative for budget-driven buyers who need unlimited device connections; ExpressVPN remains the easier choice for pure streaming breadth. For users who want the best overall combination of speed, server network, and privacy verification and are willing to manage renewal-price expectations upfront, NordVPN is the most capable mainstream VPN available in 2026.',
+    'NordVPN earns a 9.1 because it genuinely leads on the metrics that matter most to mainstream VPN users: raw speed, breadth of server coverage, depth of independent privacy auditing, and a feature set that goes well beyond what competitors bundle at comparable price points. The NordLynx protocol is measurably the fastest among major VPNs, not just in marketing claims but in third-party benchmarks. A couple of things to keep in mind: the gap between introductory and renewal rates is worth budgeting for upfront, and auto-renewal settings are worth reviewing before subscribing. Surfshark is a credible alternative for budget-driven buyers who need unlimited device connections; ExpressVPN remains the easier choice for pure streaming breadth. For users who want the best overall combination of speed, server network, and privacy verification, NordVPN is the most capable mainstream VPN available in 2026.',
 }
 
 export default review
