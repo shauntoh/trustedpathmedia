@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AllReviewsPage from '../components/pages/AllReviewsPage.jsx';
+---
+<BaseLayout
+  title="All Reviews"
+  description="Every tool ToolNav has independently reviewed — ranked, rated, and honest. Filter by category and sort by rating."
+>
+  <AllReviewsPage client:load />
+</BaseLayout>

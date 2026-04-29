@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PlaybookPageComponent from '../../components/pages/PlaybookPage.jsx';
+import releaseSong from '../../data/playbooks/release-a-song-with-suno.js';
+import sideProject from '../../data/playbooks/launch-a-side-project-with-ai.js';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: 'release-a-song-with-suno' }, props: { playbook: releaseSong } },
+    { params: { slug: 'launch-a-side-project-with-ai' }, props: { playbook: sideProject } },
+  ];
+}
+
+const { playbook } = Astro.props;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  'name': playbook.title,
+  'description': playbook.tagline,
+  'totalTime': playbook.timeRequired,
+  'step': playbook.steps.map((step, i) => ({
+    '@type': 'HowToStep',
+    'position': i + 1,
+    'name': step.title,
+    'text': step.body,
+  })),
+  'author': { '@type': 'Organization', 'name': 'ToolNav', 'url': 'https://toolnav.io' },
+  'publisher': { '@type': 'Organization', 'name': 'ToolNav', 'url': 'https://toolnav.io' },
+};
+---
+<BaseLayout
+  title={playbook.title}
+  description={playbook.tagline}
+  schema={schema}
+>
+  <PlaybookPageComponent playbook={playbook} client:load />
+</BaseLayout>

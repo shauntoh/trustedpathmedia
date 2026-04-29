@@ -1,27 +1,63 @@
-import { useState, useEffect } from 'react'
-import { Menu, X } from 'lucide-react'
+import { useState, useEffect, useRef } from 'react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { url } from '../lib/url'
 
-const navLinks = [
+const toolsLinks = [
   { label: 'AI Tools', href: '/category/ai-tools' },
   { label: 'Hosting', href: '/category/hosting' },
   { label: 'VPN', href: '/category/vpn' },
   { label: 'SaaS', href: '/category/saas' },
   { label: 'Courses', href: '/category/courses' },
   { label: 'Productivity', href: '/category/productivity' },
-  { label: 'Buying Guides', href: '/guides' },
+]
+
+const topLinks = [
+  { label: 'Guides', href: '/guides' },
+  { label: 'Playbooks', href: '/playbooks' },
   { label: 'About', href: '/about' },
 ]
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [isToolsOpen, setIsToolsOpen] = useState(false)
+  const [isMobileToolsOpen, setIsMobileToolsOpen] = useState(false)
+  const toolsRef = useRef(null)
+  const closeTimer = useRef(null)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (toolsRef.current && !toolsRef.current.contains(e.target)) {
+        setIsToolsOpen(false)
+      }
+    }
+    const handleEscape = (e) => {
+      if (e.key === 'Escape') {
+        setIsToolsOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    document.addEventListener('keydown', handleEscape)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+      document.removeEventListener('keydown', handleEscape)
+    }
+  }, [])
+
+  const handleToolsEnter = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current)
+    setIsToolsOpen(true)
+  }
+
+  const handleToolsLeave = () => {
+    closeTimer.current = setTimeout(() => setIsToolsOpen(false), 120)
+  }
 
   return (
     <nav
@@ -48,7 +84,50 @@ export default function Nav() {
 
           {/* Desktop nav links */}
           <div className="hidden md:flex items-center space-x-1">
-            {navLinks.map(({ label, href }) => (
+
+            {/* Tools dropdown */}
+            <div
+              className="relative"
+              ref={toolsRef}
+              onMouseEnter={handleToolsEnter}
+              onMouseLeave={handleToolsLeave}
+            >
+              <button
+                type="button"
+                onClick={() => setIsToolsOpen((v) => !v)}
+                className="flex items-center gap-1 text-slate-400 hover:text-white text-sm px-3.5 py-2 rounded-lg hover:bg-white/[0.05] transition-all duration-200"
+                aria-expanded={isToolsOpen}
+                aria-haspopup="true"
+              >
+                Tools
+                <ChevronDown
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${isToolsOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+
+              {isToolsOpen && (
+                <div className="absolute left-0 top-full mt-2 w-56 bg-navy-900 border border-white/[0.06] rounded-xl shadow-xl shadow-black/40 py-2">
+                  {toolsLinks.map(({ label, href }) => (
+                    <a
+                      key={label}
+                      href={url(href)}
+                      className="block text-slate-400 hover:text-white text-sm px-4 py-2 hover:bg-white/[0.05] transition-all duration-200"
+                    >
+                      {label}
+                    </a>
+                  ))}
+                  <div className="my-2 border-t border-white/[0.06]" />
+                  <a
+                    href={url('/reviews')}
+                    className="block text-slate-300 hover:text-white text-sm px-4 py-2 hover:bg-white/[0.05] transition-all duration-200"
+                  >
+                    See all reviews
+                  </a>
+                </div>
+              )}
+            </div>
+
+            {topLinks.map(({ label, href }) => (
               <a
                 key={label}
                 href={url(href)}
@@ -68,7 +147,7 @@ export default function Nav() {
               Newsletter
             </a>
             <a
-              href={url('/guides')}
+              href={url('/reviews')}
               className="bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/20"
             >
               See Top Picks
@@ -90,7 +169,42 @@ export default function Nav() {
       {isOpen && (
         <div className="md:hidden bg-navy-900 border-t border-white/[0.06]">
           <div className="px-4 py-4 space-y-1">
-            {navLinks.map(({ label, href }) => (
+
+            {/* Mobile Tools collapsible */}
+            <button
+              type="button"
+              onClick={() => setIsMobileToolsOpen((v) => !v)}
+              className="w-full flex items-center justify-between text-slate-400 hover:text-white text-sm py-2.5 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
+              aria-expanded={isMobileToolsOpen}
+            >
+              <span>Tools</span>
+              <ChevronDown
+                className={`w-4 h-4 transition-transform duration-200 ${isMobileToolsOpen ? 'rotate-180' : ''}`}
+              />
+            </button>
+            {isMobileToolsOpen && (
+              <div className="pl-3 space-y-1 border-l border-white/[0.06] ml-3">
+                {toolsLinks.map(({ label, href }) => (
+                  <a
+                    key={label}
+                    href={url(href)}
+                    className="block text-slate-400 hover:text-white text-sm py-2 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {label}
+                  </a>
+                ))}
+                <a
+                  href={url('/reviews')}
+                  className="block text-slate-300 hover:text-white text-sm py-2 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
+                  onClick={() => setIsOpen(false)}
+                >
+                  See all reviews
+                </a>
+              </div>
+            )}
+
+            {topLinks.map(({ label, href }) => (
               <a
                 key={label}
                 href={url(href)}
@@ -100,6 +214,7 @@ export default function Nav() {
                 {label}
               </a>
             ))}
+
             <div className="pt-3 space-y-2 border-t border-white/[0.06] mt-3">
               <a
                 href={url('/')}
@@ -109,7 +224,7 @@ export default function Nav() {
                 Join Newsletter
               </a>
               <a
-                href={url('/guides')}
+                href={url('/reviews')}
                 className="block bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg text-center transition-all"
                 onClick={() => setIsOpen(false)}
               >

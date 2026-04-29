@@ -16,11 +16,17 @@ const footerLinks = {
     { label: 'Productivity', href: '/category/productivity' },
   ],
   Guides: [
+    { label: 'All Buying Guides', href: '/guides' },
     { label: 'Best AI Tools', href: '/guide/ai-tools-side-hustlers' },
     { label: 'Best Hosting', href: '/guide/web-hosting-beginners' },
     { label: 'Best VPNs', href: '/guide/vpn-remote-workers' },
-    { label: 'Best for Side Hustlers', href: '/guide/ai-tools-side-hustlers' },
     { label: 'Best SaaS for Teams', href: '/guide/saas-small-teams' },
+  ],
+  Playbooks: [
+    { label: 'All Playbooks', href: '/playbooks' },
+    { label: 'Release a Song with Suno', href: '/playbook/release-a-song-with-suno' },
+    { label: 'Launch a Side Project with AI', href: '/playbook/launch-a-side-project-with-ai' },
+    { label: 'All Reviews', href: '/reviews' },
   ],
 }
 
@@ -35,7 +41,7 @@ export default function Footer() {
     <footer className="bg-navy-950 border-t border-white/[0.05]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 md:gap-12">
 
           {/* Brand column */}
           <div className="col-span-1">
