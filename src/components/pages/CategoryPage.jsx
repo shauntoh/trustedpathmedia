@@ -5,9 +5,11 @@ import claudeAi from '../../data/reviews/claude-ai'
 import hostinger from '../../data/reviews/hostinger'
 import nordvpn from '../../data/reviews/nordvpn'
 import notion from '../../data/reviews/notion'
+import grammarly from '../../data/reviews/grammarly'
+import suno from '../../data/reviews/suno'
 import { Star } from 'lucide-react'
 
-const allReviews = [claudeAi, hostinger, nordvpn, notion]
+const allReviews = [claudeAi, hostinger, nordvpn, notion, grammarly, suno]
 
 const categoryColorMap = {
   'AI Tools':     { text: 'text-violet-400',  bg: 'bg-violet-950/50' },

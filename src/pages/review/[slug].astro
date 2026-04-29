@@ -5,6 +5,8 @@ import claudeAi from '../../data/reviews/claude-ai.js';
 import hostinger from '../../data/reviews/hostinger.js';
 import nordvpn from '../../data/reviews/nordvpn.js';
 import notion from '../../data/reviews/notion.js';
+import grammarly from '../../data/reviews/grammarly.js';
+import suno from '../../data/reviews/suno.js';
 
 export function getStaticPaths() {
   return [
@@ -12,6 +14,8 @@ export function getStaticPaths() {
     { params: { slug: 'hostinger' }, props: { review: hostinger } },
     { params: { slug: 'nordvpn' }, props: { review: nordvpn } },
     { params: { slug: 'notion' }, props: { review: notion } },
+    { params: { slug: 'grammarly' }, props: { review: grammarly } },
+    { params: { slug: 'suno' }, props: { review: suno } },
   ];
 }
 
