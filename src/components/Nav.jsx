@@ -6,6 +6,9 @@ const navLinks = [
   { label: 'AI Tools', href: '/category/ai-tools' },
   { label: 'Hosting', href: '/category/hosting' },
   { label: 'VPN', href: '/category/vpn' },
+  { label: 'SaaS', href: '/category/saas' },
+  { label: 'Courses', href: '/category/courses' },
+  { label: 'Productivity', href: '/category/productivity' },
   { label: 'Buying Guides', href: '/guides' },
   { label: 'About', href: '/about' },
 ]

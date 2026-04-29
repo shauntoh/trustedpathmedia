@@ -2,10 +2,10 @@ const review = {
   slug: 'grammarly',
   name: 'Grammarly',
   tagline: 'The AI writing assistant for clear, confident communication.',
-  category: 'AI Tools',
-  categoryColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',
+  category: 'Productivity',
+  categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',
   badge: 'Top Pick',
-  badgeColor: 'bg-violet-950/60 text-violet-400 border-violet-800/40',
+  badgeColor: 'bg-cyan-950/60 text-cyan-400 border-cyan-800/40',
   rating: 8.8,
   ratingBreakdown: {
     Writing: 9.2,
