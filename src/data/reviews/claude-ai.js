@@ -18,7 +18,7 @@ const review = {
   pricingNote: 'Free plan available · Pro from $20/month',
   description:
     'Claude is Anthropic\'s flagship AI assistant, purpose-built for long-form writing, complex reasoning, and professional coding work. It consistently outperforms competitors on prose quality and instruction-following — and its 200K-token context window makes it the best option for working with long documents. Worth noting: image generation is not built in, and the Pro plan is best suited to moderate rather than extremely high-volume workflows.',
-  affiliateUrl: '#',
+  affiliateUrl: 'https://claude.ai',
   affiliateLabel: 'Try Claude AI',
   pros: [
     'Best-in-class prose quality — natural, precise, not "AI-voiced"',

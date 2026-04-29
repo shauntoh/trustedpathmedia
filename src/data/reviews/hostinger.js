@@ -18,7 +18,7 @@ const review = {
   pricingNote: 'Shared hosting from $2.99/month (48-mo) · renews at $10.99–$25.99/month',
   description:
     'Hostinger delivers genuinely fast shared hosting — LiteSpeed web servers, NVMe SSD storage, and a global CDN — at prices that undercut most competitors by a wide margin. The hPanel control panel is clean and accessible to beginners, while Git integration and multiple PHP versions make it workable for developers too. Worth noting: renewal pricing is higher than introductory rates, and support is available via live chat rather than phone.',
-  affiliateUrl: '#',
+  affiliateUrl: 'https://www.hostinger.com',
   affiliateLabel: 'Try Hostinger',
   pros: [
     'Lowest introductory price in mainstream shared hosting (from $2.99/month)',
