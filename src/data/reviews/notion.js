@@ -18,7 +18,7 @@ const review = {
   pricingNote: 'Free plan available · Plus from $10/user/month',
   description:
     'Notion is a flexible all-in-one workspace that combines documents, relational databases, wikis, and project management in a single tool. Its block-based editor and customisable databases let small teams replace Confluence, Trello, and Airtable with one subscription. Worth noting: there is a learning curve for advanced database features, very large databases load more slowly, and full AI features are available on the Business tier.',
-  affiliateUrl: '#',
+  affiliateUrl: 'https://www.notion.so',
   affiliateLabel: 'Try Notion',
   pros: [
     'Genuinely flexible: combine docs, databases, wikis, and task boards in one workspace',

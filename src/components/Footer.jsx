@@ -46,7 +46,7 @@ export default function Footer() {
                 </svg>
               </div>
               <span className="text-white font-semibold text-[15px] tracking-tight">
-                TrustedPath<span className="text-blue-400">Media</span>
+                Tool<span className="text-blue-400">Nav</span>
               </span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-6">

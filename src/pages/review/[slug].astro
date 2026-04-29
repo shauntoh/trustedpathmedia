@@ -7,6 +7,9 @@ import nordvpn from '../../data/reviews/nordvpn.js';
 import notion from '../../data/reviews/notion.js';
 import grammarly from '../../data/reviews/grammarly.js';
 import suno from '../../data/reviews/suno.js';
+import coursera from '../../data/reviews/coursera.js';
+import skillshare from '../../data/reviews/skillshare.js';
+import n8n from '../../data/reviews/n8n.js';
 
 export function getStaticPaths() {
   return [
@@ -16,6 +19,9 @@ export function getStaticPaths() {
     { params: { slug: 'notion' }, props: { review: notion } },
     { params: { slug: 'grammarly' }, props: { review: grammarly } },
     { params: { slug: 'suno' }, props: { review: suno } },
+    { params: { slug: 'coursera' }, props: { review: coursera } },
+    { params: { slug: 'skillshare' }, props: { review: skillshare } },
+    { params: { slug: 'n8n' }, props: { review: n8n } },
   ];
 }
 
