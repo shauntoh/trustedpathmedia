@@ -78,6 +78,7 @@ function ArticleCard({ article }) {
     return (
       <a
         href={url(href)}
+        id={`content-home-bestof-${href.split('/').pop()}`}
         className="group col-span-1 sm:col-span-2 bg-navy-800/60 border border-white/[0.07] rounded-2xl p-8 hover:bg-navy-800 hover:border-blue-600/20 transition-all duration-300 hover:shadow-xl hover:shadow-black/30 flex flex-col justify-between min-h-[230px]"
       >
         <div>
@@ -103,6 +104,7 @@ function ArticleCard({ article }) {
   return (
     <a
       href={url(href)}
+      id={`content-home-bestof-${href.split('/').pop()}`}
       className="group bg-navy-800/40 border border-white/[0.07] rounded-2xl p-6 hover:bg-navy-800/70 hover:border-blue-600/20 transition-all duration-300 hover:shadow-lg hover:shadow-black/20 flex flex-col justify-between"
     >
       <div>
@@ -135,6 +137,7 @@ export default function BestOf() {
           </div>
           <a
             href={url('/guides')}
+            id="cta-home-bestof-view-all-guides"
             className="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition-colors shrink-0"
           >
             View all guides

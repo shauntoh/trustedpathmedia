@@ -40,12 +40,13 @@ function MetaPill({ label, value }) {
   )
 }
 
-function FAQItem({ question, answer }) {
+function FAQItem({ question, answer, idx }) {
   const [open, setOpen] = useState(false)
   return (
     <div className="border border-white/[0.07] rounded-xl bg-navy-800/40 overflow-hidden">
       <button
         type="button"
+        id={`filter-playbook-faq-${idx}`}
         onClick={() => setOpen((v) => !v)}
         className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left hover:bg-white/[0.02] transition-colors"
         aria-expanded={open}
@@ -97,9 +98,9 @@ export default function PlaybookPage({ playbook }) {
         {/* Breadcrumb */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-2 text-xs text-slate-500">
-            <a href={url('/')} className="hover:text-slate-300 transition-colors">Home</a>
+            <a href={url('/')} id="nav-playbook-breadcrumb-home" className="hover:text-slate-300 transition-colors">Home</a>
             <span>/</span>
-            <a href={url('/playbooks')} className="hover:text-slate-300 transition-colors">Playbooks</a>
+            <a href={url('/playbooks')} id="nav-playbook-breadcrumb-playbooks" className="hover:text-slate-300 transition-colors">Playbooks</a>
             <span>/</span>
             <span className="text-slate-300 truncate max-w-[220px] sm:max-w-none">{title}</span>
           </nav>
@@ -151,6 +152,7 @@ export default function PlaybookPage({ playbook }) {
                     {tool.reviewSlug && (
                       <a
                         href={url(`/review/${tool.reviewSlug}`)}
+                        id={`content-playbook-tool-review-${tool.reviewSlug}`}
                         className="text-blue-400 text-xs font-semibold hover:underline underline-offset-2"
                       >
                         Read review →
@@ -158,6 +160,7 @@ export default function PlaybookPage({ playbook }) {
                     )}
                     <a
                       href={tool.affiliateUrl}
+                      id={`affiliate-playbook-tool-try-${tool.name.toLowerCase().replace(/\s+/g, '-')}`}
                       target="_blank"
                       rel="noopener noreferrer sponsored"
                       className="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/20"
@@ -214,7 +217,7 @@ export default function PlaybookPage({ playbook }) {
             <h2 className="text-xs uppercase tracking-widest text-slate-500 mb-6">FAQ</h2>
             <div className="space-y-3">
               {faq.map((item, i) => (
-                <FAQItem key={i} question={item.question} answer={item.answer} />
+                <FAQItem key={i} idx={i} question={item.question} answer={item.answer} />
               ))}
             </div>
           </div>
@@ -247,6 +250,7 @@ export default function PlaybookPage({ playbook }) {
                 <a
                   key={tool.name}
                   href={tool.affiliateUrl}
+                  id={`affiliate-playbook-recap-try-${tool.name.toLowerCase().replace(/\s+/g, '-')}`}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="group bg-navy-800/40 border border-white/[0.07] rounded-xl p-5 hover:border-blue-600/20 transition-all duration-300 flex flex-col gap-2"

@@ -53,7 +53,7 @@ export default function ReviewPage({ review }) {
   }
 
   const {
-    name, tagline, category, categoryColor, badge, badgeColor,
+    slug, name, tagline, category, categoryColor, badge, badgeColor,
     rating, ratingBreakdown, bestFor, pricingNote, description,
     affiliateUrl, affiliateLabel, pros, cons, pricing,
     whoItsFor, comparison, verdict,
@@ -68,7 +68,7 @@ export default function ReviewPage({ review }) {
         {/* Breadcrumb */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-2 text-xs text-slate-500">
-            <a href={url('/')} className="hover:text-slate-300 transition-colors">Home</a>
+            <a href={url('/')} id="nav-review-breadcrumb-home" className="hover:text-slate-300 transition-colors">Home</a>
             <span>/</span>
             <span className={categoryColor.split(' ')[0]}>{category}</span>
             <span>/</span>
@@ -108,6 +108,7 @@ export default function ReviewPage({ review }) {
               <div className="flex flex-wrap items-center gap-4">
                 <a
                   href={affiliateUrl}
+                  id={`affiliate-review-${slug}-hero`}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-blue-600/25 hover:-translate-y-0.5"
@@ -119,7 +120,7 @@ export default function ReviewPage({ review }) {
                 </a>
                 <p className="text-xs text-slate-600">
                   We may earn a commission via this link — at no cost to you.{' '}
-                  <a href="#disclosure" className="underline hover:text-slate-400 transition-colors">Disclosure</a>
+                  <a href="#disclosure" id="nav-review-disclosure-link" className="underline hover:text-slate-400 transition-colors">Disclosure</a>
                 </p>
               </div>
             </div>
@@ -285,6 +286,7 @@ export default function ReviewPage({ review }) {
                 <p className="text-slate-400 leading-relaxed mb-8">{verdict}</p>
                 <a
                   href={affiliateUrl}
+                  id={`affiliate-review-${slug}-verdict`}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
                   className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-blue-600/25 hover:-translate-y-0.5"

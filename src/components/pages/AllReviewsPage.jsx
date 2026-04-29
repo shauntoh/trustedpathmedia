@@ -78,6 +78,7 @@ export default function AllReviewsPage() {
                 <button
                   key={cat}
                   type="button"
+                  id={`filter-allreviews-category-${cat.toLowerCase().replace(/\s+/g, '-')}`}
                   onClick={() => setFilter(cat)}
                   className={`text-xs font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full border transition-all ${
                     active
@@ -91,9 +92,9 @@ export default function AllReviewsPage() {
             })}
           </div>
           <div className="flex items-center gap-2 shrink-0">
-            <label htmlFor="sort" className="text-xs uppercase tracking-widest text-slate-500">Sort</label>
+            <label htmlFor="allreviews-sort-select" className="text-xs uppercase tracking-widest text-slate-500">Sort</label>
             <select
-              id="sort"
+              id="allreviews-sort-select"
               value={sort}
               onChange={(e) => setSort(e.target.value)}
               className="bg-navy-800 border border-white/[0.07] text-slate-300 text-sm rounded-lg px-3 py-1.5 focus:outline-none focus:border-blue-500"
@@ -138,6 +139,7 @@ export default function AllReviewsPage() {
 
                   <a
                     href={url(`/review/${review.slug}`)}
+                    id={`content-allreviews-card-${review.slug}`}
                     className={`mt-auto text-sm font-semibold ${catColor} hover:underline underline-offset-2 transition-colors`}
                   >
                     Read review →

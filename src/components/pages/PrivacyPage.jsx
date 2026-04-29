@@ -11,7 +11,7 @@ export default function PrivacyPage() {
 
           {/* Breadcrumb */}
           <nav className="text-xs text-slate-500 mb-10">
-            <a href={url('/')} className="hover:text-slate-300 transition-colors">Home</a>
+            <a href={url('/')} id="nav-privacy-breadcrumb-home" className="hover:text-slate-300 transition-colors">Home</a>
             <span className="mx-2">/</span>
             <span className="text-slate-300">Privacy Policy</span>
           </nav>
@@ -71,6 +71,7 @@ export default function PrivacyPage() {
                 deletion:{' '}
                 <a
                   href="mailto:trustedpathmedia@gmail.com"
+                  id="nav-privacy-contact-email"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
                 >
                   trustedpathmedia@gmail.com

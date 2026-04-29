@@ -36,7 +36,7 @@ export default function GuidesPage() {
 
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-xs text-slate-500 mb-10">
-            <a href={url('/')} className="hover:text-slate-300 transition-colors">Home</a>
+            <a href={url('/')} id="nav-guides-breadcrumb-home" className="hover:text-slate-300 transition-colors">Home</a>
             <span>/</span>
             <span className="text-slate-300">Buying Guides</span>
           </nav>
@@ -56,6 +56,7 @@ export default function GuidesPage() {
               <a
                 key={guide.slug}
                 href={url(`/guide/${guide.slug}`)}
+                id={`content-guides-card-${guide.slug}`}
                 className="group bg-navy-800/40 border border-white/[0.07] rounded-2xl p-6 hover:bg-navy-800/70 hover:border-blue-600/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30 flex flex-col justify-between"
               >
                 <div>

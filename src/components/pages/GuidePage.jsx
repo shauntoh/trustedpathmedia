@@ -72,6 +72,7 @@ function PickCard({ pick }) {
 
       <a
         href={affiliateUrl}
+        id={`affiliate-guide-deal-${name.toLowerCase().replace(/\s+/g, '-')}`}
         target="_blank"
         rel="noopener noreferrer sponsored"
         className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-blue-600/25 hover:-translate-y-0.5"
@@ -103,7 +104,7 @@ export default function GuidePage({ guide }) {
         {/* Breadcrumb */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <nav className="flex items-center gap-2 text-xs text-slate-500">
-            <a href={url('/')} className="hover:text-slate-300 transition-colors">Home</a>
+            <a href={url('/')} id="nav-guide-breadcrumb-home" className="hover:text-slate-300 transition-colors">Home</a>
             <span>/</span>
             <span className={categoryColor.split(' ')[0]}>{category}</span>
             <span>/</span>

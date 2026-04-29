@@ -81,6 +81,7 @@ export default function Categories() {
           {categories.map(({ name, description, icon: Icon, label, color, bgColor, hoverBorder, href }) => (
             <a
               key={name}
+              id={`content-home-cat-${name.toLowerCase().replace(/\s+/g, '-')}`}
               href={url(href)}
               className={`group relative bg-navy-800/50 border border-white/[0.07] rounded-2xl p-5 transition-all duration-300 hover:bg-navy-800 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30 ${hoverBorder}`}
             >

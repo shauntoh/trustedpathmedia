@@ -78,6 +78,7 @@ export default function EditorsPicks() {
           </div>
           <a
             href={url('/guides')}
+            id="cta-home-picks-view-all"
             className="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition-colors shrink-0"
           >
             View all picks
@@ -126,6 +127,7 @@ export default function EditorsPicks() {
               {/* CTA */}
               <a
                 href={url(href)}
+                id={`content-home-picks-${href.split('/').pop()}`}
                 className="inline-flex items-center justify-center gap-2 border border-slate-700 hover:border-blue-500/50 hover:bg-blue-600/10 text-slate-300 hover:text-blue-400 text-sm font-medium px-4 py-2.5 rounded-lg transition-all duration-200"
               >
                 See Recommendation
