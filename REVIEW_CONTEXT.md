@@ -2,6 +2,8 @@
 
 Reference standard for all product review pages. Apply consistently to every new review.
 
+> **Related:** [`GTM_TRACKING.md`](./GTM_TRACKING.md) — click tracking convention for GTM & GA4. Every clickable element on every page (including review pages) must follow that guide.
+
 ---
 
 ## URL Taxonomy

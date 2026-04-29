@@ -11,7 +11,7 @@ export default function DisclosurePage() {
 
           {/* Breadcrumb */}
           <nav className="text-xs text-slate-500 mb-10">
-            <a href={url('/')} className="hover:text-slate-300 transition-colors">Home</a>
+            <a href={url('/')} id="nav-disclosure-breadcrumb-home" className="hover:text-slate-300 transition-colors">Home</a>
             <span className="mx-2">/</span>
             <span className="text-slate-300">Affiliate Disclosure</span>
           </nav>
@@ -62,6 +62,7 @@ export default function DisclosurePage() {
                 If you have questions about a specific affiliate relationship, contact us at{' '}
                 <a
                   href="mailto:trustedpathmedia@gmail.com"
+                  id="nav-disclosure-contact-email"
                   className="text-blue-400 hover:text-blue-300 transition-colors"
                 >
                   trustedpathmedia@gmail.com

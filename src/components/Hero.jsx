@@ -43,6 +43,7 @@ export default function Hero() {
         <div className="flex flex-wrap items-center gap-4 mb-20">
           <a
             href="#picks"
+            id="cta-hero-see-top-picks"
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:shadow-xl hover:shadow-blue-600/25 hover:-translate-y-0.5"
           >
             See Top Picks
@@ -52,6 +53,7 @@ export default function Hero() {
           </a>
           <a
             href="#newsletter"
+            id="cta-hero-join-newsletter"
             className="inline-flex items-center gap-2 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-medium text-sm px-7 py-3.5 rounded-xl transition-all duration-200 hover:bg-white/[0.03]"
           >
             Join Newsletter

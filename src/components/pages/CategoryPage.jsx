@@ -90,6 +90,7 @@ export default function CategoryPage({ category }) {
                 {/* CTA */}
                 <a
                   href={url(`/review/${review.slug}`)}
+                  id={`content-category-card-${review.slug}`}
                   className={`mt-auto text-sm font-semibold ${colors.text} hover:underline underline-offset-2 transition-colors`}
                 >
                   Read Review →

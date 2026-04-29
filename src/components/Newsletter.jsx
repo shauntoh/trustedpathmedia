@@ -54,6 +54,7 @@ export default function Newsletter() {
               >
                 <input
                   type="email"
+                  id="newsletter-email-input"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="your@email.com"
@@ -62,6 +63,7 @@ export default function Newsletter() {
                 />
                 <button
                   type="submit"
+                  id="newsletter-submit-btn"
                   className="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/25 whitespace-nowrap"
                 >
                   Subscribe Free

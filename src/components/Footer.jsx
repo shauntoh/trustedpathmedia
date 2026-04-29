@@ -73,6 +73,7 @@ export default function Footer() {
                   <li key={label}>
                     <a
                       href={resolveHref(href)}
+                      id={`nav-footer-${section.toLowerCase()}-${label.toLowerCase().replace(/\s+/g, '-')}`}
                       className="text-slate-500 hover:text-slate-300 text-sm transition-colors duration-200"
                     >
                       {label}
@@ -91,9 +92,9 @@ export default function Footer() {
             from qualifying purchases made through links on this site. This does not affect our editorial rankings or recommendations.
           </p>
           <div className="flex items-center gap-5 shrink-0">
-            <a href={url('/privacy')} className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Privacy</a>
-            <a href={url('/terms')} className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Terms</a>
-            <a href="mailto:trustedpathmedia@gmail.com" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Contact</a>
+            <a href={url('/privacy')} id="nav-footer-bottom-privacy" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Privacy</a>
+            <a href={url('/terms')} id="nav-footer-bottom-terms" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Terms</a>
+            <a href="mailto:trustedpathmedia@gmail.com" id="nav-footer-bottom-contact" className="text-slate-600 hover:text-slate-400 text-xs transition-colors">Contact</a>
           </div>
         </div>
       </div>

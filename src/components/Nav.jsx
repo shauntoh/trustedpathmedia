@@ -71,7 +71,7 @@ export default function Nav() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
-          <a href={url('/')} className="flex items-center gap-2.5 group shrink-0">
+          <a href={url('/')} id="nav-logo" className="flex items-center gap-2.5 group shrink-0">
             <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center">
               <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
@@ -94,6 +94,7 @@ export default function Nav() {
             >
               <button
                 type="button"
+                id="nav-desktop-tools-btn"
                 onClick={() => setIsToolsOpen((v) => !v)}
                 className="flex items-center gap-1 text-slate-400 hover:text-white text-sm px-3.5 py-2 rounded-lg hover:bg-white/[0.05] transition-all duration-200"
                 aria-expanded={isToolsOpen}
@@ -110,6 +111,7 @@ export default function Nav() {
                   {toolsLinks.map(({ label, href }) => (
                     <a
                       key={label}
+                      id={`nav-desktop-cat-${label.toLowerCase().replace(/\s+/g, '-')}`}
                       href={url(href)}
                       className="block text-slate-400 hover:text-white text-sm px-4 py-2 hover:bg-white/[0.05] transition-all duration-200"
                     >
@@ -119,6 +121,7 @@ export default function Nav() {
                   <div className="my-2 border-t border-white/[0.06]" />
                   <a
                     href={url('/reviews')}
+                    id="nav-desktop-see-all-reviews"
                     className="block text-slate-300 hover:text-white text-sm px-4 py-2 hover:bg-white/[0.05] transition-all duration-200"
                   >
                     See all reviews
@@ -130,6 +133,7 @@ export default function Nav() {
             {topLinks.map(({ label, href }) => (
               <a
                 key={label}
+                id={`nav-desktop-link-${label.toLowerCase()}`}
                 href={url(href)}
                 className="text-slate-400 hover:text-white text-sm px-3.5 py-2 rounded-lg hover:bg-white/[0.05] transition-all duration-200"
               >
@@ -142,12 +146,14 @@ export default function Nav() {
           <div className="hidden md:flex items-center gap-4">
             <a
               href={url('/')}
+              id="cta-nav-desktop-newsletter"
               className="text-slate-400 hover:text-slate-200 text-sm transition-colors duration-200"
             >
               Newsletter
             </a>
             <a
               href={url('/reviews')}
+              id="cta-nav-desktop-see-top-picks"
               className="bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/20"
             >
               See Top Picks
@@ -156,6 +162,7 @@ export default function Nav() {
 
           {/* Mobile toggle */}
           <button
+            id="nav-mobile-menu-toggle"
             className="md:hidden p-1.5 text-slate-400 hover:text-white transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
@@ -173,6 +180,7 @@ export default function Nav() {
             {/* Mobile Tools collapsible */}
             <button
               type="button"
+              id="nav-mobile-tools-btn"
               onClick={() => setIsMobileToolsOpen((v) => !v)}
               className="w-full flex items-center justify-between text-slate-400 hover:text-white text-sm py-2.5 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
               aria-expanded={isMobileToolsOpen}
@@ -187,6 +195,7 @@ export default function Nav() {
                 {toolsLinks.map(({ label, href }) => (
                   <a
                     key={label}
+                    id={`nav-mobile-cat-${label.toLowerCase().replace(/\s+/g, '-')}`}
                     href={url(href)}
                     className="block text-slate-400 hover:text-white text-sm py-2 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
                     onClick={() => setIsOpen(false)}
@@ -196,6 +205,7 @@ export default function Nav() {
                 ))}
                 <a
                   href={url('/reviews')}
+                  id="nav-mobile-see-all-reviews"
                   className="block text-slate-300 hover:text-white text-sm py-2 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
                   onClick={() => setIsOpen(false)}
                 >
@@ -207,6 +217,7 @@ export default function Nav() {
             {topLinks.map(({ label, href }) => (
               <a
                 key={label}
+                id={`nav-mobile-link-${label.toLowerCase()}`}
                 href={url(href)}
                 className="block text-slate-400 hover:text-white text-sm py-2.5 px-3 rounded-lg hover:bg-white/[0.05] transition-all"
                 onClick={() => setIsOpen(false)}
@@ -218,6 +229,7 @@ export default function Nav() {
             <div className="pt-3 space-y-2 border-t border-white/[0.06] mt-3">
               <a
                 href={url('/')}
+                id="cta-nav-mobile-join-newsletter"
                 className="block text-slate-300 text-sm py-2.5 px-4 rounded-lg border border-white/10 text-center hover:bg-white/[0.05] transition-all"
                 onClick={() => setIsOpen(false)}
               >
@@ -225,6 +237,7 @@ export default function Nav() {
               </a>
               <a
                 href={url('/reviews')}
+                id="cta-nav-mobile-see-top-picks"
                 className="block bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium py-2.5 px-4 rounded-lg text-center transition-all"
                 onClick={() => setIsOpen(false)}
               >

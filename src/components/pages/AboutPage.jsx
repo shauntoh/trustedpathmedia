@@ -11,7 +11,7 @@ export default function AboutPage() {
 
           {/* Breadcrumb */}
           <nav className="text-xs text-slate-500 mb-10">
-            <a href={url('/')} className="hover:text-slate-300 transition-colors">Home</a>
+            <a href={url('/')} id="nav-about-breadcrumb-home" className="hover:text-slate-300 transition-colors">Home</a>
             <span className="mx-2">/</span>
             <span className="text-slate-300">About</span>
           </nav>
