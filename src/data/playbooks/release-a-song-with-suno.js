@@ -5,7 +5,7 @@ const playbook = {
   category: 'Music',
   categoryColor: 'text-rose-400 bg-rose-950/50 border-rose-800/30',
   goal: 'Take a song from a one-line concept to a finished, distributed release on Spotify, Apple Music, and the rest of the major streamers in 2–4 hours of actual work.',
-  earningPotential: 'Passive royalties · realistically $0–500/mo per track depending on traction',
+  earningPotential: 'Passive royalties · realistically $10–$8,000/mo per track depending on traction',
   difficulty: 'Beginner',
   timeRequired: '2–4 hours',
   publishedAt: '2026-04-29',

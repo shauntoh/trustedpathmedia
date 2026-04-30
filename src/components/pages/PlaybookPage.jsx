@@ -123,7 +123,7 @@ export default function PlaybookPage({ playbook }) {
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 pt-6 border-t border-white/[0.05]">
-              <MetaPill label="Goal" value={goal.length > 60 ? goal.slice(0, 60) + '…' : goal} />
+              <MetaPill label="Goal" value={goal} />
               <MetaPill label="Difficulty" value={difficulty} />
               <MetaPill label="Time" value={timeRequired} />
               <MetaPill label="Earning Potential" value={earningPotential} />
