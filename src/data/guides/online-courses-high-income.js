@@ -70,7 +70,7 @@ const guide = {
         'Breadth is unmatched — Excel modeling, SQL, Python, negotiation, and more in one platform',
       ],
       con: 'Quality varies enormously by instructor; no credential carries weight with employers.',
-      affiliateUrl: '#',
+      affiliateUrl: 'https://trk.udemy.com/KBZ0P9',
     },
   ],
   verdict:

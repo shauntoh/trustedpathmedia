@@ -4,8 +4,9 @@ import { url } from '../../lib/url'
 
 import releaseSong from '../../data/playbooks/release-a-song-with-suno'
 import sideProject from '../../data/playbooks/launch-a-side-project-with-ai'
+import learnSkillUdemy from '../../data/playbooks/learn-a-skill-with-udemy'
 
-const allPlaybooks = [releaseSong, sideProject]
+const allPlaybooks = [releaseSong, sideProject, learnSkillUdemy]
 
 function ArrowIcon() {
   return (

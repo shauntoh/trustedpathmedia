@@ -11,6 +11,7 @@ import grammarly from '../../data/reviews/grammarly'
 import suno from '../../data/reviews/suno'
 import coursera from '../../data/reviews/coursera'
 import skillshare from '../../data/reviews/skillshare'
+import udemy from '../../data/reviews/udemy'
 import n8n from '../../data/reviews/n8n'
 
 const allReviews = [
@@ -22,6 +23,7 @@ const allReviews = [
   suno,
   coursera,
   skillshare,
+  udemy,
   n8n,
 ].map((r, i) => ({ ...r, _order: i }))
 
