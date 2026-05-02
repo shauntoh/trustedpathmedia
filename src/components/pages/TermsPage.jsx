@@ -32,12 +32,24 @@ export default function TermsPage() {
             </section>
 
             <section>
+              <h2 className="text-xl font-semibold text-white mb-3">Your Responsibility</h2>
+              <p>
+                The decisions you make based on content here are yours. We share what we know and
+                recommend what we genuinely think is useful, but results vary — especially with
+                anything income-related. We cannot guarantee you&apos;ll earn money or achieve specific
+                outcomes by following our recommendations. Please use your own judgment and do your
+                own due diligence before spending money or changing how you run your business.
+              </p>
+            </section>
+
+            <section>
               <h2 className="text-xl font-semibold text-white mb-3">Affiliate Links</h2>
               <p>
-                This site contains affiliate links. When you click a link and complete a purchase, we may
-                earn a commission from the vendor. Affiliate relationships are clearly disclosed on every
-                relevant page. The presence of affiliate links does not affect our editorial rankings or
-                recommendations.
+                This site contains affiliate links. When you click a link and complete a purchase, we
+                may earn a commission from the vendor — at no extra cost to you. Affiliate relationships
+                are clearly disclosed on every relevant page. The presence of affiliate links does not
+                affect our editorial rankings or recommendations. We only recommend tools we&apos;d stand
+                behind regardless of commission.
               </p>
             </section>
 
@@ -52,11 +64,48 @@ export default function TermsPage() {
             </section>
 
             <section>
+              <h2 className="text-xl font-semibold text-white mb-3">No Warranties</h2>
+              <p>
+                All content on ToolNav is provided as-is. We do our best to keep things accurate and
+                useful, but we make no guarantees — about accuracy, completeness, or fitness for any
+                particular purpose. Use the information here at your own discretion.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-white mb-3">Limitation of Liability</h2>
+              <p>
+                We are not liable for any losses or damages — direct, indirect, or otherwise — that
+                result from using this site or acting on information published here. This includes
+                purchasing decisions, business outcomes, or anything else downstream of a recommendation
+                we made.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-white mb-3">External Links</h2>
+              <p>
+                We link to a lot of third-party sites and products. Once you leave ToolNav, you&apos;re
+                on their turf — their terms and policies apply. We have no control over external
+                sites and are not responsible for their content, availability, or practices.
+              </p>
+            </section>
+
+            <section>
               <h2 className="text-xl font-semibold text-white mb-3">Intellectual Property</h2>
               <p>
                 All content on ToolNav — including text, reviews, guides, and editorial commentary —
                 is owned by ToolNav. Reproduction, redistribution, or commercial use of our content
                 without explicit written permission is prohibited.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-white mb-3">Changes to These Terms</h2>
+              <p>
+                We may update these terms from time to time. When we do, the &quot;last updated&quot; date at
+                the top of this page will change. Continuing to use the site after an update means
+                you&apos;re okay with the new terms.
               </p>
             </section>
 
