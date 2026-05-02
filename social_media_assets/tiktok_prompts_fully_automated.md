@@ -12,7 +12,7 @@ These tools will automatically generate the AI voice, pull relevant background f
 > Create a 30-second fast-paced, faceless TikTok video about why developers are switching from ChatGPT to Claude AI. 
 > 
 > **Visuals:** Use high-quality, aesthetic B-roll of futuristic coding, glowing server rooms, and modern tech workspaces. Do not use cheesy robot footage.
-> **Voice:** Use an engaging, fast-paced, authoritative male AI voice.
+> **Voice:** Use an authoritative American male AI voice, sounding like a tech or advanced science expert (e.g., clear, crisp, professional). Do not use an Indian accent.
 > **Captions:** Use bold, dynamic, animated captions (Hormozi style) in the center of the screen.
 > 
 > **Script:**
@@ -26,7 +26,7 @@ These tools will automatically generate the AI voice, pull relevant background f
 > Create a 30-second fast-paced, faceless TikTok video about launching a tech startup with zero budget using AI.
 > 
 > **Visuals:** Use high-quality B-roll of people working late at night on laptops, money/growth visuals, and aesthetic coffee shop workspaces.
-> **Voice:** Use an energetic, motivational female AI voice.
+> **Voice:** Use an energetic, motivational American female AI voice in the tech space.
 > **Captions:** Use bold, dynamic, animated captions (Hormozi style) in the center of the screen.
 > 
 > **Script:**
@@ -40,7 +40,7 @@ These tools will automatically generate the AI voice, pull relevant background f
 > Create a 30-second fast-paced, faceless TikTok video about automating your job using an open-source tool called n8n.
 > 
 > **Visuals:** Use high-quality B-roll of gears turning, digital networks connecting, data flowing, and people relaxing while computers work.
-> **Voice:** Use a smart, tech-savvy, conversational male AI voice.
+> **Voice:** Use an authoritative American male AI voice, sounding like a tech or advanced science expert (e.g., clear, crisp, professional). Do not use an Indian accent.
 > **Captions:** Use bold, dynamic, animated captions (Hormozi style) in the center of the screen.
 > 
 > **Script:**
