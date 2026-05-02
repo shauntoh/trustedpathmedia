@@ -63,19 +63,19 @@ export default function PrivacyPage() {
                 We use two types of cookies. Analytics cookies (via Google Analytics) track aggregate
                 site traffic — things like page views and session duration — so we can see what content
                 is resonating. Affiliate tracking cookies are set when you click a partner link; these
-                let vendors like Fiverr, NordVPN, InVideo, and Udemy know that a purchase originated
-                from our site, which is how commissions are attributed. You can disable all cookies in
-                your browser settings at any time without breaking the site.
+                let the vendor know that a purchase originated from our site, which is how commissions
+                are attributed. You can disable all cookies in your browser settings at any time without
+                breaking the site.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Third-Party Services</h2>
               <p>
-                We use Google Analytics for site performance data. We have affiliate relationships with
-                partners including Fiverr, NordVPN, InVideo, and Udemy. These services operate under
-                their own privacy policies and may set their own cookies when you interact with their
-                links or content. We encourage you to review their policies if you want to understand
+                We use Google Analytics for site performance data. We also have affiliate relationships
+                with various third-party platforms and tools featured on this site. These services operate
+                under their own privacy policies and may set their own cookies when you interact with
+                their links or content. We encourage you to review their policies if you want to understand
                 how they handle your data.
               </p>
             </section>
