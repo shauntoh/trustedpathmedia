@@ -39,6 +39,17 @@ export default function PrivacyPage() {
             </section>
 
             <section>
+              <h2 className="text-xl font-semibold text-white mb-3">How We Use Your Data</h2>
+              <p>
+                The data we collect has a narrow purpose: keeping the site running well and sending you
+                the newsletter if you asked for it. Analytics help us understand which content is useful
+                so we can improve it. Affiliate tracking cookies help vendors attribute purchases and pay
+                us commissions — that&apos;s the business model that keeps this site free. We don&apos;t use your
+                data for advertising, profiling, or anything unrelated to those purposes.
+              </p>
+            </section>
+
+            <section>
               <h2 className="text-xl font-semibold text-white mb-3">What We Don&apos;t Do</h2>
               <p>
                 We do not sell your data. We do not rent your data. We do not share your email with third
@@ -49,18 +60,60 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Cookies</h2>
               <p>
-                Analytics cookies track aggregate site traffic. Affiliate tracking cookies are set when you
-                click a partner link — this is how vendors attribute purchases and pay us commissions.
-                Standard in affiliate publishing. You can disable all cookies in your browser without
-                breaking the site.
+                We use two types of cookies. Analytics cookies (via Google Analytics) track aggregate
+                site traffic — things like page views and session duration — so we can see what content
+                is resonating. Affiliate tracking cookies are set when you click a partner link; these
+                let vendors like Fiverr, NordVPN, InVideo, and Udemy know that a purchase originated
+                from our site, which is how commissions are attributed. You can disable all cookies in
+                your browser settings at any time without breaking the site.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-white mb-3">Third-Party Services</h2>
+              <p>
+                We use Google Analytics for site performance data. We have affiliate relationships with
+                partners including Fiverr, NordVPN, InVideo, and Udemy. These services operate under
+                their own privacy policies and may set their own cookies when you interact with their
+                links or content. We encourage you to review their policies if you want to understand
+                how they handle your data.
               </p>
             </section>
 
             <section>
               <h2 className="text-xl font-semibold text-white mb-3">Third-Party Links</h2>
               <p>
-                Once you leave ToolNav, the vendor&apos;s privacy policy governs your data. We encourage
-                you to review it before purchasing.
+                Once you leave ToolNav, the vendor&apos;s privacy policy governs your data. We have no
+                control over external sites and are not responsible for their privacy practices.
+                We encourage you to review their policy before purchasing.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-white mb-3">Affiliate Disclosure</h2>
+              <p>
+                This site contains affiliate links. If you click one and make a purchase, we may earn
+                a commission — at no extra cost to you. This is how we fund the site and keep all
+                content free to read. Affiliate relationships never influence our editorial rankings
+                or recommendations.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-white mb-3">Data Retention</h2>
+              <p>
+                We only hold onto data for as long as it&apos;s needed. Newsletter subscriber emails are
+                kept until you unsubscribe. Analytics data is retained per Google Analytics&apos; default
+                retention settings. If you ask us to delete your data, we&apos;ll do it promptly.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-semibold text-white mb-3">Your Rights</h2>
+              <p>
+                You can ask us what data we hold about you, request a correction, or ask us to delete
+                it entirely. Just email us and we&apos;ll take care of it. We keep things simple — no
+                bureaucratic hoops.
               </p>
             </section>
 
