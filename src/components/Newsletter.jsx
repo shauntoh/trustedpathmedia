@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import { Mail, CheckCircle } from 'lucide-react'
+import { useEffect, useRef } from 'react'
+import { Mail } from 'lucide-react'
 
 export default function Newsletter() {
-  const [email, setEmail] = useState('')
-  const [submitted, setSubmitted] = useState(false)
+  const containerRef = useRef(null)
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    if (email.trim()) {
-      setSubmitted(true)
-      setEmail('')
-    }
-  }
+  useEffect(() => {
+    if (!containerRef.current) return
+    const script = document.createElement('script')
+    script.src = 'https://subscribe-forms.beehiiv.com/v3/loader.js'
+    script.async = true
+    script.setAttribute('data-beehiiv-form', 'a34ba540-0dfd-4213-95a3-1a85260a5a6a')
+    containerRef.current.appendChild(script)
+  }, [])
 
   return (
     <section id="newsletter" className="py-24 bg-navy-900 border-t border-white/[0.04]">
@@ -41,35 +41,8 @@ export default function Newsletter() {
               The no-fluff digest for professionals who want better tools, not more noise. Delivered weekly.
             </p>
 
-            {/* Form or confirmation */}
-            {submitted ? (
-              <div className="inline-flex items-center gap-3 bg-emerald-950/50 border border-emerald-800/40 text-emerald-400 px-6 py-4 rounded-xl">
-                <CheckCircle className="w-5 h-5 shrink-0" />
-                <span className="font-medium text-sm">You're on the list. Watch your inbox.</span>
-              </div>
-            ) : (
-              <form
-                onSubmit={handleSubmit}
-                className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-              >
-                <input
-                  type="email"
-                  id="newsletter-email-input"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your@email.com"
-                  required
-                  className="flex-1 bg-navy-900 border border-white/10 focus:border-blue-500/60 focus:outline-none text-white placeholder-slate-600 text-sm px-4 py-3 rounded-xl transition-colors"
-                />
-                <button
-                  type="submit"
-                  id="newsletter-submit-btn"
-                  className="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/25 whitespace-nowrap"
-                >
-                  Subscribe Free
-                </button>
-              </form>
-            )}
+            {/* Beehiiv embed */}
+            <div ref={containerRef} className="max-w-md mx-auto" />
 
             <p className="text-slate-600 text-xs mt-4">
               No spam. Unsubscribe anytime. We respect your privacy.
