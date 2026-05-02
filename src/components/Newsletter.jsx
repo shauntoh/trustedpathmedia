@@ -30,7 +30,7 @@ export default function Newsletter() {
             </div>
 
             {/* Label */}
-            <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-4">Weekly Digest</p>
+            <p className="text-blue-400 text-xs font-semibold uppercase tracking-widest mb-4">The AI Hustle Playbook Newsletter</p>
 
             {/* Heading */}
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -38,7 +38,7 @@ export default function Newsletter() {
             </h2>
 
             <p className="text-slate-400 text-lg leading-relaxed max-w-xl mx-auto mb-10">
-              The no-fluff digest for professionals who want better tools, not more noise. Delivered weekly.
+              A curated playbook of AI tools and strategies for building income streams.
             </p>
 
             {/* Beehiiv embed */}
