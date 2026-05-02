@@ -4,6 +4,10 @@ TikTok Photo Mode, Instagram Carousels, and X/Threads multi-image posts are curr
 
 Use the slide-by-slide copy below in tools like **Gamma.app**, **Canva (Bulk Create)**, or **Taplio** to generate your images.
 
+**CRITICAL PROMPTING INSTRUCTION FOR GAMMA.APP / AI GENERATORS:**
+When pasting this text into an AI presentation generator, ALWAYS prepend this instruction:
+> *"Create a social media carousel optimized for mobile viewing (TikTok/Instagram). Use a 9:16 vertical aspect ratio. Keep the text MASSIVE and highly legible. Do NOT add extra bullet points or detailed paragraphs. Use exactly the text provided below, and focus on high-contrast, bold typography over complex layouts."*
+
 ---
 
 ## Day 1: The Ultimate AI Coding Assistant (Claude AI)
