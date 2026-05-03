@@ -82,10 +82,10 @@ with open(instructions_path, "w") as f:
     f.write("2. The Meat (Best value/step slide)\n")
     f.write("3. The Action (How it works/next step slide)\n")
     f.write("4. The CTA (Last slide with link in bio)\n\n")
-    f.write("Caption:\n")
+    f.write("Caption (Must be under 280 characters):\n")
     f.write("[Insert Hook/Summary Here]\n\n")
-    f.write("🧵 Swipe through the cards below for the breakdown.\n\n")
-    f.write("Read the full guide here: [Link to toolnav.io]\n")
+    f.write("🧵 Swipe for the breakdown.\n\n")
+    f.write("Full guide: [Link to toolnav.io]\n")
 
 print("Posting instructions created.")
 
