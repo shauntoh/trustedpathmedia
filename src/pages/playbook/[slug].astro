@@ -4,12 +4,14 @@ import PlaybookPageComponent from '../../components/pages/PlaybookPage.jsx';
 import releaseSong from '../../data/playbooks/release-a-song-with-suno.js';
 import sideProject from '../../data/playbooks/launch-a-side-project-with-ai.js';
 import learnSkillUdemy from '../../data/playbooks/learn-a-skill-with-udemy.js';
+import post30Videos from '../../data/playbooks/post-30-videos-with-invideo-fiverr.js';
 
 export function getStaticPaths() {
   return [
     { params: { slug: 'release-a-song-with-suno' }, props: { playbook: releaseSong } },
     { params: { slug: 'launch-a-side-project-with-ai' }, props: { playbook: sideProject } },
     { params: { slug: 'learn-a-skill-with-udemy' }, props: { playbook: learnSkillUdemy } },
+    { params: { slug: 'post-30-videos-with-invideo-fiverr' }, props: { playbook: post30Videos } },
   ];
 }
 
