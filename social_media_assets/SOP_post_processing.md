@@ -69,12 +69,11 @@ if clips:
     # Add background audio if the file exists
     audio_path = os.path.join(assets_dir, "background_audio.mp3")
     if os.path.exists(audio_path):
-        from moviepy import AudioFileClip
-        from moviepy.audio.fx.all import audio_loop
+        from moviepy import AudioFileClip, afx
         
         # Load audio and loop it to match video duration
         audio_clip = AudioFileClip(audio_path)
-        looped_audio = audio_loop(audio_clip, duration=video.duration)
+        looped_audio = audio_clip.with_effects([afx.AudioLoop(duration=video.duration)])
         
         # Set the audio of the video
         video = video.with_audio(looped_audio)
