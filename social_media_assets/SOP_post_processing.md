@@ -89,13 +89,21 @@ with open(instructions_path, "w") as f:
 
 print("Posting instructions created.")
 
-# 5. Move original folder to Trash
+# 5. Move original folder and zip file to Trash
 trash_dir = os.path.expanduser("~/.Trash")
 try:
     shutil.move(input_dir, os.path.join(trash_dir, os.path.basename(input_dir)))
     print("Moved original folder to Trash.")
 except Exception as e:
-    print(f"Could not move to trash automatically: {e}")
+    print(f"Could not move folder to trash automatically: {e}")
+
+zip_path = input_dir + ".zip"
+if os.path.exists(zip_path):
+    try:
+        shutil.move(zip_path, os.path.join(trash_dir, os.path.basename(zip_path)))
+        print("Moved original zip file to Trash.")
+    except Exception as e:
+        print(f"Could not move zip file to trash automatically: {e}")
 
 print(f"\n✅ All done! Your files are ready in: {output_dir}")
 ```
