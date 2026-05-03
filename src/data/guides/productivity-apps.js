@@ -3,7 +3,7 @@ const guide = {
   title: 'Best Productivity Apps Worth Paying For',
   category: 'Productivity',
   categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',
-  readTime: '9 min read',
+  readTime: '10 min read',
   intro:
     'Most productivity apps get downloaded during a burst of motivation and abandoned within a month. This guide only covers tools that people actually keep paying for — assessed on whether they create durable habit change, save meaningful time on recurring work, and justify their subscription cost in concrete hours recovered per week. Free alternatives are noted where they genuinely compete.',
   picks: [
@@ -72,9 +72,22 @@ const guide = {
       con: 'Requires Google Calendar — no Outlook or Apple Calendar support yet.',
       affiliateUrl: '#',
     },
+    {
+      rank: 6,
+      name: 'Fiverr',
+      tagline: 'The world\'s largest freelance marketplace — hire specialists for any task in hours, not weeks.',
+      bestFor: 'Solopreneurs and small teams who need to outsource quickly without a full hiring process',
+      pros: [
+        'Access to specialists across 700+ categories — design, copy, development, video, and more — without a hiring process',
+        'Fixed-price gigs mean you can hire in minutes; many sellers deliver within 24–48 hours',
+        'Fiverr Pro surfaces vetted sellers for higher-stakes projects; Fiverr Business adds team accounts and consolidated billing',
+      ],
+      con: 'Service quality varies by seller — always check reviews and portfolios before ordering.',
+      affiliateUrl: 'https://go.fiverr.com/visit/?bta=1167365&brand=fiverrmarketplace',
+    },
   ],
   verdict:
-    'Notion is the highest-leverage productivity investment for most knowledge workers — the free plan covers individual use, and the flexibility reduces your need for other tools. Obsidian is the better choice if data ownership and offline access matter. Superhuman and Reclaim are specialized tools worth paying for only if you have a specific, confirmed problem they solve — do not subscribe speculatively.',
+    'Notion is the highest-leverage productivity investment for most knowledge workers — the free plan covers individual use, and the flexibility reduces your need for other tools. Obsidian is the better choice if data ownership and offline access matter. Superhuman and Reclaim are specialized tools worth paying for only if you have a specific, confirmed problem they solve — do not subscribe speculatively. Fiverr earns its place in a productivity guide not as a software tool but as a force multiplier: for solopreneurs and small teams, the ability to hire a specialist for a one-off task in under ten minutes — without a job posting, interview, or retainer — is one of the highest-leverage moves available. Use it for tasks that are real bottlenecks, not as a substitute for building internal skills.',
 }
 
 export default guide

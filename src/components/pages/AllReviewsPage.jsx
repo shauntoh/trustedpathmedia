@@ -13,6 +13,8 @@ import coursera from '../../data/reviews/coursera'
 import skillshare from '../../data/reviews/skillshare'
 import udemy from '../../data/reviews/udemy'
 import n8n from '../../data/reviews/n8n'
+import fiverr from '../../data/reviews/fiverr'
+import invideo from '../../data/reviews/invideo'
 
 const allReviews = [
   claudeAi,
@@ -25,6 +27,8 @@ const allReviews = [
   skillshare,
   udemy,
   n8n,
+  fiverr,
+  invideo,
 ].map((r, i) => ({ ...r, _order: i }))
 
 const categories = ['All', 'AI Tools', 'Hosting', 'VPN', 'SaaS', 'Courses', 'Productivity']

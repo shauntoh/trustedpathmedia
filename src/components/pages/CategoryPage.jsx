@@ -11,9 +11,11 @@ import coursera from '../../data/reviews/coursera'
 import skillshare from '../../data/reviews/skillshare'
 import udemy from '../../data/reviews/udemy'
 import n8n from '../../data/reviews/n8n'
+import fiverr from '../../data/reviews/fiverr'
+import invideo from '../../data/reviews/invideo'
 import { Star } from 'lucide-react'
 
-const allReviews = [claudeAi, hostinger, nordvpn, notion, grammarly, suno, coursera, skillshare, udemy, n8n]
+const allReviews = [claudeAi, hostinger, nordvpn, notion, grammarly, suno, coursera, skillshare, udemy, n8n, fiverr, invideo]
 
 const categoryColorMap = {
   'AI Tools':     { text: 'text-violet-400',  bg: 'bg-violet-950/50' },
