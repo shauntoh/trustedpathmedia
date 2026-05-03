@@ -3,7 +3,7 @@ const guide = {
   title: 'Best AI Tools for Side Hustlers in 2026',
   category: 'AI Tools',
   categoryColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',
-  readTime: '8 min read',
+  readTime: '10 min read',
   intro:
     'Whether you\'re freelancing, running a newsletter, or building a product on nights and weekends, the right AI tools can compress weeks of work into hours. This guide ranks the tools that genuinely move the needle for one-person businesses — judged on output quality, practical workflow fit, and honest cost-per-value. We skip the hype and focus on what people actually keep paying for after the free trial ends.',
   picks: [
@@ -61,6 +61,19 @@ const guide = {
     },
     {
       rank: 5,
+      name: 'InVideo AI',
+      tagline: 'Turn a text prompt into a publish-ready video in minutes — no editing skills required.',
+      bestFor: 'Side hustlers who create YouTube, TikTok, or Instagram content and want to scale output without video editing skills',
+      pros: [
+        'Generates a complete video — footage, voiceover, subtitles, music — from a text prompt or script in under ten minutes',
+        '16M+ stock clips and images included, so you rarely hit a dead end hunting for usable footage',
+        'No editing experience needed; the interface is guided and template-driven throughout',
+      ],
+      con: 'AI-generated videos often need light editing to hit a professional look — plan for a 20-30 minute polish pass.',
+      affiliateUrl: 'https://invideo.sjv.io/R062Xb',
+    },
+    {
+      rank: 6,
       name: 'Notion AI',
       tagline: 'AI built into your second brain — no copy-pasting between apps.',
       bestFor: 'Solo operators who already use Notion for docs, projects, and notes',
@@ -74,7 +87,7 @@ const guide = {
     },
   ],
   verdict:
-    'For most side hustlers, start with Claude or ChatGPT Plus — they cover 80% of use cases at $20/month each. Add Perplexity Pro if research is a meaningful part of your work. Notion AI is worth it only if Notion is already central to your workflow. Avoid subscribing to all of them at once; pick one, master it for 60 days, then reassess.',
+    'For most side hustlers, start with Claude or ChatGPT Plus — they cover 80% of use cases at $20/month each. Add Perplexity Pro if research is a meaningful part of your work. If video content is your primary output channel — YouTube, TikTok, Instagram Reels — InVideo AI is the fastest way to scale production without hiring an editor or learning post-production software; budget time for a light polish pass on anything client-facing. Notion AI is worth it only if Notion is already central to your workflow. Avoid subscribing to all of them at once; pick one, master it for 60 days, then reassess.',
 }
 
 export default guide
