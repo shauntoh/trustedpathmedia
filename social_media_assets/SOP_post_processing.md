@@ -54,7 +54,7 @@ for filename in sorted(os.listdir(input_dir)):
         image_files.append(output_path)
         print(f"Cropped {filename}")
 
-# 3. Create Video
+# 3. Create Video with Audio
 video_output_path = os.path.join(output_dir, f"{post_folder_name}_video.mp4")
 clips = []
 for i, img_path in enumerate(image_files):
@@ -65,7 +65,22 @@ for i, img_path in enumerate(image_files):
 
 if clips:
     video = concatenate_videoclips(clips, padding=-0.5, method="compose")
-    video.write_videofile(video_output_path, fps=24, codec="libx264")
+    
+    # Add background audio if the file exists
+    audio_path = os.path.join(assets_dir, "background_audio.mp3")
+    if os.path.exists(audio_path):
+        from moviepy import AudioFileClip
+        from moviepy.audio.fx.all import audio_loop
+        
+        # Load audio and loop it to match video duration
+        audio_clip = AudioFileClip(audio_path)
+        looped_audio = audio_loop(audio_clip, duration=video.duration)
+        
+        # Set the audio of the video
+        video = video.with_audio(looped_audio)
+        print("Background audio added to video.")
+        
+    video.write_videofile(video_output_path, fps=24, codec="libx264", audio_codec="aac")
     print("Video created successfully.")
 
 # 4. Create Posting Instructions Text File
