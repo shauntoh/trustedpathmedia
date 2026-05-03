@@ -47,3 +47,6 @@ pnpm-lock.yaml
 *.tmp
 *.temp
 .cache/
+
+# Ignore generated social media post folders
+social_media_assets/Post_*/
