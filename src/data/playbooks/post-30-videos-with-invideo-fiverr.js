@@ -24,10 +24,10 @@ const playbook = {
       affiliateUrl: 'https://go.fiverr.com/visit/?bta=1167365&brand=fiverrmarketplace',
     },
     {
-      name: 'Buffer or Metricool',
+      name: 'Buffer',
       role: 'Optional scheduling tool for automated posting',
       reviewSlug: null,
-      affiliateUrl: '#',
+      affiliateUrl: 'https://buffer.com',
     },
   ],
   steps: [
