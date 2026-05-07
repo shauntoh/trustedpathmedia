@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://toolnav.io/toolnav/sitemap-index.xml
+Disallow: /cdn-cgi/
+Disallow: /_astro/
+
+Sitemap: https://toolnav.io/sitemap-index.xml
