@@ -8,8 +8,8 @@ const entry = {
     'HD-by-default removes the upscaling step that used to sit between first draft and usable asset -- designers and content creators now get print-ready resolution on the initial render, which meaningfully tightens the iteration loop when working at volume. Improved text rendering, including accurate quoted text in prompts, is the less-heralded change with the bigger practical impact: marketing and product teams can finally generate mockups with real copy rather than placeholder gibberish, reducing downstream Photoshop cleanup. The 4-5x speed improvement changes the credit economics for high-volume users -- you can run more variations in the same credit window, which either cuts cost or buys more creative exploration depending on how you work. Where v8.1 still trails is brand consistency: Adobe Firefly custom model training lets agency teams anchor output to a specific visual identity, something Midjourney has no direct equivalent for yet.',
   sourceUrl: 'https://updates.midjourney.com',
   sourceLabel: 'Midjourney',
-  relatedReviewSlug: 'invideo',
-  relatedReviewName: 'InVideo AI',
+  relatedReviewSlug: 'chatgpt',
+  relatedReviewName: 'ChatGPT',
   tags: ['Midjourney', 'AI Image', 'Creative Tools', 'v8.1'],
 }
 
