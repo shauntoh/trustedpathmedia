@@ -7,6 +7,10 @@ import vpnRemoteWorkers from '../../data/guides/vpn-remote-workers.js';
 import productivityApps from '../../data/guides/productivity-apps.js';
 import saasSmallTeams from '../../data/guides/saas-small-teams.js';
 import onlineCoursesHighIncome from '../../data/guides/online-courses-high-income.js';
+import aiForBlogWriting from '../../data/guides/ai-for-blog-writing.js';
+import aiForCoding from '../../data/guides/ai-for-coding.js';
+import vpnForStreamingNetflix from '../../data/guides/vpn-for-streaming-netflix.js';
+import hostingForWordpress from '../../data/guides/hosting-for-wordpress.js';
 
 export function getStaticPaths() {
   return [
@@ -16,6 +20,10 @@ export function getStaticPaths() {
     { params: { slug: 'productivity-apps' }, props: { guide: productivityApps } },
     { params: { slug: 'saas-small-teams' }, props: { guide: saasSmallTeams } },
     { params: { slug: 'online-courses-high-income' }, props: { guide: onlineCoursesHighIncome } },
+    { params: { slug: 'ai-for-blog-writing' }, props: { guide: aiForBlogWriting } },
+    { params: { slug: 'ai-for-coding' }, props: { guide: aiForCoding } },
+    { params: { slug: 'vpn-for-streaming-netflix' }, props: { guide: vpnForStreamingNetflix } },
+    { params: { slug: 'hosting-for-wordpress' }, props: { guide: hostingForWordpress } },
   ];
 }
 

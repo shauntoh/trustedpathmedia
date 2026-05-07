@@ -27,6 +27,22 @@ export const guides = {
     slug: 'online-courses-high-income',
     title: 'Best Online Courses for High-Income Skills',
   },
+  'ai-for-blog-writing': {
+    slug: 'ai-for-blog-writing',
+    title: 'Best AI Tools for Blog Writing in 2026',
+  },
+  'ai-for-coding': {
+    slug: 'ai-for-coding',
+    title: 'Best AI Tools for Coding in 2026',
+  },
+  'vpn-for-streaming-netflix': {
+    slug: 'vpn-for-streaming-netflix',
+    title: 'Best VPNs for Streaming Netflix in 2026',
+  },
+  'hosting-for-wordpress': {
+    slug: 'hosting-for-wordpress',
+    title: 'Best Hosting for WordPress in 2026',
+  },
 }
 
 // --- Playbooks index ---
@@ -177,4 +193,8 @@ export const guideLinks = {
   'productivity-apps':            { relatedReviews: ['notion', 'grammarly', 'claude-ai'] },
   'saas-small-teams':             { relatedReviews: ['notion', 'n8n'] },
   'online-courses-high-income':   { relatedReviews: ['coursera', 'skillshare', 'udemy'] },
+  'ai-for-blog-writing':          { relatedReviews: ['claude-ai', 'chatgpt', 'grammarly', 'notion', 'perplexity'] },
+  'ai-for-coding':                { relatedReviews: ['claude-ai', 'chatgpt', 'gemini', 'perplexity', 'n8n'] },
+  'vpn-for-streaming-netflix':    { relatedReviews: ['nordvpn', 'expressvpn', 'surfshark', 'protonvpn'] },
+  'hosting-for-wordpress':        { relatedReviews: ['hostinger'] },
 }
