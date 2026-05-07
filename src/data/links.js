@@ -63,6 +63,12 @@ export const reviewMeta = {
   'n8n':         { slug: 'n8n',         name: 'n8n',          category: 'SaaS' },
   'fiverr':      { slug: 'fiverr',      name: 'Fiverr',       category: 'SaaS' },
   'invideo':     { slug: 'invideo',     name: 'InVideo AI',   category: 'AI Tools' },
+  'chatgpt':     { slug: 'chatgpt',     name: 'ChatGPT',      category: 'AI Tools' },
+  'gemini':      { slug: 'gemini',      name: 'Gemini',       category: 'AI Tools' },
+  'perplexity':  { slug: 'perplexity',  name: 'Perplexity',   category: 'AI Tools' },
+  'expressvpn':  { slug: 'expressvpn',  name: 'ExpressVPN',   category: 'VPN' },
+  'surfshark':   { slug: 'surfshark',   name: 'Surfshark',    category: 'VPN' },
+  'protonvpn':   { slug: 'protonvpn',   name: 'Proton VPN',   category: 'VPN' },
 }
 
 // --- Per-review relationship map ---
@@ -129,6 +135,36 @@ export const reviewLinks = {
     relatedGuides: ['ai-tools-side-hustlers'],
     relatedReviews: ['fiverr', 'suno'],
     relatedPlaybooks: ['post-30-videos-with-invideo-fiverr'],
+  },
+  'chatgpt': {
+    relatedGuides: ['ai-tools-side-hustlers', 'productivity-apps', 'saas-small-teams'],
+    relatedReviews: ['claude-ai', 'notion', 'grammarly'],
+    relatedPlaybooks: ['launch-a-side-project-with-ai'],
+  },
+  'gemini': {
+    relatedGuides: ['ai-tools-side-hustlers', 'productivity-apps'],
+    relatedReviews: ['claude-ai', 'chatgpt', 'notion'],
+    relatedPlaybooks: [],
+  },
+  'perplexity': {
+    relatedGuides: ['ai-tools-side-hustlers'],
+    relatedReviews: ['claude-ai', 'chatgpt', 'gemini'],
+    relatedPlaybooks: [],
+  },
+  'expressvpn': {
+    relatedGuides: ['vpn-remote-workers'],
+    relatedReviews: ['nordvpn', 'surfshark', 'protonvpn'],
+    relatedPlaybooks: [],
+  },
+  'surfshark': {
+    relatedGuides: ['vpn-remote-workers'],
+    relatedReviews: ['nordvpn', 'expressvpn', 'protonvpn'],
+    relatedPlaybooks: [],
+  },
+  'protonvpn': {
+    relatedGuides: ['vpn-remote-workers'],
+    relatedReviews: ['nordvpn', 'expressvpn', 'surfshark'],
+    relatedPlaybooks: [],
   },
 }
 

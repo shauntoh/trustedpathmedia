@@ -13,6 +13,12 @@ import udemy from '../../data/reviews/udemy.js';
 import n8n from '../../data/reviews/n8n.js';
 import fiverr from '../../data/reviews/fiverr.js';
 import invideo from '../../data/reviews/invideo.js';
+import chatgpt from '../../data/reviews/chatgpt.js';
+import gemini from '../../data/reviews/gemini.js';
+import perplexity from '../../data/reviews/perplexity.js';
+import expressvpn from '../../data/reviews/expressvpn.js';
+import surfshark from '../../data/reviews/surfshark.js';
+import protonvpn from '../../data/reviews/protonvpn.js';
 
 export function getStaticPaths() {
   return [
@@ -28,6 +34,12 @@ export function getStaticPaths() {
     { params: { slug: 'n8n' }, props: { review: n8n } },
     { params: { slug: 'fiverr' }, props: { review: fiverr } },
     { params: { slug: 'invideo' }, props: { review: invideo } },
+    { params: { slug: 'chatgpt' }, props: { review: chatgpt } },
+    { params: { slug: 'gemini' }, props: { review: gemini } },
+    { params: { slug: 'perplexity' }, props: { review: perplexity } },
+    { params: { slug: 'expressvpn' }, props: { review: expressvpn } },
+    { params: { slug: 'surfshark' }, props: { review: surfshark } },
+    { params: { slug: 'protonvpn' }, props: { review: protonvpn } },
   ];
 }
 
