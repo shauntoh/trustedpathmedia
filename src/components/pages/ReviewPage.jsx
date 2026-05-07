@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Nav from '../Nav'
 import Footer from '../Footer'
 import { url } from '../../lib/url'
@@ -39,6 +40,41 @@ function RatingBar({ label, score }) {
           className="h-full bg-blue-500 rounded-full transition-all duration-500"
           style={{ width: `${pct}%` }}
         />
+      </div>
+    </div>
+  )
+}
+
+function StickyAffiliateCTA({ name, rating, affiliateUrl, affiliateLabel, slug }) {
+  const [visible, setVisible] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => setVisible(window.scrollY > 500)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  if (!visible) return null
+
+  return (
+    <div className="fixed bottom-0 left-0 right-0 z-40 bg-navy-900/95 backdrop-blur-xl border-t border-white/[0.08] shadow-2xl shadow-black/50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+        <div className="flex items-center gap-3 min-w-0">
+          <span className="font-semibold text-white text-sm truncate">{name}</span>
+          <span className="text-xs text-amber-400 font-bold tabular-nums shrink-0">{rating}/10</span>
+        </div>
+        <a
+          href={affiliateUrl}
+          id={`affiliate-review-${slug}-sticky`}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="shrink-0 inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-blue-600/20"
+        >
+          {affiliateLabel}
+          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
       </div>
     </div>
   )
@@ -396,6 +432,14 @@ export default function ReviewPage({ review }) {
         )}
 
       </main>
+
+      <StickyAffiliateCTA
+        name={name}
+        rating={rating}
+        affiliateUrl={affiliateUrl}
+        affiliateLabel={affiliateLabel}
+        slug={slug}
+      />
 
       <Footer />
     </div>
