@@ -1,6 +1,7 @@
 const guide = {
   slug: 'web-hosting-beginners',
   title: 'Best Web Hosting for Beginners',
+  lastUpdated: '2026-05-07',
   category: 'Hosting',
   categoryColor: 'text-emerald-400 bg-emerald-950/50 border-emerald-800/30',
   readTime: '6 min read',

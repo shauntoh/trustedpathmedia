@@ -1,6 +1,7 @@
 const guide = {
   slug: 'online-courses-high-income',
   title: 'Best Online Courses for High-Income Skills',
+  lastUpdated: '2026-05-07',
   category: 'Courses',
   categoryColor: 'text-amber-400 bg-amber-950/50 border-amber-800/30',
   readTime: '5 min read',

@@ -1,6 +1,7 @@
 const guide = {
   slug: 'saas-small-teams',
   title: 'Best SaaS Tools for Small Teams',
+  lastUpdated: '2026-05-07',
   category: 'SaaS',
   categoryColor: 'text-blue-400 bg-blue-950/50 border-blue-800/30',
   readTime: '7 min read',

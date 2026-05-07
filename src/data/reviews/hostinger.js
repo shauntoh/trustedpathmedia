@@ -1,6 +1,7 @@
 const review = {
   slug: 'hostinger',
   name: 'Hostinger',
+  lastUpdated: '2026-05-07',
   tagline: 'Fast, affordable hosting for sites that need to ship.',
   category: 'Hosting',
   categoryColor: 'text-emerald-400 bg-emerald-950/50 border-emerald-800/30',

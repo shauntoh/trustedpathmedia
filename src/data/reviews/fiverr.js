@@ -1,6 +1,7 @@
 const review = {
   slug: 'fiverr',
   name: 'Fiverr',
+  lastUpdated: '2026-05-07',
   tagline: 'The world\'s largest freelance marketplace — hire specialists for any task in hours, not weeks.',
   category: 'Productivity',
   categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',

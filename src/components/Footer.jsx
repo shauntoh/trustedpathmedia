@@ -28,6 +28,9 @@ const footerLinks = {
     { label: 'Launch a Side Project with AI', href: '/playbook/launch-a-side-project-with-ai' },
     { label: 'All Reviews', href: '/reviews' },
   ],
+  News: [
+    { label: 'Latest AI News', href: '/news' },
+  ],
 }
 
 // mailto links should not get the base prefix

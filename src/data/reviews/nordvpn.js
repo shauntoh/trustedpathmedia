@@ -1,6 +1,7 @@
 const review = {
   slug: 'nordvpn',
   name: 'NordVPN',
+  lastUpdated: '2026-05-07',
   tagline: 'Fast, private, and feature-rich for serious VPN users.',
   category: 'VPN',
   categoryColor: 'text-rose-400 bg-rose-950/50 border-rose-800/30',

@@ -1,6 +1,7 @@
 const review = {
   slug: 'skillshare',
   name: 'Skillshare',
+  lastUpdated: '2026-05-07',
   tagline: 'Project-based creative learning for curious professionals.',
   category: 'Courses',
   categoryColor: 'text-amber-400 bg-amber-950/50 border-amber-800/30',

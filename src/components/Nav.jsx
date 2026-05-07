@@ -14,6 +14,7 @@ const toolsLinks = [
 const topLinks = [
   { label: 'Guides', href: '/guides' },
   { label: 'Playbooks', href: '/playbooks' },
+  { label: 'News', href: '/news' },
   { label: 'About', href: '/about' },
 ]
 

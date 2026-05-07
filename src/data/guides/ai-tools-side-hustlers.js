@@ -1,6 +1,7 @@
 const guide = {
   slug: 'ai-tools-side-hustlers',
   title: 'Best AI Tools for Side Hustlers in 2026',
+  lastUpdated: '2026-05-07',
   category: 'AI Tools',
   categoryColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',
   readTime: '10 min read',

@@ -1,6 +1,7 @@
 const review = {
   slug: 'grammarly',
   name: 'Grammarly',
+  lastUpdated: '2026-05-07',
   tagline: 'The AI writing assistant for clear, confident communication.',
   category: 'Productivity',
   categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',

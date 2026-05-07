@@ -1,6 +1,7 @@
 const review = {
   slug: 'udemy',
   name: 'Udemy',
+  lastUpdated: '2026-05-07',
   tagline: "The world's largest course marketplace — millions of topics at perpetually sale prices.",
   category: 'Courses',
   categoryColor: 'text-amber-400 bg-amber-950/50 border-amber-800/30',

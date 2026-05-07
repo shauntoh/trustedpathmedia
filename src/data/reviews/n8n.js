@@ -1,6 +1,7 @@
 const review = {
   slug: 'n8n',
   name: 'n8n',
+  lastUpdated: '2026-05-07',
   tagline: 'Open-source workflow automation built for developers and power users.',
   category: 'AI Tools',
   categoryColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',

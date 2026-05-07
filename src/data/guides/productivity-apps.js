@@ -1,6 +1,7 @@
 const guide = {
   slug: 'productivity-apps',
   title: 'Best Productivity Apps Worth Paying For',
+  lastUpdated: '2026-05-07',
   category: 'Productivity',
   categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',
   readTime: '10 min read',

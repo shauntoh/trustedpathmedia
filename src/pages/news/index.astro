@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Nav from '../../components/Nav.jsx';
+import Footer from '../../components/Footer.jsx';
+import { newsEntries } from '../../data/news/index.js';
+import { url } from '../../lib/url.js';
+
+function formatDate(iso) {
+  const [year, month, day] = iso.split('-');
+  return new Date(Number(year), Number(month) - 1, Number(day))
+    .toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+---
+<BaseLayout
+  title="AI Tools Latest News"
+  description="Stay current on the tools you use. Short takes on product updates, launches, and changes that matter — updated every 1-2 days."
+>
+  <div class="min-h-screen bg-navy-900">
+    <Nav client:load />
+
+    <main class="pt-24">
+
+      {/* Breadcrumb */}
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <nav class="flex items-center gap-2 text-xs text-slate-500">
+          <a href={url('/')} class="hover:text-slate-300 transition-colors">Home</a>
+          <span>/</span>
+          <span class="text-slate-300">News</span>
+        </nav>
+      </div>
+
+      {/* Hero */}
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute -top-32 right-0 w-[600px] h-[400px] bg-blue-600/[0.04] rounded-full blur-[120px]" />
+        </div>
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pb-8">
+          <span class="inline-flex text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full border text-blue-400 bg-blue-950/50 border-blue-800/30 mb-5">
+            AI Tools News
+          </span>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight mb-4">
+            What's New in AI Tools
+          </h1>
+          <p class="text-slate-400 text-base leading-relaxed max-w-2xl">
+            Short takes on product updates, launches, and pricing changes across the tools we cover.
+            No hype — just what's relevant if you use these tools professionally. Updated every 1–2 days.
+          </p>
+        </div>
+      </section>
+
+      <div class="border-t border-white/[0.05]" />
+
+      {/* Entries */}
+      <section class="py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {newsEntries.length === 0 ? (
+            <p class="text-slate-500 text-sm">No entries yet — check back soon.</p>
+          ) : (
+            <div class="space-y-5">
+              {newsEntries.map((entry) => (
+                <article class="group bg-navy-800/40 border border-white/[0.06] hover:border-blue-600/20 rounded-2xl p-6 transition-all duration-200">
+                  <div class="flex flex-wrap items-center gap-3 mb-3">
+                    <time class="text-xs text-slate-500 tabular-nums">{formatDate(entry.date)}</time>
+                    {entry.tags && entry.tags.map((tag) => (
+                      <span class="text-[10px] uppercase tracking-wider text-blue-400 bg-blue-950/50 border border-blue-800/30 px-2 py-0.5 rounded-full">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <h2 class="text-lg font-semibold text-white mb-2 leading-snug">
+                    <a href={url(`/news/${entry.slug}`)} class="hover:text-blue-300 transition-colors">
+                      {entry.title}
+                    </a>
+                  </h2>
+                  <p class="text-slate-400 text-sm leading-relaxed mb-4">{entry.summary}</p>
+                  <div class="flex flex-wrap items-center gap-4">
+                    <a
+                      href={url(`/news/${entry.slug}`)}
+                      class="text-xs font-medium text-blue-400 hover:text-blue-300 transition-colors"
+                    >
+                      Read more →
+                    </a>
+                    {entry.relatedReviewSlug && (
+                      <a
+                        href={url(`/review/${entry.relatedReviewSlug}`)}
+                        class="text-xs text-slate-500 hover:text-slate-300 transition-colors"
+                      >
+                        See our {entry.relatedReviewName} review →
+                      </a>
+                    )}
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+
+    </main>
+
+    <Footer />
+  </div>
+</BaseLayout>

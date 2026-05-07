@@ -1,6 +1,7 @@
 const review = {
   slug: 'claude-ai',
   name: 'Claude AI',
+  lastUpdated: '2026-05-07',
   tagline: 'The AI built for serious writing and code.',
   category: 'AI Tools',
   categoryColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',

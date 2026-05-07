@@ -1,6 +1,7 @@
 const review = {
   slug: 'notion',
   name: 'Notion',
+  lastUpdated: '2026-05-07',
   tagline: 'All-in-one workspace for notes, wikis, and projects.',
   category: 'Productivity',
   categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',

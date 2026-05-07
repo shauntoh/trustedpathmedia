@@ -1,6 +1,7 @@
 const review = {
   slug: 'coursera',
   name: 'Coursera',
+  lastUpdated: '2026-05-07',
   tagline: 'University-quality learning, online and on your schedule.',
   category: 'Courses',
   categoryColor: 'text-amber-400 bg-amber-950/50 border-amber-800/30',
