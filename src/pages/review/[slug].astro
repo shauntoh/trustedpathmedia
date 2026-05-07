@@ -19,6 +19,12 @@ import perplexity from '../../data/reviews/perplexity.js';
 import expressvpn from '../../data/reviews/expressvpn.js';
 import surfshark from '../../data/reviews/surfshark.js';
 import protonvpn from '../../data/reviews/protonvpn.js';
+import bluehost from '../../data/reviews/bluehost.js';
+import siteground from '../../data/reviews/siteground.js';
+import cloudways from '../../data/reviews/cloudways.js';
+import zapier from '../../data/reviews/zapier.js';
+import airtable from '../../data/reviews/airtable.js';
+import webflow from '../../data/reviews/webflow.js';
 
 export function getStaticPaths() {
   return [
@@ -40,6 +46,12 @@ export function getStaticPaths() {
     { params: { slug: 'expressvpn' }, props: { review: expressvpn } },
     { params: { slug: 'surfshark' }, props: { review: surfshark } },
     { params: { slug: 'protonvpn' }, props: { review: protonvpn } },
+    { params: { slug: 'bluehost' }, props: { review: bluehost } },
+    { params: { slug: 'siteground' }, props: { review: siteground } },
+    { params: { slug: 'cloudways' }, props: { review: cloudways } },
+    { params: { slug: 'zapier' }, props: { review: zapier } },
+    { params: { slug: 'airtable' }, props: { review: airtable } },
+    { params: { slug: 'webflow' }, props: { review: webflow } },
   ];
 }
 

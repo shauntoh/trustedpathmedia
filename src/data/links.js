@@ -85,6 +85,12 @@ export const reviewMeta = {
   'expressvpn':  { slug: 'expressvpn',  name: 'ExpressVPN',   category: 'VPN' },
   'surfshark':   { slug: 'surfshark',   name: 'Surfshark',    category: 'VPN' },
   'protonvpn':   { slug: 'protonvpn',   name: 'Proton VPN',   category: 'VPN' },
+  'bluehost':    { slug: 'bluehost',    name: 'Bluehost',     category: 'Hosting' },
+  'siteground':  { slug: 'siteground',  name: 'SiteGround',   category: 'Hosting' },
+  'cloudways':   { slug: 'cloudways',   name: 'Cloudways',    category: 'Hosting' },
+  'zapier':      { slug: 'zapier',      name: 'Zapier',       category: 'SaaS' },
+  'airtable':    { slug: 'airtable',    name: 'Airtable',     category: 'SaaS' },
+  'webflow':     { slug: 'webflow',     name: 'Webflow',      category: 'SaaS' },
 }
 
 // --- Per-review relationship map ---
@@ -98,8 +104,8 @@ export const reviewLinks = {
     relatedPlaybooks: ['launch-a-side-project-with-ai'],
   },
   'hostinger': {
-    relatedGuides: ['web-hosting-beginners'],
-    relatedReviews: [],
+    relatedGuides: ['web-hosting-beginners', 'hosting-for-wordpress'],
+    relatedReviews: ['bluehost', 'siteground', 'cloudways'],
     relatedPlaybooks: [],
   },
   'nordvpn': {
@@ -180,6 +186,36 @@ export const reviewLinks = {
   'protonvpn': {
     relatedGuides: ['vpn-remote-workers'],
     relatedReviews: ['nordvpn', 'expressvpn', 'surfshark'],
+    relatedPlaybooks: [],
+  },
+  'bluehost': {
+    relatedGuides: ['web-hosting-beginners', 'hosting-for-wordpress'],
+    relatedReviews: ['hostinger', 'siteground', 'cloudways'],
+    relatedPlaybooks: [],
+  },
+  'siteground': {
+    relatedGuides: ['web-hosting-beginners', 'hosting-for-wordpress'],
+    relatedReviews: ['hostinger', 'bluehost', 'cloudways'],
+    relatedPlaybooks: [],
+  },
+  'cloudways': {
+    relatedGuides: ['web-hosting-beginners', 'hosting-for-wordpress'],
+    relatedReviews: ['hostinger', 'siteground', 'bluehost'],
+    relatedPlaybooks: [],
+  },
+  'zapier': {
+    relatedGuides: ['saas-small-teams'],
+    relatedReviews: ['n8n', 'notion', 'airtable'],
+    relatedPlaybooks: ['launch-a-side-project-with-ai'],
+  },
+  'airtable': {
+    relatedGuides: ['saas-small-teams', 'productivity-apps'],
+    relatedReviews: ['notion', 'zapier', 'n8n'],
+    relatedPlaybooks: [],
+  },
+  'webflow': {
+    relatedGuides: ['saas-small-teams', 'web-hosting-beginners'],
+    relatedReviews: ['hostinger', 'notion', 'zapier'],
     relatedPlaybooks: [],
   },
 }
