@@ -1,4 +1,4 @@
-// News entries — add new imports and entries here when publishing.
+// News entries  --  add new imports and entries here when publishing.
 // Most recent entry first.
 import entry20260507 from './2026-05-07-claude-4-5-web-browsing.js'
 import entry20260505 from './2026-05-05-invideo-ai-avatar-voices.js'
