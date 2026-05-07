@@ -1,0 +1,131 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <defs>
+    <!-- Main background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080f1e"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+
+    <!-- Blue glow top-right -->
+    <radialGradient id="glowTR" cx="85%" cy="10%" r="55%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#080f1e" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle blue glow bottom-left -->
+    <radialGradient id="glowBL" cx="8%" cy="92%" r="40%">
+      <stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#080f1e" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Card surface gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1c30"/>
+      <stop offset="100%" stop-color="#0c1a2e"/>
+    </linearGradient>
+
+    <!-- Blue pill gradient -->
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <!-- Shield clip -->
+    <clipPath id="shieldClip">
+      <path d="M60 8 L100 20 L100 52 C100 72 80 85 60 92 C40 85 20 72 20 52 L20 20 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glowTR)"/>
+  <rect width="1200" height="630" fill="url(#glowBL)"/>
+
+  <!-- Subtle dot grid pattern -->
+  <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.025"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Decorative horizontal lines right side -->
+  <line x1="820" y1="180" x2="1140" y2="180" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="860" y1="210" x2="1140" y2="210" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="820" y1="240" x2="1140" y2="240" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="860" y1="270" x2="1100" y2="270" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
+  <line x1="820" y1="300" x2="1140" y2="300" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="860" y1="330" x2="1060" y2="330" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="820" y1="360" x2="1140" y2="360" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="860" y1="390" x2="1100" y2="390" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
+  <line x1="820" y1="420" x2="1140" y2="420" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+
+  <!-- Decorative vertical lines right side -->
+  <line x1="900" y1="160" x2="900" y2="450" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="980" y1="160" x2="980" y2="450" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="1060" y1="160" x2="1060" y2="450" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="1140" y1="160" x2="1140" y2="450" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Floating card — right side accent -->
+  <rect x="860" y="190" width="240" height="130" rx="14" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+  <rect x="884" y="218" width="60" height="8" rx="4" fill="#3b82f6" fill-opacity="0.7"/>
+  <rect x="884" y="234" width="160" height="6" rx="3" fill="#ffffff" fill-opacity="0.12"/>
+  <rect x="884" y="248" width="130" height="6" rx="3" fill="#ffffff" fill-opacity="0.08"/>
+  <rect x="884" y="270" width="48" height="24" rx="6" fill="#3b82f6" fill-opacity="0.9"/>
+  <rect x="940" y="270" width="64" height="24" rx="6" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- Floating card — right bottom -->
+  <rect x="900" y="350" width="200" height="90" rx="12" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+  <circle cx="924" cy="378" r="10" fill="#3b82f6" fill-opacity="0.2" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1"/>
+  <rect x="942" y="372" width="80" height="6" rx="3" fill="#ffffff" fill-opacity="0.15"/>
+  <rect x="942" y="384" width="120" height="5" rx="2.5" fill="#ffffff" fill-opacity="0.07"/>
+  <!-- Star rating dots -->
+  <circle cx="924" cy="408" r="4" fill="#f59e0b" fill-opacity="0.9"/>
+  <circle cx="934" cy="408" r="4" fill="#f59e0b" fill-opacity="0.9"/>
+  <circle cx="944" cy="408" r="4" fill="#f59e0b" fill-opacity="0.9"/>
+  <circle cx="954" cy="408" r="4" fill="#f59e0b" fill-opacity="0.9"/>
+  <circle cx="964" cy="408" r="4" fill="#f59e0b" fill-opacity="0.4"/>
+  <rect x="974" y="403" width="40" height="8" rx="4" fill="#ffffff" fill-opacity="0.08"/>
+
+  <!-- Left content area — main text block -->
+
+  <!-- Logo row -->
+  <!-- Shield icon -->
+  <rect x="80" y="170" width="44" height="44" rx="10" fill="#3b82f6"/>
+  <path d="M102 178 L118 183.5 L118 197 C118 207 108 213.5 102 216 C96 213.5 86 207 86 197 L86 183.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M95 198 L100.5 203.5 L110 191" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ToolNav wordmark -->
+  <text x="136" y="200" font-size="28" font-weight="700" letter-spacing="-0.5" fill="#f8fafc">Tool<tspan fill="#60a5fa">Nav</tspan></text>
+
+  <!-- Category pill -->
+  <rect x="80" y="238" width="148" height="28" rx="14" fill="#1e3a5f" stroke="#3b82f6" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="154" y="257" font-size="11" font-weight="600" letter-spacing="1.2" fill="#60a5fa" text-anchor="middle">INDEPENDENT REVIEWS</text>
+
+  <!-- Main headline -->
+  <text x="80" y="330" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#f8fafc" opacity="0.97">Trusted Digital</text>
+  <text x="80" y="400" font-size="58" font-weight="800" letter-spacing="-1.5">
+    <tspan fill="#f8fafc" opacity="0.97">Tools </tspan><tspan fill="#3b82f6">Worth Paying For</tspan>
+  </text>
+
+  <!-- Subtext -->
+  <text x="80" y="450" font-size="21" font-weight="400" fill="#94a3b8" letter-spacing="0">AI · Hosting · VPN · SaaS · Courses · Productivity</text>
+
+  <!-- Divider -->
+  <line x1="80" y1="490" x2="680" y2="490" stroke="#ffffff" stroke-opacity="0.07" stroke-width="1"/>
+
+  <!-- Bottom bar -->
+  <text x="80" y="525" font-size="16" font-weight="500" fill="#475569" letter-spacing="0.2">toolnav.io</text>
+
+  <!-- Trust badges row -->
+  <!-- Badge 1 -->
+  <rect x="220" y="508" width="130" height="26" rx="6" fill="#0e1c30" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+  <text x="285" y="525" font-size="11" font-weight="500" fill="#64748b" text-anchor="middle" letter-spacing="0.3">No Paid Rankings</text>
+
+  <!-- Badge 2 -->
+  <rect x="360" y="508" width="130" height="26" rx="6" fill="#0e1c30" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+  <text x="425" y="525" font-size="11" font-weight="500" fill="#64748b" text-anchor="middle" letter-spacing="0.3">Editorial First</text>
+
+  <!-- Badge 3 -->
+  <rect x="500" y="508" width="152" height="26" rx="6" fill="#0e1c30" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+  <text x="576" y="525" font-size="11" font-weight="500" fill="#64748b" text-anchor="middle" letter-spacing="0.3">Fully Disclosed</text>
+
+</svg>
