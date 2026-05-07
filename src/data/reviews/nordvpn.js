@@ -2,6 +2,7 @@ const review = {
   slug: 'nordvpn',
   name: 'NordVPN',
   lastUpdated: '2026-05-07',
+  metaDescription: "NordVPN review 2026: 6,300+ servers, Threat Protection, and Meshnet tested. Fast, private and feature-rich — but is it still worth $4.99/mo in 2026?",
   tagline: 'Fast, private, and feature-rich for serious VPN users.',
   category: 'VPN',
   categoryColor: 'text-rose-400 bg-rose-950/50 border-rose-800/30',

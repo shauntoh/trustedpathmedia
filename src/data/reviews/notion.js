@@ -2,6 +2,7 @@ const review = {
   slug: 'notion',
   name: 'Notion',
   lastUpdated: '2026-05-07',
+  metaDescription: "Notion review 2026: all-in-one workspace with AI writing, databases and wikis. Powerful but has a learning curve — here's who should (and shouldn't) use it.",
   tagline: 'All-in-one workspace for notes, wikis, and projects.',
   category: 'Productivity',
   categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',

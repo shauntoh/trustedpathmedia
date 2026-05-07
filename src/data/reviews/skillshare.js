@@ -2,6 +2,7 @@ const review = {
   slug: 'skillshare',
   name: 'Skillshare',
   lastUpdated: '2026-05-07',
+  metaDescription: "Skillshare review 2026: 30,000+ creative and business classes for $14/mo. Great for side hustlers — but how does it compare to Udemy and Coursera?",
   tagline: 'Project-based creative learning for curious professionals.',
   category: 'Courses',
   categoryColor: 'text-amber-400 bg-amber-950/50 border-amber-800/30',

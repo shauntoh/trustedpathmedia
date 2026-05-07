@@ -2,6 +2,7 @@ const review = {
   slug: 'suno',
   name: 'Suno',
   lastUpdated: '2026-05-07',
+  metaDescription: "Suno AI review 2026: generate full songs with vocals in seconds. We test audio quality, prompt control and whether the Pro plan is worth $8/mo.",
   tagline: 'Turn a text prompt into a complete, radio-ready song.',
   category: 'AI Tools',
   categoryColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',

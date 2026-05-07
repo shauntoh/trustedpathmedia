@@ -2,6 +2,7 @@ const guide = {
   slug: 'saas-small-teams',
   title: 'Best SaaS Tools for Small Teams',
   lastUpdated: '2026-05-07',
+  metaDescription: "Best SaaS tools for small teams in 2026: affordable picks for project management, comms, docs and automation that scale without ballooning your bill.",
   category: 'SaaS',
   categoryColor: 'text-blue-400 bg-blue-950/50 border-blue-800/30',
   readTime: '7 min read',

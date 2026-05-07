@@ -2,6 +2,7 @@ const guide = {
   slug: 'web-hosting-beginners',
   title: 'Best Web Hosting for Beginners',
   lastUpdated: '2026-05-07',
+  metaDescription: "Best web hosting for beginners in 2026: cheap, reliable picks with easy WordPress setup. Compare Hostinger, Bluehost and SiteGround side by side.",
   category: 'Hosting',
   categoryColor: 'text-emerald-400 bg-emerald-950/50 border-emerald-800/30',
   readTime: '6 min read',

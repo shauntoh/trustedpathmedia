@@ -2,6 +2,7 @@ const guide = {
   slug: 'productivity-apps',
   title: 'Best Productivity Apps Worth Paying For',
   lastUpdated: '2026-05-07',
+  metaDescription: "Best productivity apps in 2026: top-rated tools for task management, focus and deep work. Curated picks that serious professionals actually use daily.",
   category: 'Productivity',
   categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',
   readTime: '10 min read',

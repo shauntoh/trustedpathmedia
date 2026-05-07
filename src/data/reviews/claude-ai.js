@@ -2,6 +2,7 @@ const review = {
   slug: 'claude-ai',
   name: 'Claude AI',
   lastUpdated: '2026-05-07',
+  metaDescription: "Claude AI review 2026: Anthropic's flagship model leads on prose, coding & long-context tasks. Is the $20/mo Pro plan worth it? Full independent verdict.",
   tagline: 'The AI built for serious writing and code.',
   category: 'AI Tools',
   categoryColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',

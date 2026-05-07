@@ -2,6 +2,7 @@ const review = {
   slug: 'fiverr',
   name: 'Fiverr',
   lastUpdated: '2026-05-07',
+  metaDescription: "Fiverr review 2026: hire freelancers from $5 or sell your skills online. We break down buyer and seller experience, fees, and who it actually works for.",
   tagline: 'The world\'s largest freelance marketplace — hire specialists for any task in hours, not weeks.',
   category: 'Productivity',
   categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',

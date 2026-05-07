@@ -2,6 +2,7 @@ const review = {
   slug: 'grammarly',
   name: 'Grammarly',
   lastUpdated: '2026-05-07',
+  metaDescription: "Grammarly review 2026: more than a spellchecker — AI tone, clarity and plagiarism tools tested. Worth upgrading to Premium? Our honest take inside.",
   tagline: 'The AI writing assistant for clear, confident communication.',
   category: 'Productivity',
   categoryColor: 'text-cyan-400 bg-cyan-950/50 border-cyan-800/30',

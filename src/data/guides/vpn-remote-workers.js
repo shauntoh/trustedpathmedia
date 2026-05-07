@@ -2,6 +2,7 @@ const guide = {
   slug: 'vpn-remote-workers',
   title: 'Best VPNs for Remote Workers & Travelers',
   lastUpdated: '2026-05-07',
+  metaDescription: "Best VPN for remote workers in 2026: fast, secure picks for public Wi-Fi, multi-device use and split tunnelling. NordVPN, Mullvad and more tested.",
   category: 'VPN',
   categoryColor: 'text-rose-400 bg-rose-950/50 border-rose-800/30',
   readTime: '7 min read',

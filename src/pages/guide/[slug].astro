@@ -48,7 +48,7 @@ const schema = {
 ---
 <BaseLayout
   title={guide.title}
-  description={guide.intro}
+  description={guide.metaDescription || guide.intro}
   schema={schema}
 >
   <GuidePageComponent guide={guide} client:load />

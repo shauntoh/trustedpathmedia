@@ -2,6 +2,7 @@ const review = {
   slug: 'hostinger',
   name: 'Hostinger',
   lastUpdated: '2026-05-07',
+  metaDescription: "Hostinger review 2026: sub-$3 hosting with LiteSpeed servers and a solid AI builder. We test speed, uptime and support to see if it holds up for real sites.",
   tagline: 'Fast, affordable hosting for sites that need to ship.',
   category: 'Hosting',
   categoryColor: 'text-emerald-400 bg-emerald-950/50 border-emerald-800/30',

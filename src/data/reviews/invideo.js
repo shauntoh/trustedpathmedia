@@ -2,6 +2,7 @@ const review = {
   slug: 'invideo',
   name: 'InVideo AI',
   lastUpdated: '2026-05-07',
+  metaDescription: "InVideo AI review 2026: text-to-video creation with stock footage and voiceovers. Can it replace a video editor? We test the $30/mo Plus plan in full.",
   tagline: 'Turn a text prompt into a publish-ready video in minutes.',
   category: 'AI Tools',
   categoryColor: 'text-violet-400 bg-violet-950/50 border-violet-800/30',

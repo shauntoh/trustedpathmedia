@@ -90,7 +90,7 @@ const schema = {
 ---
 <BaseLayout
   title={`${review.name} Review`}
-  description={review.description}
+  description={review.metaDescription || review.description}
   schema={schema}
 >
   <ReviewPageComponent review={review} client:load />
