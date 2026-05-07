@@ -1,16 +1,16 @@
 const entry = {
   slug: '2026-04-29-figma-ai-auto-layout',
   date: '2026-04-29',
-  title: 'Figma AI Generates Full Auto-Layout Screens From Screenshots',
+  title: 'Figma Make Turns Natural Language Into Interactive Prototypes — No Design Skills Required',
   summary:
-    'Figma AI can now generate fully editable, auto-layout Figma screens from a screenshot or rough sketch — converting static images into structured design files ready for developer handoff.',
+    'Figma launched Figma Make, an AI prototyping system that converts written instructions into fully interactive, structured design files — with working logic and component hierarchy built in, ready for developer handoff.',
   body:
-    'For solo founders and small product teams without a dedicated designer, this collapses a real workflow: marker sketch on Tuesday, working Figma file with proper constraints on Wednesday, dev handoff on Thursday. Accuracy on the auto-layout output is good on standard SaaS patterns — forms, dashboards, settings pages — and noticeably weaker on bespoke marketing layouts where spacing carries half the brand. Junior UI roles do not disappear, but the value of the role shifts further toward judgement and systems thinking and away from pixel-pushing. Framer AI and Builder.io\'s visual import still win for generating live code rather than design files; Figma\'s advantage is that the output stays inside the existing design system and component library most teams already maintain.',
-  sourceUrl: 'https://www.figma.com/blog',
-  sourceLabel: 'Figma Blog',
+    'Figma Make takes a written description of how something should behave — not just look — and generates an interactive prototype with correct component hierarchy and working logic, skipping the step where a designer has to manually wire up interactions after laying out screens. The Figma MCP server extends this further by connecting Figma design context directly into coding tools like VS Code, Cursor and Claude, so developers can reference live design intent in their editor without switching tabs or downloading assets for handoff. Solo founders and early-stage product teams without a dedicated designer get the clearest benefit: viable interactive prototypes from a product brief rather than a blank canvas. The honest question for junior UI roles is not whether they disappear — demand for design judgement and systems thinking holds — but whether the low-end production work that previously filled the first two years of a design career shrinks enough to change hiring patterns at small companies.',
+  sourceUrl: 'https://www.figma.com/ai/',
+  sourceLabel: 'Figma',
   relatedReviewSlug: 'n8n',
   relatedReviewName: 'n8n',
-  tags: ['Figma', 'Design', 'AI Tools', 'Productivity'],
+  tags: ['Figma', 'AI Design', 'Prototyping', 'Productivity'],
 }
 
 export default entry

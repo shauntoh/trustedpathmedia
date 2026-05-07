@@ -1,16 +1,16 @@
 const entry = {
   slug: '2026-04-03-stability-ai-sd4-open-source',
   date: '2026-04-03',
-  title: 'Stability AI Releases Stable Diffusion 4 as Fully Open-Source',
+  title: 'Flux 2 Emerges as the Open-Source Image Model to Beat in 2026',
   summary:
-    'Stability AI released Stable Diffusion 4 under a fully open-source licence, with improved prompt adherence, photorealistic output and native 2K resolution generation.',
+    "Black Forest Labs's Flux 2 has quietly become the benchmark leader for open-source image generation in 2026, outperforming Stability AI's SD 3.5 on photorealism, prompt adherence and native 2K output.",
   body:
-    'Open-source under a permissive licence matters most for two groups: developers who need image generation inside a product without paying per-call API fees, and content creators producing at volume where Midjourney costs scale linearly with output. SD4 closes most of the remaining photorealism gap with Midjourney v7 and now beats DALL-E 3 on prompt adherence in side-by-side tests. The catch is the same one it has always been — running it locally takes a 24GB GPU to be comfortable, and managed hosts still bill by the second. For one-off creative work the maths still favours a Midjourney subscription. For anyone shipping a product or generating thousands of images a month, self-hosting now pays back in weeks rather than months.',
-  sourceUrl: 'https://stability.ai/news',
-  sourceLabel: 'Stability AI',
+    'Flux 2 pulls ahead of SD 3.5 on the metrics that matter most for real work: photorealism on faces and materials, natural language understanding that follows complex multi-clause prompts without hallucinating extra elements, and output consistency across repeated generations of the same subject. The self-hosting trade-off is real — running Flux 2 comfortably requires capable hardware that many individuals do not have, whereas managed services like Midjourney and Adobe Firefly offload that burden in exchange for per-image or subscription pricing. Developers and power users with a capable GPU or access to GPU cloud compute get the better deal by self-hosting: no per-image fees, no content policy restrictions on commercial use, and full control over fine-tuning. For everyone else, the gap between Flux 2 and the best managed services has narrowed to the point where the hardware overhead stops making sense — but Flux 2's rise makes the open-source case stronger than it has been at any point in the image AI cycle.',
+  sourceUrl: 'https://blackforestlabs.ai',
+  sourceLabel: 'Black Forest Labs',
   relatedReviewSlug: 'invideo',
   relatedReviewName: 'InVideo AI',
-  tags: ['Stability AI', 'Image Generation', 'AI Tools', 'Open Source'],
+  tags: ['Flux', 'Stable Diffusion', 'Image Generation', 'Open Source', 'AI Tools'],
 }
 
 export default entry
