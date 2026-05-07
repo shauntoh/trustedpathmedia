@@ -1,15 +1,18 @@
 // News entries  --  add new imports and entries here when publishing.
 // Most recent entry first.
+import entry20260507euai from './2026-05-07-eu-ai-act-streamlining-agreement.js'
 import entry20260506spacex from './2026-05-06-anthropic-spacex-colossus.js'
 import entry20260505invideo from './2026-05-05-invideo-ai-avatar-voices.js'
 import entry20260505goldman from './2026-05-05-anthropic-goldman-blackstone-venture.js'
 import entry20260505notion from './2026-05-05-notion-custom-agents-paid.js'
 import entry20260504 from './2026-05-04-notion-calendar-ai-scheduling.js'
+import entry20260504sierra from './2026-05-04-sierra-ai-agents-950m-funding.js'
 import entry20260430mj from './2026-04-30-midjourney-v8-1.js'
 import entry20260422zapier from './2026-04-22-zapier-tables-ai-enrich.js'
 import entry20260416opus from './2026-04-16-claude-opus-4-7-ga.js'
 import entry20260410grammarly from './2026-04-10-grammarly-full-document-rewrite.js'
 import entry20260409enterprise from './2026-04-09-anthropic-claude-enterprise.js'
+import entry20260407glasswing from './2026-04-07-anthropic-project-glasswing-claude-mythos.js'
 import entry20260403flux from './2026-04-03-stability-ai-sd4-open-source.js'
 import entry20260330zapier from './2026-03-30-zapier-ai-guardrails.js'
 import entry20260326suno from './2026-03-26-suno-v5-5.js'
@@ -29,16 +32,19 @@ import entry20250507figma from './2025-05-07-figma-make-prototyping.js'
 import entry20250325gemini from './2025-03-25-gemini-2-5-pro-launch.js'
 
 export const newsEntries = [
+  entry20260507euai,
   entry20260506spacex,
   entry20260505invideo,
   entry20260505goldman,
   entry20260505notion,
   entry20260504,
+  entry20260504sierra,
   entry20260430mj,
   entry20260422zapier,
   entry20260416opus,
   entry20260410grammarly,
   entry20260409enterprise,
+  entry20260407glasswing,
   entry20260403flux,
   entry20260330zapier,
   entry20260326suno,
